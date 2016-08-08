@@ -1,0 +1,4 @@
+before_script:
+ps aux | grep -v grep caddy
+update_www
+

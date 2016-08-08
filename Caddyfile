@@ -24,7 +24,7 @@ https://git.vcholerae.com {
 
 
 vibriocholera.com {
-    root /home/blast/public/www/vibriocholera.com/www/
+    root /home/blast/public/www/www/
     gzip
 	errors ./errors_ani.log
         log ./log_ani.log

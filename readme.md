@@ -15,5 +15,6 @@ Perl script placeholders, actual scripts are available on request
 ## Deploy CI
 
 - [x] Deploy to fr.vibriocholera.com
-- [ ] Deploy to us.vibriocholera.com 
-
+- [x] Deploy to us.vibriocholera.com 
+- [ ] Setup round robin routing
+- [ ] Machine specific patches as part of CI

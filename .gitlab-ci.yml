@@ -7,3 +7,13 @@ job_deploy:
   - sleep 10
   - sudo systemctl restart t6ss
   - sudo systemctl restart caddy
+job_deploy:
+  stage: deploy
+  tags:
+  - us.atc
+  script:
+  - GIT_WORK_TREE=/home/blast/public/www/ git checkout -f
+  - sleep 10
+  - sudo systemctl restart t6ss
+  - sudo systemctl restart caddy
+

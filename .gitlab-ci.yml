@@ -1,4 +1,4 @@
-job_deploy:
+job_deploy_fr:
   stage: deploy
   tags: 
   - fr.atc
@@ -7,7 +7,7 @@ job_deploy:
   - sleep 10
   - sudo systemctl restart t6ss
   - sudo systemctl restart caddy
-job_deploy:
+job_deploy_us:
   stage: deploy
   tags:
   - us.atc

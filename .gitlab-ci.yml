@@ -1,5 +1,5 @@
-before_script:
-- ps aux | grep -v grep caddy
-update_www:
-- git push master www
-
+job_deploy:
+  stage: deploy
+  tags: fr.atc
+   script:
+    -  GIT_WORK_TREE=/home/blast/public/www/ git checkout -f https://git.vcholerae.com/arch/vibriocholera.com/

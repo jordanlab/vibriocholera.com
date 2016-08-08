@@ -1,5 +1,6 @@
 job_deploy:
   stage: deploy
-  tags: fr.atc
+  tags: 
+  - fr.atc
   script:
-  -  GIT_WORK_TREE=/home/blast/public/www/ git checkout -f https://git.vcholerae.com/arch/vibriocholera.com/
+  - GIT_WORK_TREE=/home/blast/public/www/ git checkout -f https://git.vcholerae.com/arch/vibriocholera.com/

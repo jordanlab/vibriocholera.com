@@ -1,0 +1,54 @@
+https://git.vcholerae.com {
+    gzip
+    minify
+    log git.access.log {
+        rotate
+    }
+    errors {
+        log git.errors.log
+        404 /opt/gitlab/embedded/service/gitlab-rails/public/404.html
+        422 /opt/gitlab/embedded/service/gitlab-rails/public/422.html
+        500 /opt/gitlab/embedded/service/gitlab-rails/public/500.html
+        502 /opt/gitlab/embedded/service/gitlab-rails/public/502.html
+    }
+    header /shared/ Cache-Control "max-age=7200, public"
+    proxy / http://127.0.0.1:8181 {
+        fail_timeout 300s
+        proxy_header Host {host}
+        proxy_header X-Real-IP {remote}
+        proxy_header X-Forwarded-Proto {scheme}
+        proxy_header X-Forwarded-Ssl on
+	proxy_header Cache-Control "max-age=7200, public"
+    }
+}
+
+
+vibriocholera.com {
+    root /home/blast/public/www/vibriocholera.com/www/
+    gzip
+	errors ./errors_ani.log
+        log ./log_ani.log
+}
+
+t6ss.vibriocholera.com {
+    errors ./errors_ani.log
+    log ./log_ani.log
+    proxy /websocket/ http://127.0.0.1:4545 {
+    	websocket 
+    }
+    proxy / http://127.0.0.1:4545 {
+        proxy_header Host {host}
+        proxy_header X-Real-IP {remote}
+        proxy_header X-Forwarded-Proto {scheme}
+    }
+}
+
+blast.vibriocholera.com {
+    gzip
+    errors ./errors_blast.log
+    log ./log_blast.log
+    proxy / localhost:4567/ {
+	without /blast
+	proxy_header Host {host}
+    }
+}

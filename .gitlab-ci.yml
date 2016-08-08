@@ -4,3 +4,5 @@ job_deploy:
   - fr.atc
   script:
   - GIT_WORK_TREE=/home/blast/public/www/ git checkout -f
+  - sudo systemctl restart t6ss
+  - sudo systemctl restart t6ss

@@ -12,9 +12,8 @@ Files for the T6ES prediction tool.
 
 Perl script placeholders, actual scripts are available on request
 
-## Deploy CI
+## TODO
 
-- [x] Deploy to fr.vibriocholera.com
-- [x] Deploy to us.vibriocholera.com 
-- [ ] Setup round robin routing
+- [ ] Deploy to dev.vibriocholera.com (DNS not public)
 - [ ] Machine specific patches as part of CI
+- [ ] Improved handling of T6SS-resubmission

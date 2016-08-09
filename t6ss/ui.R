@@ -17,6 +17,7 @@ shinyUI(
   fluidPage(
     theme = 'cerulean.css',
     tags$head(includeScript("www/ga.js")),
+    includeHTML('header.html'),
     headerPanel(title = "T6SS Predictor", windowTitle = 'Predict T6SS Proteins'),
     sidebarPanel(
       radioButtons(

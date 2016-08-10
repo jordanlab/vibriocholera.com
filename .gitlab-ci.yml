@@ -1,6 +1,8 @@
 job_deploy_fr:
   variables:
     CI_BUILD_REF_NAME: master
+  only:
+    - master
   stage: deploy
   tags: 
   - fr.atc
@@ -12,6 +14,8 @@ job_deploy_fr:
 job_deploy_us:
   variables:
     CI_BUILD_REF_NAME: master
+  only:
+    - master
   stage: deploy
   tags:
   - us.atc

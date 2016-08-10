@@ -91,7 +91,7 @@ shinyUI(
           plotOutput("plot"),
           tags$hr(),
           uiOutput("dlProts"),
-          uiOutput("dlPreds")
+          uiOutput("dlPred")
         )
         
       ),

@@ -133,7 +133,7 @@ shinyServer(function(input, output, session) {
                    class = 'btn btn-primary btn-large')
 
   })
-  output$dlPreds <- renderUI({
+  output$dlPred <- renderUI({
     downloadButton('dlPreds', 'Download predicted T6SS proteins',
                    class = 'btn btn-primary btn-large')
 })

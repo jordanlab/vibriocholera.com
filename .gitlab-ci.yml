@@ -8,7 +8,7 @@ job_deploy_fr:
   - fr.atc
   script:
   - GIT_WORK_TREE=/home/blast/public/www/ git checkout -f
-  - sleep 10
+  - sleep 5
   - sudo systemctl restart t6ss
   - sudo systemctl restart caddy
 job_deploy_us:
@@ -21,7 +21,7 @@ job_deploy_us:
   - us.atc
   script:
   - GIT_WORK_TREE=/home/blast/public/www/ git checkout -f
-  - sleep 10
+  - sleep 5
   - sudo systemctl restart t6ss
   - sudo systemctl restart caddy
-
+  - patch -b /home/blast/prediction_server/server/predict_t6.pl -i /home/blast/public/www/patches/us.vibriocholera.com

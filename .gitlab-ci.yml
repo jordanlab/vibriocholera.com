@@ -1,4 +1,6 @@
 job_deploy_fr:
+  variables:
+    CI_BUILD_REF_NAME: master
   stage: deploy
   tags: 
   - fr.atc
@@ -8,6 +10,8 @@ job_deploy_fr:
   - sudo systemctl restart t6ss
   - sudo systemctl restart caddy
 job_deploy_us:
+  variables:
+    CI_BUILD_REF_NAME: master
   stage: deploy
   tags:
   - us.atc

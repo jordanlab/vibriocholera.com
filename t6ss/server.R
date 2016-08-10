@@ -129,6 +129,12 @@ shinyServer(function(input, output, session) {
   output$plot = renderPlot({
     annotPlot()
   })
+  output$buttons <- renderUI({
+    downloadButton('dlFasta', 'Download Fasta Amino Acid',
+                   class = 'btn btn-primary btn-large')
+    downloadButton('dlPreds', 'Download predicted T6SS proteins',
+                   class = 'btn btn-primary btn-large')
+  })
   output$dlFasta = downloadHandler(
     filename = function() {
       paste("proteins",

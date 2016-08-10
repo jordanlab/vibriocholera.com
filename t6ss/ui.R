@@ -90,10 +90,7 @@ shinyUI(
           tags$hr(),
           plotOutput("plot"),
           tags$hr(),
-          downloadButton('dlFasta', 'Download Fasta Amino Acid',
-                         class = 'btn btn-primary btn-large'),
-          downloadButton('dlPreds', 'Download predicted T6SS proteins',
-                         class = 'btn btn-primary btn-large')
+          uiOutput("buttons")
         )
         
       ),

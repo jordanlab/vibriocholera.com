@@ -1,0 +1,15 @@
+# 2016-08-10
+
+ - Implement dev builds
+
+# 2016-08-09
+
+- Start continuous integration builds
+- Move BLAST from vcholerae.com to vibriocholera.com
+- GA tracking snippets
+- Consistent theming across properties
+
+# 2016-08-08
+
+- Initial commit of files
+- Deploy to us. and fr.vibriocholera.com

@@ -26,12 +26,7 @@ plotGff <- function(outdir){
   plot_gene_map(dna_segs = dna, annotations = annot)
 }
 plotSkel <- function(outdir){
-  genplotdata <-
-    paste(
-      '/home/blast/prediction_server/server/gff.pl -fasta '
-      ,outdir,'/prots.faa', sep="")
-  system(genplotdata)
-  filelist = dir(outdir, pattern = "*.ptt")
+  filelist = dir('/home/blast/prediction_server/server/skel/', pattern = "*.ptt")
   dna <- list()
   annot <- list()
   for (i in 1:length(filelist)) {
@@ -63,12 +58,14 @@ shinyServer(function(input, output, session) {
     if (seqCond == 'protein' &
         predCond == 'pred' &
         input$submit != 0L & !is.null(input$fastaFile)) {
+
       outdir = substr(input$fastaFile$datapath, 1, nchar(input$fastaFile$datapath) - 1)
       cpProt <- paste('cp ', input$fastaFile$datapath, ' ', outdir, '/prots.faa', sep="")
       system(cpProt)
       sed <- paste("sed -i 's/ #.*.//g' ",outdir,"/prots.faa", sep="")
       system(sed)
       t6pred(outdir)
+      plotSkel()
     }
     else if (predCond == 'pred' &
              seqCond == 'genomic' &

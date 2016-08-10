@@ -25,12 +25,16 @@ plotGff <- function(outdir){
   
   plot_gene_map(dna_segs = dna, annotations = annot)
 }
+<<<<<<< HEAD
 plotSkel <- function(outdir){
+=======
+plotSkel <- function(){
+>>>>>>> master
   filelist = dir('/home/blast/prediction_server/server/skel/', pattern = "*.ptt")
   dna <- list()
   annot <- list()
   for (i in 1:length(filelist)) {
-    file = paste(outdir, filelist[i], sep = "")
+    file = paste('/home/blast/prediction_server/server/skel/', filelist[i], sep = "")
     dna[[i]] <- read_dna_seg_from_ptt(file)
     mid_pos <- middle(dna[[i]])
     annot[[i]] <-
@@ -129,6 +133,15 @@ shinyServer(function(input, output, session) {
   output$plot = renderPlot({
     annotPlot()
   })
+  output$dlProts<- renderUI({
+    downloadButton('dlFasta', 'Download Fasta Amino Acid',
+                   class = 'btn btn-primary btn-large')
+
+  })
+  output$dlPred <- renderUI({
+    downloadButton('dlPreds', 'Download predicted T6SS proteins',
+                   class = 'btn btn-primary btn-large')
+})
   output$dlFasta = downloadHandler(
     filename = function() {
       paste("proteins",

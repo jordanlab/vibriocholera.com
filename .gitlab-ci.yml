@@ -1,4 +1,5 @@
 job_deploy_fr:
+  environment: production 
   variables:
     CI_BUILD_REF_NAME: master
   only:
@@ -12,6 +13,7 @@ job_deploy_fr:
   - sudo systemctl restart t6ss
   - sudo systemctl restart caddy
 job_deploy_us:
+  environment: production
   variables:
     CI_BUILD_REF_NAME: master
   only:
@@ -24,4 +26,23 @@ job_deploy_us:
   - sleep 5
   - sudo systemctl restart t6ss
   - sudo systemctl restart caddy
+<<<<<<< HEAD
   - patch -b /home/blast/prediction_server/server/predict_t6.pl -i /home/blast/public/www/patches/us.vibriocholera.com
+=======
+job_deploy_dev:
+  environment: dev
+  variables:
+    CI_BUILD_REF_NAME: dev-v2
+  only:
+    - dev
+  stage: deploy
+  tags:
+  - us.atc.dev
+  script:
+    - GIT_WORK_TREE=/home/blast/dev/www/ git checkout -f
+    - sleep 2
+    - sudo systemctl restart t6ss
+    - sudo systemctl restart caddy
+                                            
+                                            
+>>>>>>> master

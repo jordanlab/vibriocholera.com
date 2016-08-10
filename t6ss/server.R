@@ -25,7 +25,7 @@ plotGff <- function(outdir){
   
   plot_gene_map(dna_segs = dna, annotations = annot)
 }
-plotSkel <- function(outdir){
+plotSkel <- function(){
   filelist = dir('/home/blast/prediction_server/server/skel/', pattern = "*.ptt")
   dna <- list()
   annot <- list()

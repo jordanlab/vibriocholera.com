@@ -71,9 +71,7 @@ shinyUI(
       
     ),
     
-    mainPanel(# css hack to move the progress bar to a lower place
-      # from https://gist.github.com/johndharrison/9578241
-      # tags$link(rel = 'stylesheet', type = 'text/css', href = 'progbar.css'),
+    mainPanel(
       tabsetPanel(
         id = 'vchot6ss',
         tabPanel(

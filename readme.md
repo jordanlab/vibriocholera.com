@@ -14,6 +14,9 @@ Perl script placeholders, actual scripts are available on request
 
 ## TODO
 
-- [ ] Deploy to dev.vibriocholera.com (DNS not public)
-- [ ] Machine specific patches as part of CI
+- [x] Deploy to dev.vibriocholera.com
+- [x] Machine specific patches as part of CI
 - [ ] Improved handling of T6SS-resubmission
+- [ ] Export images
+- [ ] Fix labeling on plot
+

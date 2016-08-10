@@ -25,11 +25,7 @@ plotGff <- function(outdir){
   
   plot_gene_map(dna_segs = dna, annotations = annot)
 }
-<<<<<<< HEAD
-plotSkel <- function(outdir){
-=======
 plotSkel <- function(){
->>>>>>> master
   filelist = dir('/home/blast/prediction_server/server/skel/', pattern = "*.ptt")
   dna <- list()
   annot <- list()
@@ -88,43 +84,6 @@ shinyServer(function(input, output, session) {
       outdir = substr(input$fastaFile$datapath, 1, nchar(input$fastaFile$datapath) - 1)
       prediction <- paste('prodigal -q -c -i ', input$fastaFile$datapath, ' -a ', outdir, '/prots.faa -f gff -o ',outdir,'/prots.gff 2> /dev/null', sep="")
     }
-    
-    # else if (predCond == 'nopred' &
-    #          input$submit != 0L &
-    #          !is.null(input$fastaFile) & !is.null(input$gffFile)) {
-    #   outdir = substr(input$fastaFile$datapath,
-    #                   1,
-    #                   nchar(input$fastaFile$datapath) - 1)
-    #   annotate <-
-    #     paste(
-    #       '/home/blast/prediction_server/server/predict_t6.pl -predict no -fasta ',
-    #       input$fastaFile$datapath,
-    #       ' -gff ',
-    #       input$gffFile$datapath
-    #     )
-    #   #system('echo "',input$fastaFile$datapath,'\n$(date) >> ~/vibrio_project/webtest.txt"', intern = TRUE)
-    #   system(annotate)
-    #   genplotdata <-
-    #     paste(
-    #       '/home/blast/prediction_server/server/gff.pl -fasta ',
-    #       input$fastaFile$datapath
-    #     )
-    #   system(genplotdata)
-    #   filelist = dir(outdir, pattern = "*.ptt")
-    #   dna <- list()
-    #   annot <- list()
-    #   for (i in 1:length(filelist)) {
-    #     file = paste(outdir, filelist[i], sep = "")
-    #     dna[[i]] <- read_dna_seg_from_ptt(file)
-    #     mid_pos <- middle(dna[[i]])
-    #     annot[[i]] <-
-    #       annotation(x1 = mid_pos,
-    #                  text = dna[[i]]$name,
-    #                  rot = "45")
-    #   }
-    #   
-    #   plot_gene_map(dna_segs = dna, annotations = annot)
-    # }
     else{
       return(NULL)
     }

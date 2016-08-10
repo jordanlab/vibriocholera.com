@@ -58,7 +58,6 @@ shinyServer(function(input, output, session) {
     if (seqCond == 'protein' &
         predCond == 'pred' &
         input$submit != 0L & !is.null(input$fastaFile)) {
-
       outdir = substr(input$fastaFile$datapath, 1, nchar(input$fastaFile$datapath) - 1)
       cpProt <- paste('cp ', input$fastaFile$datapath, ' ', outdir, '/prots.faa', sep="")
       system(cpProt)
@@ -129,12 +128,15 @@ shinyServer(function(input, output, session) {
   output$plot = renderPlot({
     annotPlot()
   })
-  output$buttons <- renderUI({
+  output$dlProts<- renderUI({
     downloadButton('dlFasta', 'Download Fasta Amino Acid',
                    class = 'btn btn-primary btn-large')
+
+  })
+  output$dlPreds <- renderUI({
     downloadButton('dlPreds', 'Download predicted T6SS proteins',
                    class = 'btn btn-primary btn-large')
-  })
+})
   output$dlFasta = downloadHandler(
     filename = function() {
       paste("proteins",

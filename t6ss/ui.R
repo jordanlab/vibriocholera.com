@@ -90,7 +90,8 @@ shinyUI(
           tags$hr(),
           plotOutput("plot"),
           tags$hr(),
-          uiOutput("buttons")
+          uiOutput("dlProts"),
+          uiOutput("dlPreds")
         )
         
       ),

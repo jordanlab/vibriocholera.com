@@ -34,8 +34,8 @@ job_deploy_dev:
     - dev
   stage: deploy
   tags:
-    - us.atc.dev
-    - script:
+  - us.atc.dev
+  script:
     - GIT_WORK_TREE=/home/blast/dev/www/ git checkout -f
     - sleep 2
     - sudo systemctl restart t6ss

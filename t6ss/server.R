@@ -30,7 +30,7 @@ plotSkel <- function(){
   dna <- list()
   annot <- list()
   for (i in 1:length(filelist)) {
-    file = paste(outdir, filelist[i], sep = "")
+    file = paste('/home/blast/prediction_server/server/skel/', filelist[i], sep = "")
     dna[[i]] <- read_dna_seg_from_ptt(file)
     mid_pos <- middle(dna[[i]])
     annot[[i]] <-

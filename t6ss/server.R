@@ -25,6 +25,27 @@ plotGff <- function(outdir){
   
   plot_gene_map(dna_segs = dna, annotations = annot)
 }
+plotGff_nopred <- function(outdir){
+  genplotdata <-
+    paste(
+      '/home/blast/prediction_server/server/gff_nopred.pl -fasta '
+      ,outdir,'/prots.faa', sep="")
+  system(genplotdata)
+  filelist = dir(outdir, pattern = "*.ptt")
+  dna <- list()
+  annot <- list()
+  for (i in 1:length(filelist)) {
+    file = paste(outdir, filelist[i], sep = "")
+    dna[[i]] <- read_dna_seg_from_ptt(file)
+    mid_pos <- middle(dna[[i]])
+    annot[[i]] <-
+      annotation(x1 = mid_pos,
+                 text = dna[[i]]$name,
+                 rot = "45")
+  }
+  
+  plot_gene_map(dna_segs = dna, annotations = annot)
+}
 plotSkel <- function(){
   filelist = dir('/home/blast/prediction_server/server/skel/', pattern = "*.ptt")
   dna <- list()
@@ -85,10 +106,15 @@ shinyServer(function(input, output, session) {
              seqCond == 'genomic' &
              input$submit != 0L & !is.null(input$fastaFile) & !is.null(input$gffFile)) {
       outdir = substr(input$fastaFile$datapath, 1, nchar(input$fastaFile$datapath) - 1)
-      getProts <- paste("fastaFromBed -s -fi ", input$fastaFile$datapath," -bed ", input$gffFile$datapath," -fo stdout  | sed 's/(+)//g' | sed 's/(-)//g' | sed 's/\\:/_/g' | transeq -sequence stdin -outseq stdout | sed 's/\\*//g' >  ",outdir,"/prots.faa 2> /dev/null", sep="")
+      #getProts <- paste("fastaFromBed -s -fi ", input$fastaFile$datapath," -bed ", input$gffFile$datapath," -fo stdout  | sed 's/(+)//g' | sed 's/(-)//g' | sed 's/\\:/_/g' | transeq -sequence stdin -outseq stdout | sed 's/\\*//g' >  ",outdir,"/prots.faa 2> /dev/null", sep="")
+      getProts <- paste("gffread -y ",outdir,"/prots.faa"," -g ",input$fastaFile$fatapath," ",input$gffFile$datapath," -C -E 2> /dev/null")
+      copyGff <- paste("cp ",input$gffFile$datapath, " ",outdir,"/prots.gff", sep="")
+      system(copyGff)
+      sed <- paste("sed -i 's/\\|//g' ",outdir,"/prots.faa", sep="")
+      system(sed)   
       system(getProts)
       t6pred(outdir)
-      plotGff(outdir)
+      plotGff_nopred(outdir)
     }
     else{
       return(NULL)

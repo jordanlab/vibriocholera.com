@@ -85,7 +85,7 @@ shinyServer(function(input, output, session) {
              seqCond == 'genomic' &
              input$submit != 0L & !is.null(input$fastaFile) & !is.null(input$gffFile)) {
       outdir = substr(input$fastaFile$datapath, 1, nchar(input$fastaFile$datapath) - 1)
-      getProts <- paste("fastaFromBed -s -fi ", input$fastaFile$datapath," -bed ", input$gffFile$datapath,"-fo stdout  | sed 's/(+)//g' | sed 's/(-)//g' | sed 's/\:/_/g' | transeq -sequence stdin -outseq stdout | sed 's/\*//g' >  ",outdir,"/prots.faa 2> /dev/null", sep="")
+      getProts <- paste("fastaFromBed -s -fi ", input$fastaFile$datapath," -bed ", input$gffFile$datapath,"-fo stdout  | sed 's/(+)//g' | sed 's/(-)//g' | sed 's/\\:/_/g' | transeq -sequence stdin -outseq stdout | sed 's/\\*//g' >  ",outdir,"/prots.faa 2> /dev/null", sep="")
       system(getProts)
       t6pred(outdir)
       plotGff(outdir)

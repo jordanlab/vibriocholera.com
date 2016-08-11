@@ -107,10 +107,10 @@ shinyServer(function(input, output, session) {
              input$submit != 0L & !is.null(input$fastaFile) & !is.null(input$gffFile)) {
       outdir = substr(input$fastaFile$datapath, 1, nchar(input$fastaFile$datapath) - 1)
       #getProts <- paste("fastaFromBed -s -fi ", input$fastaFile$datapath," -bed ", input$gffFile$datapath," -fo stdout  | sed 's/(+)//g' | sed 's/(-)//g' | sed 's/\\:/_/g' | transeq -sequence stdin -outseq stdout | sed 's/\\*//g' >  ",outdir,"/prots.faa 2> /dev/null", sep="")
-      getProts <- paste("gffread -y ",outdir,"/prots.faa"," -g ",input$fastaFile$filepath," ",input$gffFile$datapath," -C -E 2> /dev/null")
+      getProts <- paste("gffread -y ",outdir,"/prots.faa"," -g ",input$fastaFile$datapath," ",input$gffFile$datapath," -C -E 2> /dev/null")
       copyGff <- paste("cp ",input$gffFile$datapath, " ",outdir,"/prots.gff", sep="")
       system(copyGff)
-      sed <- paste("sed -i 's/\\|//g' ",outdir,"/prots.faa", sep="")
+      sed <- paste("sed -i 's/\\|//g' ",outdir,"/prots.gff", sep="")
       system(sed)   
       system(getProts)
       t6pred(outdir)

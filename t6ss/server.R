@@ -55,6 +55,7 @@ shinyServer(function(input, output, session) {
   annotPlot = reactive({
     seqCond = input$seqType
     predCond = input$predict
+    # Protein, oddity of reactive shiny app requires the predCond to not be wonky
     if (seqCond == 'protein' &
         predCond == 'pred' &
         input$submit != 0L & !is.null(input$fastaFile)) {
@@ -67,6 +68,7 @@ shinyServer(function(input, output, session) {
       t6pred(outdir)
       plotSkel()
     }
+    # Genomic DNA, predict with prodigal
     else if (predCond == 'pred' &
              seqCond == 'genomic' &
              input$submit != 0L & !is.null(input$fastaFile)) {
@@ -78,11 +80,15 @@ shinyServer(function(input, output, session) {
       t6pred(outdir)
       plotGff(outdir)
     }
+    # Genomic DNA
     else if (predCond == 'nopred' &
              seqCond == 'genomic' &
              input$submit != 0L & !is.null(input$fastaFile) & !is.null(input$gffFile)) {
       outdir = substr(input$fastaFile$datapath, 1, nchar(input$fastaFile$datapath) - 1)
-      prediction <- paste('prodigal -q -c -i ', input$fastaFile$datapath, ' -a ', outdir, '/prots.faa -f gff -o ',outdir,'/prots.gff 2> /dev/null', sep="")
+      getProts <- paste("fastaFromBed -s -fi ", input$fastaFile$datapath," -bed ", input$gffFile$datapath," -fo stdout | sed 's/(+)//g' | sed 's/(-)//g' > ",outdir,"/prots.fna 2> /dev/null", sep="")
+      system(getProts)
+      t6pred(outdir)
+      plotGff(outdir)
     }
     else{
       return(NULL)

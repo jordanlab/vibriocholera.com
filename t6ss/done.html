@@ -1,0 +1,58 @@
+<div class="splash">
+  <div class="middle">
+    <h1>T6SS prediction finished</h1>
+    <p>Scroll down to see results</p>
+    <hr>
+    <p>Downloadable results:</p>
+    <ul style="list-style-type:none;">
+      <li><a href="genome.fasta">Input genome (noramlized)</a></li>
+      <li><a href="nucleotides.fna">Nucleotide fasta</a></li>
+      <li><a href="proteins.faa">Protein fasta</a></li>
+      <li><a href="log.txt">Analysis log</a></li>
+    </ul>
+    <hr>
+  </div>
+  <div class="bottomleft">
+    <p><a href="https://T6SS.Vibriocholera.com" target=_blank style="color: black; text-decoration: none;">T6SS.Vibriocholera.com</a></p>
+  </div>
+</div>
+
+
+<style>
+body, html {
+  height: 100%
+}
+
+.splash {
+  height: 100%;
+  position: relative;
+  color: black;
+  /* Add a font */
+  font-family: "Courier New", Courier, monospace;
+  /* Set the font-size to 25 pixels */
+  font-size: 25px;
+}
+
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>

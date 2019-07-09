@@ -1,0 +1,2030 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  aux5
+# target sequence database:        ../BGT49_PacBio_Final_assembly.fasta
+# output directed to file:         aux5.out
+# per-seq hits tabular output:     aux5.tab
+# number of worker threads:        10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Aux5  [M=6460]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+          0 15169.4   3.8          0 7392.1   0.1    4.2  4  scaffold2  
+          0 10744.9   0.1          0 7448.5   0.1    3.1  3  scaffold3  
+          0 7419.8   0.1          0 7419.4   0.1    1.1  1  scaffold1  
+
+
+Domain annotation for each sequence (and alignments):
+>> scaffold2  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  784.7   0.0  2.1e-239    7e-239    3926    5825 ..  340728  342625 ..  340651  342639 .. 0.91
+   2 ! 2671.8   0.0         0         0    3914    6459 ..  457718  460266 ..  457664  460267 .. 0.97
+   3 ! 4318.1   0.8         0         0     157    6459 ..  749937  756333 ..  749895  756334 .. 0.99
+   4 ! 7392.1   0.1         0         0       1    6459 [. 1156181 1162652 .. 1156181 1162653 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 784.7 bits;  conditional E-value: 2.1e-239
+       Aux5   3926 tgtccgggactaccgccagagttgaggttaatcatcgctccgacaagatgcacaccggcaggatcgactttaacaaagctgccgcccgctttaa 4019  
+                   tg+c  g act ccgcc g gtt+aggttaat    g  ccgac a +tgcac cc  c g atcgacttt acaaa ctgcc cc gcttt+a
+  scaffold2 340728 TGCCT-GCACTGCCGCCCGCGTTTAGGTTAATGGCAGGACCGACTAAGTGCACGCCACCTGCATCGACTTTTACAAAACTGCCCCCAGCTTTTA 340820
+                   33332.34899*********************9999999**************999999*********************************** PP
+
+       Aux5   4020 ccgtaatctcggagcccgcttcaataacgactttctcaccggctttaatatgtatctcatcgcctgcttc.actgacccagaccttaccagact 4112  
+                    +gt a+ctc g+ cccgcttcaa  acga ttt  c ccg  ttt a   + atctc t  cc gc tc ac  a c a +c tt+cc+gact
+  scaffold2 340821 GGGTTAACTCCGCTCCCGCTTCAACCACGATTTTTGCGCCGCTTTTGAGTGAAATCTCTTTACCCGCCTCgAC--AGCAATGCGTTGCCCGACT 340912
+                   ****************************************988888777777889999999898888776144..4467778899999999987 PP
+
+       Aux5   4113 t.gacataaagagagccttccaccatgagtgttttgcttcctttaacggcttctcgac...tctccccctcgaccgtcaggtgttggttgtgct 4202  
+                   t g   t  ag+ga+  t cc +c t+a  g+  tgct+ c+ +  cg +tt+ c+ac   t tc cc tc accgt a  tgttggttg gct
+  scaffold2 340913 TtGTGTTGTAGTGAC-GTGCCGACTTCATGGC--TGCTATCGAGTGCGATTTTGCTACggcTTTCGCCTTCAACCGTTAAATGTTGGTTGCGCT 341003
+                   522223445788874.5666666666665554..456666666666777777777764322778999*************************** PP
+
+       Aux5   4203 taatctgagtaaattggtcattttcaacggtcagatgttggtcgtgacgaatgaccgtggtgtggtcgttttcaatcaaaccatcaaagtcttt 4296  
+                    aat +gagtaaa  ggtcatt tc ac gt agatg tg tcgtg+cg at ac   ggtgtg+tc t  tcaatcaa  catc  a tcttt
+  scaffold2 341004 GAATGCGAGTAAAGCGGTCATTGTCCACAGTGAGATGCTGATCGTGGCGGATCACTTCGGTGTGATCATGCTCAATCAACGCATCCCAATCTTT 341097
+                   *************************************************************************************9999***** PP
+
+       Aux5   4297 ctgcgcatgcaggtagatttgctctttgcccgcttggtcttcaaaactgagctcgttaaacccttcaccttggtgcgtctcggtgcgcagcacg 4390  
+                    tg+gcatgcag  a at tg tc  tgcccgcttg+tc tcaaaact ag tcgtt  a cctt++ccttggtg gtctc gtgcgcag acg
+  scaffold2 341098 TTGTGCATGCAGCAAAATCTGTTCGCTGCCCGCTTGATCCTCAAAACTCAGTTCGTTGTAGCCTTGCCCTTGGTGAGTCTCAGTGCGCAGTACG 341191
+                   ********************************************************************************************** PP
+
+       Aux5   4391 gttttggttttgtgctctggcaaggtgtatggtggcgtgttggtcgcatgatatgtgcggccagtgataatgggttggtcagggtctccattta 4484  
+                   gttttggttttgtg tc ggcaagg++ta gg+g +gt ttggtcgcatgata gt+cg cc gtgat atgggttg tc gg tc c att+a
+  scaffold2 341192 GTTTTGGTTTTGTGGTCAGGCAAGGCATAAGGCGCGGTATTGGTCGCATGATACGTACGACCTGTGATGATGGGTTGATCCGGATCGCAATTCA 341285
+                   ********************************************************************************************** PP
+
+       Aux5   4485 aaaagtttacgatcacttcatgaccgatgcgcggaattgcgataaaaccttattggctgcccgcccaaccttgtgacacccgtacccaacagga 4578  
+                   aaaa+   ac+atcacttcatg cc+a  cgcggaat gc ata +acc tattggct cccgccca  cttgtg cac cg accca ca ga
+  scaffold2 341286 AAAACGAAACAATCACTTCATGGCCAACTCGCGGAATCGCCATACTACCGTATTGGCTACCCGCCCATTCTTGTGCCACTCGCACCCAGCAAGA 341379
+                   ********************************************************************************************** PP
+
+       Aux5   4579 gctttgctcgttactgttcgagtaacgatcccacgggaagtggattttcacccgcccgtgttcatcacagaagatttcttcgccttcaggaccg 4672  
+                   gcttt +tcgtt ct  t gagta+ gatcccacgggaa tg+a tttcac cg cc+ + t atc ca  a at tcttc+cctt  gg cc+
+  scaffold2 341380 GCTTTTTTCGTTGCTACTTGAGTAGTGATCCCACGGGAAATGCACTTTCACACGACCAAAGTTATCGCAATAAATCTCTTCACCTTGTGGCCCA 341473
+                   ********************************************************************************************** PP
+
+       Aux5   4673 acgaccgtggctatcattggaccatcgacttgcggtttagtttgtggctcggcgcgccagtggagatgccccggaattaagctgaactggttgc 4766  
+                   ac ac gtggc atcat ggaccatc+acttgcgg ttag +   ggc   gc cgcca   ga  tg  c ggaat a   t a ctg ttgc
+  scaffold2 341474 ACCACGGTGGCGATCATGGGACCATCCACTTGCGGCTTAGCACAAGGCCTTGCTCGCCAAGTGATGTGAGCGGGAATAAGTTTTAGCTGATTGC 341567
+                   ****************************************99988888777788887764445666888899999999999999********** PP
+
+       Aux5   4767 tgtaggtggttgcaccgctgccgccctcttcttgtaacgcttgcggctgctcaccttgatggttaatcgacaccaccacccaatcgcggttcat 4860  
+                   tgta gtggt gcacc    ccgccctcttcttgtaacgcttg ggctgc   ccttg+tg+tt     + accac a ccaatc cg+ttcat
+  scaffold2 341568 TGTAAGTGGTAGCACCTGAACCGCCCTCTTCTTGTAACGCTTGTGGCTGCGTCCCTTGGTGATTGGCTTGTACCACGAGCCAATCTCGATTCAT 341661
+                   ****************9999******************************************998888889*********************** PP
+
+       Aux5   4861 cgcggggtcaagatgctcttgcaggtcaaacttataaccagcacgcagtagcggctcgttgctctgccctgccgcggtgtgggcatggcggcgc 4954  
+                   +gcg g tcaag+tg+tcttgca gtcaaa       ccagc  +cag a+ gg+tcgt  ctct c c  c gc+    ++gcat gcggcg 
+  scaffold2 341662 TGCGTGATCAAGGTGATCTTGCAAGTCAAAACGCACTCCAGCCAACAGCAAAGGTTCGTCACTCTTCGCATCAGCAAGCAAAGCATCGCGGCGT 341755
+                   ***************************9876555555666666678999999***************999999999999999************ PP
+
+       Aux5   4955 agatagtctaagcggatttggctaaaggcggcgccgttcacatcgtctttgtagcgccccggcgcatcaaagtgttggtagcgcgtttgctgat 5048  
+                   a ata tctaagcg atttggctaaaggc + gcc tt  catcgtctttgtagcg+cccgg gcatcaaa+tg t  ta    g  tgctgat
+  scaffold2 341756 AAATACTCTAAGCGAATTTGGCTAAAGGCCTTGCCATTTGCATCGTCTTTGTAGCGTCCCGGAGCATCAAAATGCTCATAATTTGGCTGCTGAT 341849
+                   **************************************************************************99999887666679999*** PP
+
+       Aux5   5049 attctagctcagtaccctgcacggtttgtaaaaatgagtaggctggctttttgaagctgtaatctttgagctgaacttcgctcacttctgcttg 5142  
+                   a+ c a  tc+ taccctgc+ g   tg + aaat+ gtaggctggctt tt+aagctgtaatcttt ag t   + t+gct actt+ gc+  
+  scaffold2 341850 AAGCGATGTCTTTACCCTGCGTGCGCTGAGTAAATCCGTAGGCTGGCTTCTTAAAGCTGTAATCTTTAAGTTCGGTATGGCTGACTTGCGCGGT 341943
+                   9999999999**********999866666666778899********************************999999*************99877 PP
+
+       Aux5   5143 ggtgcgataggttaagccgtgg.........atgtacggtgtatctttcgtgccgcccgctaaagcgttgtacgggatgg.........gctcc 5218  
+                   ggt       +tt a  ++tg+         a  ta gg   at  +tc +gcc+cccgc+a  gc+tt+ta gg a  g         +ct c
+  scaffold2 341944 GGT-------CTTGA--ATTGCagatcgaccACATAAGGGAGATTGATCTCGCCACCCGCCAGCGCATTATAAGGTACTGgcttgtctaACTTC 342028
+                   766.......33333..344440000011114566777777888899999*******************9998887775502222222245678 PP
+
+       Aux5   5219 ggtagtttacttaggctgtcactggcatcactgaaatagagggtatgtttgccagcttcatggacaaagctgtacaccaagccttcttcagcgg 5312  
+                   ggt g +t++++ +gct t         c +t aa  a a ggt tgttt   +gcttcatg+a    gctgta accaagccttcttc+gcgg
+  scaffold2 342029 GGTTGGCTGTCCGAGCTAT---------CGGTAAACAACAAGGTGTGTTTCTGCGCTTCATGTAGGTGGCTGTAAACCAAGCCTTCTTCGGCGG 342113
+                   8888888888888888766.........55666665666789999999999999**************************************** PP
+
+       Aux5   5313 cgaggcggtggagaaagtcgatatcgctttcgcggtactgcacacaaaactcacgctgcacgctatcacggttgagcgcaaaagcgtaatcgtt 5406  
+                   cga +cggtg a aaa t  a atc  tttc cg+tactg acacaaaactc cgctg+ c+c+ tcacg+tt ag gcaaa+gcgtaatc t 
+  scaffold2 342114 CGATACGGTGTAAAAACTGCAAATCCGTTTCACGATACTGTACACAAAACTCTCGCTGGGCACACTCACGCTTAAGGGCAAAGGCGTAATCTTC 342207
+                   ****************999999************************************************************************ PP
+
+       Aux5   5407 gatgcccatctcttgcagcaagatagaaagaatttctgggacagtctgcttttggaaaatgcggctattatgacgcagggataagcgctctaag 5500  
+                    at cccatctcttgcag aa ataga+a aat tctgg ac +t tgct  tggaaaat cggctatta+ +cg a  ga+a  c +tc+aa 
+  scaffold2 342208 AATCCCCATCTCTTGCAGTAAAATAGAGATAATCTCTGGCACGCTTTGCTGCTGGAAAATACGGCTATTACTGCGTAAAGAAAGCCTTTCCAAC 342301
+                   ***********************************************************************99********99999******** PP
+
+       Aux5   5501 gcagggactaaggtgagttcgtagaaggtttggtgatggccgatatcgccttggctgaaggcgcaaacaatgccgtgaacgcgctgaaccaact 5594  
+                   gcagg acta +gt a t  +tagaa gt tg  gatggccg tatc cctt gct aa    c++acaat ccgt +a + gctg+acca  t
+  scaffold2 342302 GCAGGAACTAGCGTTAATGAATAGAAAGTATGTCGATGGCCGGTATCCCCTTTGCTCAATTGACGCACAATACCGTTTATTTGCTGCACCACTT 342395
+                   *************9999999***************************************999******************************** PP
+
+       Aux5   5595 gtgaattgcggtaaagcttcagctcagcacgcttatcgaccatctgctcagcagtcagattggatgcccgactcgccaattgcacttcgtagcg 5688  
+                   g++  t +cg   aa   t+a  t agc+  +t +tcgac a +tgctcagca   a +ttg +t  c  act+gc aa t  ac t  tagcg
+  scaffold2 342396 GCCCGTCACGCAGAATGGTGAAATGAGCGGTTTGGTCGACAAATTGCTCAGCAACAAAGTTGCTTAGCGCACTGGCTAAATCAACCTGATAGCG 342489
+                   ******999888888777888889999998888899********************************************************** PP
+
+       Aux5   5689 aaacccgtaacaggct....tgccctaaaaaaacactatttgagagtgactcctgcccgtggaagcctctgaccaccagagtctcatcttccag 5778  
+                   aaa cc ta cagg +    tgc c a     aca  at+ ga a +gactc tgccc t +aa cc c  ac ac ag+g  tcatc tc ag
+  scaffold2 342490 AAAACCATAGCAGGGCtcacTGCGCCAT----ACAGAATCAGACAAGGACTCTTGCCCTTCAAATCCGCGTACAACGAGGGATTCATCCTCAAG 342579
+                   *************975222279988875....566668999999*************************99*********************** PP
+
+       Aux5   5779 cccttccacctcaatgctgtacgctaatgtcgccatcctgcctttcc 5825  
+                    cc tccacct  a      ac  taa  t gccat ctg  t tcc
+  scaffold2 342580 GCCATCCACCTTTAATTGAAACTGTAACCTTGCCATGCTGTTT-TCC 342625
+                   **********864432222233344566667888888888644.344 PP
+
+  == domain 2  score: 2671.8 bits;  conditional E-value: 0
+       Aux5   3914 c...aaccagcccc.ctgtccgggactaccgccagagttgaggttaatcatcgctccgacaagatgcacaccggcaggatcgactttaacaaag 4003  
+                   c   a+cc g +cc ctg+c g g ct ccgccagagtt aggttaat    g  ccgac a +tgcacaccg cag atcgactttaa aaa 
+  scaffold2 457718 CcatAGCCTGAGCCgCTGCCTGCG-CTGCCGCCAGAGTTAAGGTTAATGGCAGAGCCGACGACGTGCACACCGCCAGCATCGACTTTAATAAAA 457810
+                   134455555444433566666555.799********************9999999*************************************** PP
+
+       Aux5   4004 ctgccgcccgctttaaccgtaatctcggagcccgcttcaataacgactttctcaccggctttaatatgtatctcatcgcctgcttc........ 4089  
+                   ctgccgcc+gcttt a +gtaa ctcg  gcc+gcttc a  ac a+ttt t acc gctttaa +tg a ctca   cc gc+tc        
+  scaffold2 457811 CTGCCGCCGGCTTTGATGGTAAGCTCGTTGCCAGCTTCCAAGACCAGTTTGTTACCCGCTTTAAGGTGAACCTCAGTACCCGCATCgtaaatcg 457904
+                   *****************************************9*********************************9999998877611111111 PP
+
+       Aux5   4090 ....actgacccagaccttaccagacttgacataaagagagccttccaccatgagtgtt.ttgcttcctttaacggcttctcgactctccccct 4178  
+                       actg   c ga+ tt + +++c+       a  +ga cc  cca++ t++ tg+t +tg + ++ttt acg    + cgact tcccc t
+  scaffold2 457905 ctttACTG---CCGATTTTTTGCTGCA-------A--TGAACC-GCCAATTTCGCTGCTgCTGTCGAGTTTGACGAGCGTACGACTTTCCCCTT 457985
+                   11114444...3355555555444443.......2..334444.6899999999888642677777777766666556678************* PP
+
+       Aux5   4179 cgaccgtcaggtgttggttgtgcttaatctgagtaaattggtcattttcaacggtcagatgttggtcgtgacgaatgaccgtggtgtggtcgtt 4272  
+                   c accgtcaggtgttggttgtgcttaatctg+gtaaattggtc ttttcaacggt ag+tgttggtcgtgacgaatgaccgtggtgtggtcgtt
+  scaffold2 457986 CCACCGTCAGGTGTTGGTTGTGCTTAATCTGGGTAAATTGGTCGTTTTCAACGGTTAGGTGTTGGTCGTGACGAATGACCGTGGTGTGGTCGTT 458079
+                   ********************************************************************************************** PP
+
+       Aux5   4273 ttcaatcaaaccatcaaagtctttctgcgcatgcaggtagatttgctctttgcccgcttggtcttcaaaactgagctcgttaaacccttcacct 4366  
+                   ttcaatcaaaccatcaaa tctttctgcgcatgcaggtagatttgctctttgcc+gcttggtcttcaaaactgagctcgttaaacccttc+cct
+  scaffold2 458080 TTCAATCAAACCATCAAAATCTTTCTGCGCATGCAGGTAGATTTGCTCTTTGCCTGCTTGGTCTTCAAAACTGAGCTCGTTAAACCCTTCCCCT 458173
+                   ********************************************************************************************** PP
+
+       Aux5   4367 tggtgcgtctcggtgcgcagcacggttttggttttgtgctctggcaaggtgtatggtggcgtgttggtcgcatgatatgtgcggccagtgataa 4460  
+                   tggtgcgtctcggtgcgcagcacggttttggttttgtgctc ggcaaggtgtatgg+ggcgtgttggtcgcatgata gtgcg+ccagtgataa
+  scaffold2 458174 TGGTGCGTCTCGGTGCGCAGCACGGTTTTGGTTTTGTGCTCAGGCAAGGTGTATGGCGGCGTGTTGGTCGCATGATAAGTGCGTCCAGTGATAA 458267
+                   ********************************************************************************************** PP
+
+       Aux5   4461 tgggttggtcagggtctccatttaaaaagtttacgatcacttcatgaccgatgcgcggaattgcgataaaaccttattggctgcccgcccaacc 4554  
+                   tgggttggtc+gggtc+cc+tttaaaaa+t+tac+atcacttcatgaccgatgcgcggaat gcgataaaacc+tattggctgcccgcccaacc
+  scaffold2 458268 TGGGTTGGTCTGGGTCACCGTTTAAAAACTCTACAATCACTTCATGACCGATGCGCGGAATAGCGATAAAACCATATTGGCTGCCCGCCCAACC 458361
+                   ********************************************************************************************** PP
+
+       Aux5   4555 ttgtgacacccgtacccaacaggagctttgctcgttactgttcgagtaacgatcccacgggaagtggattttcacccgcccgtgttcatcacag 4648  
+                   ttgtgacacccg acccaacaggagctttgctcgttac+gttcgagta+cg+tcccacgggaagtggattttcacccgcccgtgttcatcacag
+  scaffold2 458362 TTGTGACACCCGCACCCAACAGGAGCTTTGCTCGTTACCGTTCGAGTAGCGGTCCCACGGGAAGTGGATTTTCACCCGCCCGTGTTCATCACAG 458455
+                   ********************************************************************************************** PP
+
+       Aux5   4649 aagatttcttcgccttcaggaccgacgaccgtggctatcattggaccatcgacttgcggtttagtttgtggctcggcgcgccagtggagatgcc 4742  
+                   aagatttcttcgccttcaggaccgacgaccgtggc+atcattggaccatcgacttgcggtttag ttgtggctcggcgcgccagtg+agatgcc
+  scaffold2 458456 AAGATTTCTTCGCCTTCAGGACCGACGACCGTGGCAATCATTGGACCATCGACTTGCGGTTTAGCTTGTGGCTCGGCGCGCCAGTGAAGATGCC 458549
+                   ********************************************************************************************** PP
+
+       Aux5   4743 ccggaattaagctgaactggttgctgtaggtggttgcaccgctgccgccctcttcttgtaacgcttgcggctgctcaccttgatggttaatcga 4836  
+                   ccggaattaa+ct+aa+tggtt ctgta gt gt gc ccgctgcc cc tcttcttgta+cgcttgcggctgctcaccttg+tggttaat ga
+  scaffold2 458550 CCGGAATTAAACTAAATTGGTTACTGTAAGTAGTAGCGCCGCTGCCACCGTCTTCTTGTAGCGCTTGCGGCTGCTCACCTTGGTGGTTAATAGA 458643
+                   ********************************************************************************************** PP
+
+       Aux5   4837 caccaccacccaatcgcggttcatcgcggggtcaagatgctcttgcaggtcaaacttataaccagcacgcagtagcggctcgttgctctgccct 4930  
+                   +accaccacccaatcgcggttcatcgcggggtcaag+tgctcttgcaggtcaaacttataacc gcacgcag agcggctcgttgctctg cct
+  scaffold2 458644 GACCACCACCCAATCGCGGTTCATCGCGGGGTCAAGGTGCTCTTGCAGGTCAAACTTATAACCCGCACGCAGCAGCGGCTCGTTGCTCTGTCCT 458737
+                   ********************************************************************************************** PP
+
+       Aux5   4931 gccgcggtgtgggcatggcggcgcagatagtctaagcggatttggctaaaggcggcgccgttcacatcgtctttgtagcgccccggcgcatcaa 5024  
+                   g++gcggt tgggcatggcggcgcag+tagtctaa+cggatttggctaaaggcggcgccgttcacatcgtctttgtagcgccccggcgcatcaa
+  scaffold2 458738 GTTGCGGTATGGGCATGGCGGCGCAGGTAGTCTAAACGGATTTGGCTAAAGGCGGCGCCGTTCACATCGTCTTTGTAGCGCCCCGGCGCATCAA 458831
+                   ********************************************************************************************** PP
+
+       Aux5   5025 agtgttggtagcgcgtttgctgatattctagctcagtaccctgcacggtttgtaaaaatgagtaggctggctttttgaagctgtaatctttgag 5118  
+                   a+tgttg tagcg gtttgctgata+tc+agctc+gt ccctgcacggtttgtaaaaa+gagtaggctggctttttgaagctgta+tctttgag
+  scaffold2 458832 AATGTTGATAGCGGGTTTGCTGATAATCCAGCTCCGTGCCCTGCACGGTTTGTAAAAAGGAGTAGGCTGGCTTTTTGAAGCTGTAGTCTTTGAG 458925
+                   ********************************************************************************************** PP
+
+       Aux5   5119 ctgaacttcgctcacttctgcttgggtgcgataggttaagccgtggatgtacggtgtatctttcgtgccgcccgctaaagcgttgtacgggatg 5212  
+                   ctgaacttcgct acttctgcttgggtg gataggttaagccgtggatgtacgg+gtatc++tcgtgccgcccgctaa+gcgttgtacgggatg
+  scaffold2 458926 CTGAACTTCGCTGACTTCTGCTTGGGTGTGATAGGTTAAGCCGTGGATGTACGGCGTATCCATCGTGCCGCCCGCTAAGGCGTTGTACGGGATG 459019
+                   ********************************************************************************************** PP
+
+       Aux5   5213 ggctccggtagtttacttaggctgtcactggcatcactgaaatagagggtatgtttgccagcttcatggacaaagctgtacaccaagccttctt 5306  
+                   ggctccgg+agttt+cttaggct tcactggcatcactgaaatagagggtatgtttgcc+gcttcatggacaaagctgtacaccaa ccttctt
+  scaffold2 459020 GGCTCCGGCAGTTTGCTTAGGCTATCACTGGCATCACTGAAATAGAGGGTATGTTTGCCCGCTTCATGGACAAAGCTGTACACCAAACCTTCTT 459113
+                   ********************************************************************************************** PP
+
+       Aux5   5307 cagcggcgaggcggtggagaaagtcgatatcgctttcgcggtactgcacacaaaactcacgctgcacgctatcacggttgagcgcaaaagcgta 5400  
+                   c+gc gcgaggcggtg agaaagtcgat+tcgctttcgcggtactgcacacaaaactcacgctgcac+c+atcacg+ttgagcgcaaaagcgta
+  scaffold2 459114 CGGCAGCGAGGCGGTGCAGAAAGTCGATGTCGCTTTCGCGGTACTGCACACAAAACTCACGCTGCACACAATCACGCTTGAGCGCAAAAGCGTA 459207
+                   ********************************************************************************************** PP
+
+       Aux5   5401 atcgttgatgcccatctcttgcagcaagatagaaagaatttctgggacagtctgcttttggaaaatgcggctattatgacgcagggataagcgc 5494  
+                   atcgttgatgcccat+tcttgcagcaagataga+agaatttctgg+acagtctgcttttggaaaatgcggctatt+tg+cgcagggataagcgc
+  scaffold2 459208 ATCGTTGATGCCCATTTCTTGCAGCAAGATAGAGAGAATTTCTGGAACAGTCTGCTTTTGGAAAATGCGGCTATTGTGGCGCAGGGATAAGCGC 459301
+                   ********************************************************************************************** PP
+
+       Aux5   5495 tctaaggcagggactaaggtgagttcgtagaaggtttggtgatggccgatatcgccttggctgaaggcgcaaacaatgccgtgaacgcgctgaa 5588  
+                   tctaaggcagg actaaggtgagttcgtagaaggt+tggtgatggccgatatcgccttggct aaggcgc++acaatgccgtg+acgcgctg+a
+  scaffold2 459302 TCTAAGGCAGGCACTAAGGTGAGTTCGTAGAAGGTGTGGTGATGGCCGATATCGCCTTGGCTAAAGGCGCGCACAATGCCGTGCACGCGCTGCA 459395
+                   ********************************************************************************************** PP
+
+       Aux5   5589 ccaactgtgaattgcggtaaagcttcagctcagcacgcttatcgaccatctgctcagcagtcagattggatgcccgactcgccaattgcacttc 5682  
+                   ccaactgtgaattgcggtaaagctt+agctcagcacgcttatc accatctgctc+gc gtcagattggat cccgactcgcca+ttgcacttc
+  scaffold2 459396 CCAACTGTGAATTGCGGTAAAGCTTGAGCTCAGCACGCTTATCCACCATCTGCTCGGCGGTCAGATTGGATACCCGACTCGCCAGTTGCACTTC 459489
+                   ********************************************************************************************** PP
+
+       Aux5   5683 gtagcgaaacccgtaacaggcttgccctaaaaaaacactatttgagagtgactcctgcccgtggaagcctctgaccaccagagtctcatcttcc 5776  
+                   gtagcgaaacccgtaacaggcttgccctaaaaaaacact+tt+gagagtgactcctgcccgtggaagcctctgaccaccagagtctcatcttcc
+  scaffold2 459490 GTAGCGAAACCCGTAACAGGCTTGCCCTAAAAAAACACTGTTGGAGAGTGACTCCTGCCCGTGGAAGCCTCTGACCACCAGAGTCTCATCTTCC 459583
+                   ********************************************************************************************** PP
+
+       Aux5   5777 agcccttccacctcaatgctgtacgctaatgtcgccatcctgcctttccttcccctacattaaaaatggcaaaaccttaaacccacaataccgc 5870  
+                   agcccttccacctcaatgctgtacgctaatgtcgccatcctgcctttccttcccctacattaaaaatggcaaaaccttaaacccacaataccgc
+  scaffold2 459584 AGCCCTTCCACCTCAATGCTGTACGCTAATGTCGCCATCCTGCCTTTCCTTCCCCTACATTAAAAATGGCAAAACCTTAAACCCACAATACCGC 459677
+                   ********************************************************************************************** PP
+
+       Aux5   5871 gccaaacgatactctgggtttaaggttcacagccgcccacccgaaggtgagcgacattctcgcagcgtaaattacgcttcgattggcttacgcc 5964  
+                   gccaaacgatactctgggtttaaggttcacagccgcccacccgaaggtgagcgacattctcgcagcgtaaattacgcttcgattggcttacgcc
+  scaffold2 459678 GCCAAACGATACTCTGGGTTTAAGGTTCACAGCCGCCCACCCGAAGGTGAGCGACATTCTCGCAGCGTAAATTACGCTTCGATTGGCTTACGCC 459771
+                   ********************************************************************************************** PP
+
+       Aux5   5965 agtcatcagagcctgaggtgcccgcgttaacgtggtcccaagtgattttgcggtaagacagagacacagtcacattctgagtaaaatcagattt 6058  
+                   agtcatcagagcctgaggtgcccgcgttaacgtggtcccaagtgattttgcggtaagacagagacacagtcacattctgagtaaaatcagattt
+  scaffold2 459772 AGTCATCAGAGCCTGAGGTGCCCGCGTTAACGTGGTCCCAAGTGATTTTGCGGTAAGACAGAGACACAGTCACATTCTGAGTAAAATCAGATTT 459865
+                   ********************************************************************************************** PP
+
+       Aux5   6059 tgctgggtcttggcagtgtggcatttcacagtggatatcgacgatagacgcgttttccagcttagtggtgaagaagttctcttgtttaccttcg 6152  
+                   tgctgggtcttggcagtgtggcatttcacagtggatatcgacgatagacgcgttttccagcttagtggt aagaagtt+tcttgtttaccttcg
+  scaffold2 459866 TGCTGGGTCTTGGCAGTGTGGCATTTCACAGTGGATATCGACGATAGACGCGTTTTCCAGCTTAGTGGTAAAGAAGTTTTCTTGTTTACCTTCG 459959
+                   ********************************************************************************************** PP
+
+       Aux5   6153 atagaagtacggtaccacttcagctcaaccgttttcagcttctcaccggaagagagcgcgttgtacagcagaggaaccgctttgttcagcgcca 6246  
+                   ataga+gtacggtaccacttcagctcaac+gttttcagcttctcacc gaaga+agcgcgttgtacag+agaggaaccgctttgttca cgcca
+  scaffold2 459960 ATAGAGGTACGGTACCACTTCAGCTCAACGGTTTTCAGCTTCTCACCAGAAGAAAGCGCGTTGTACAGTAGAGGAACCGCTTTGTTCAACGCCA 460053
+                   ********************************************************************************************** PP
+
+       Aux5   6247 cagtgaatttgaatggcttgtgcacacgttggcctgaaggctgacctgattgtgggtcagtcggtacggttacgacgtggtcaaactgctgaac 6340  
+                   cagtgaatttgaatggcttgtgcacacgttggcctgaaggctgacc+gattgtgggtcagtcggtac gttacgacgtggtcaaactgctgaac
+  scaffold2 460054 CAGTGAATTTGAATGGCTTGTGCACACGTTGGCCTGAAGGCTGACCAGATTGTGGGTCAGTCGGTACCGTTACGACGTGGTCAAACTGCTGAAC 460147
+                   ********************************************************************************************** PP
+
+       Aux5   6341 cagcatctcatcttcatggccttcaacgaatgaatcgccgatagagtcagcagtacatgcgcctgcagtgataagaccctgagtttggccttcg 6434  
+                   cagcatctcatcttc+tggccttcaacgaatgaatcgccgatagagtcagcagtacatgc cctgcagtgataagaccctgagtttggccttcg
+  scaffold2 460148 CAGCATCTCATCTTCGTGGCCTTCAACGAATGAATCGCCGATAGAGTCAGCAGTACATGCACCTGCAGTGATAAGACCCTGAGTTTGGCCTTCG 460241
+                   ********************************************************************************************** PP
+
+       Aux5   6435 atagagatataacatggagttggca 6459  
+                   atagagatataacatggagttggca
+  scaffold2 460242 ATAGAGATATAACATGGAGTTGGCA 460266
+                   ***********************97 PP
+
+  == domain 3  score: 4318.1 bits;  conditional E-value: 0
+       Aux5    157 gatatctttaggaaactccctactcggtggatacaagaaggtctttgccatgttaagggcat.tacttccctgcacataggcgacataaccatt 249   
+                    atatct+ta+++aa++cc++actc             agg+++tt++ca++++a+g+gcat tact+c+++++++at+ggcga+++a++c+tt
+  scaffold2 749937 TATATCTCTATCGAAGGCCAAACTC-------------AGGGTCTTATCACTGCAGGTGCATgTACTGCTGACTCTATCGGCGATTCATTCGTT 750017
+                   49***********************.............******************************************************** PP
+
+       Aux5    250 gggatttgtcacggtg.......cgttcgacatgtttcgcttcatcgtaaacgaactcaagccatccccaacgctttcttagccatgagcgctc 336   
+                   g+++++++++a+g+tg       +gttc++ca gttt++c++c+tcgtaa+cg+ac++a                  ct+a+cca++a      
+  scaffold2 750018 GAAGGCCACGAAGATGagatgctGGTTCAGCA-GTTTGACCACGTCGTAACCGTACCGA------------------CTGACCCACAA------ 750086
+                   ****************99999999********.**************************..................***********...... PP
+
+       Aux5    337 acccgaatcggcatcctttagcctagctttgtagtcagcatactgctttccaagccaccaagagtagatgtattggtga..........ttctc 420   
+                                    t++g+++agc+tt+++g+ca+c+t+    t+++caagcca+++a+a+t+++tgt+++g+tga          t+ctc
+  scaffold2 750087 -----------------TCTGGTCAGCCTTCAGGCCAACGTG----TGCACAAGCCATTCAAATTCACTGTGGCGTTGAacaaagcggtTCCTC 750159
+                   .................*************************....************************************************ PP
+
+       Aux5    421 taaggcttgacgggatagtttcttattaccagcttgttgcatatatcgttgcgt....ataatactgcactgattttcccgccaagttgtcatg 510   
+                   ta++g++++acg+g+t+++ttct++t+a++agct      ++a+a+cgttg+g+    +t++tac+g+ac+                       
+  scaffold2 750160 TACTGTACAACGCGCTTTCTTCTGGTGAGAAGCT------GAAAACCGTTGAGCtgaaGTGGTACCGTACC----------------------- 750224
+                   **********************************......**************9999*************....................... PP
+
+       Aux5    511 catgacaaaatatgcggcaaccttttccgagactttatgtaacttattaaaattaggaaaaggaacctctccactac.gagccgcatgatacat 603   
+                                                             ++tat++aa++ta+++aa+++aac+tct++ac+ac +agc+g+a++a++c+t
+  scaffold2 750225 ------------------------------------------TCTATCGAAGGTAAACAAGAAAACTTCTTTACCACtAAGCTGGAAAACGCGT 750276
+                   ..........................................89************************************************** PP
+
+       Aux5    604 ctgatgtaacgccactcgactcaattcggcactggggcgttgttcattggggagcaaaccacctgtaatatcttcgcttatgcccggtaacaag 697   
+                   ct+++gt                              cg+t+t+ca+tg+g+a++++++cac++++aa+a+c               +a+caa+
+  scaffold2 750277 CTATCGT------------------------------CGATATCCACTGTGAAATGCCACACTGCCAAGACC---------------CAGCAAA 750325
+                   *******..............................***********************************...............******* PP
+
+       Aux5    698 ctctcgtcccatccagactgtaacggc....................ccaagtgggactaag.......gggcggtaaacgcgccgctcatggg 764   
+                   +tct++t+++a++caga+tgt+ac+g+                    +ca++tgggac+a+g       gggc+++++a+gc+c+g+t+a++gg
+  scaffold2 750326 ATCTGATTTTACTCAGAATGTGACTGTgtctctgtcttaccgcaaaaTCACTTGGGACCACGttaacgcGGGCACCTCAGGCTCTGATGACTGG 750419
+                   ********************************************************************************************** PP
+
+       Aux5    765 cggcaaccaaatgaagtgcctttttcaccgcgcgatgaagcggcttatcaaaatcaatcaccttaggg..............ccaccaatccat 844   
+                   cg++a+ccaa++gaag+g+++ttt+c+c+gcg+g               aa++tc++tcacctt+ggg              cc+++aa+cca+
+  scaffold2 750420 CGTAAGCCAATCGAAGCGTAATTTACGCTGCGAG---------------AATGTCGCTCACCTTCGGGtgggcggctgtgaaCCTTAAACCCAG 750498
+                   **********************************...............*****************99999*********************** PP
+
+       Aux5    845 tccagaggcttaagcaagattccggcaaaactgaaaacatcgttcatggtatcacc.................................cgaat 905   
+                   +++a++g++t+++gc+++att++gg                gtt+a+ggt+t++cc                                 cga++
+  scaffold2 750499 AGTATCGTTTGGCGCGGTATTGTGG----------------GTTTAAGGTTTTGCCatttttaatgtaggggaaggaaaggcaggatggCGACA 750576
+                   *************************................***************************************************** PP
+
+       Aux5    906 cgagtgaactgcggcgag..........tgcaatcaaatagcccgg....caaaggttacctcgaccttggctccctcatagatatagtcttcg 985   
+                   ++ag+g+ac+gc+++gag          tg+aa++++a+a++c+gg    ca+agg+t+cc+cg++c++g++tc+ctc++++a+a++gt+tt  
+  scaffold2 750577 TTAGCGTACAGCATTGAGgtggaagggcTGGAAGATGAGACTCTGGtggtCAGAGGCTTCCACGGGCAGGAGTCACTCTCCAACAGTGTTTT-- 750668
+                   ********************************************************************************************.. PP
+
+       Aux5    986 ccctgtttcgtgcagacctcttcca................gtaattcgtcaataaaacgacgagccagaatgccacctagatcgggtccaaac 1063  
+                        ttt+g+gca++cct+tt+c+                g+aa+t+g++a+t+++++++c+a++c+ga++gcc++++agat+g+g+++aa+c
+  scaffold2 750669 -----TTTAGGGCAAGCCTGTTACGggtttcgctacgaagtGCAACTGGCGAGTCGGGTATCCAATCTGACCGCCGAGCAGATGGTGGATAAGC 750757
+                   .....***************************************************************************************** PP
+
+       Aux5   1064 acggaaagctgaa...taagtttaatcgggagttgattcttcgctttcaaaattgaaaagcgttttctgaaggcatttttcgcgccatcaaccc 1154  
+                   ++g+++agct+aa   t+a++++aat++++agttg+t+c++cgc+t+c                     a+ggcatt+t+cgcgcc+t+a+cc+
+  scaffold2 750758 GTGCTGAGCTCAAgctTTACCGCAATTCACAGTTGGTGCAGCGCGTGC---------------------ACGGCATTGTGCGCGCCTTTAGCCA 750830
+                   ************************************************.....................************************* PP
+
+       Aux5   1155 gggcatcaacccctgtcataaactgctccatgaccatggggttatcccgcagtgctggcaacgcctctagcgtcactttcttggcaacattttc 1248  
+                   +ggc+++a+c++c++tca++a+++++tc+a+ga+c+++        cc++agtgc++gc    c+t++agcg++++t++ct++gc+aca+t++c
+  scaffold2 750831 AGGCGATATCGGCCATCACCACACCTTCTACGAACTCA--------CCTTAGTGCCTGC----CTTAGAGCGCTTATCCCTGCGCCACAATAGC 750912
+                   **************************************........*************....******************************* PP
+
+       Aux5   1249 cgctgtatctgtaataactgctttagctcctttgatactaaagagctcatcgagatggtttgatagggtatcaaaccaattcttcttat.tggc 1341  
+                   cgc++t+tc+++aa                                                ++ag++t+t+++a++aattct+++tat t+gc
+  scaffold2 750913 CGCATTTTCCAAAA------------------------------------------------GCAGACTGTTCCAGAAATTCTCTCTATcTTGC 750958
+                   **************................................................9******************************* PP
+
+       Aux5   1342 ttcaaaaagc..gtatcaaccgccgcctctttgctctgaccgctgacactatccaacgtattatccagtaaagccttttgctgactatccatga 1433  
+                   t+caa+aa++  g+atcaac+++++c+++tttgc+ct+a++++tga+++t+t+ca+cgt           +ag++tt+tg+++a+ta+c++++a
+  scaffold2 750959 TGCAAGAAATggGCATCAACGATTACGCTTTTGCGCTCAAGCGTGATTGTGTGCAGCGT-----------GAGTTTTGTGTGCAGTACCGCGAA 751041
+                   **********999**********************************************...........************************ PP
+
+       Aux5   1434 tactgtgcagacgttcagc....................cgtttgatcttcatagtctgtacccaaaccggggatatataccgtcgatttaagg 1507  
+                   ++c++++++gac+ttc+gc                    +gtttg+t+t+ca ++t+tgt+c+++aa+cggg+a+a+atacc+tc+attt+ag 
+  scaffold2 751042 AGCGACATCGACTTTCTGCaccgcctcgctgccgaagaaGGTTTGGTGTACA-GCTTTGTCCATGAAGCGGGCAAACATACCCTCTATTTCAG- 751133
+                   ****************************************************.****************************************. PP
+
+       Aux5   1508 taagatgagtcgaagtccatcgattcttgaattggatgtgcccttaataagcgggatagattagataaacgaccggagtcactatcctgattaa 1601  
+                                                               t+at++++g+gatag++ta+++aaac++ccggag+  c+atcc+g+++aa
+  scaffold2 751134 --------------------------------------------TGATGCCAGTGATAGCCTAAGCAAACTGCCGGAGC--CCATCCCGTACAA 751181
+                   ............................................9**********************************..************* PP
+
+       Aux5   1602 cgttgcggcgcataccatcaaagaaaaatcctacttgccaggctaaagcgcacgtacccaccccggcttgatgcagattctgctcacgaacttt 1695  
+                   cg+++++gcg+++++ca++a++ga+a+++c+tac+t+c++ggct+aa+c+++c++accca++c+g+++t+a+++a++ttc+gctca+++ac  t
+  scaffold2 751182 CGCCTTAGCGGGCGGCACGATGGATACGCCGTACATCCACGGCTTAACCTATCACACCCAAGCAGAAGTCAGCGAAGTTCAGCTCAAAGAC--T 751273
+                   *******************************************************************************************..* PP
+
+       Aux5   1696 acggcattgaata..........tcctgtatatcgagcattagtatttccttgtttgataagtggcaatcacatcatcaaaagctccaagctcc 1779  
+                   ac+gc+t++aa+a          tcct+t+ta+++a+c+t++++++t+c+++g+t+gat+a+++gcaa+c+c+++a+caa+a++t++a+gc+cc
+  scaffold2 751274 ACAGCTTCAAAAAgccagcctacTCCTTTTTACAAACCGTGCAGGGTACTGAGCTGGATTATCAGCAAACGCGCTACCAACATTTTGATGCGCC 751367
+                   ********************************************************************************************** PP
+
+       Aux5   1780 ggtgaccaacg.....tacttgaacctcgtta..tttggcataatcagggtataaaaaaatatgtcgccttgtttgcgcttcggcatgggtaag 1866  
+                   gg+g++c+ac+     +a++tgaac++cg+++  ttt+gc++aatc+g++ta +a++a++t++g+cgcc+tg++++c+c++cg+c tggg+a++
+  scaffold2 751368 GGGGCGCTACAaagacGATGTGAACGGCGCCGccTTTAGCCAAATCCGTTTA-GATTACCTGCGCCGCCATGCCCACACCGCGAC-TGGGCAGA 751459
+                   ***********9999999**********************************.********************************.******** PP
+
+       Aux5   1867 gttactttgtgtttttcagtacggtatccaagtgtgtcttgctgagctcgtgtcatattgagctcccattcaatcgtgactgttttgc....cc 1956  
+                   gt+ac+++++g+t+tt++gt+c+g++t++aagt+tg+c+tgc+++      ++ca++ttga+c+c+c++t+aa+cg+ga+tg++t+g+    +c
+  scaffold2 751460 GTAACGAGCCGCTCTTGCGTGCCGGCTATAAGTTTGACCTGCAAG------AGCACCTTGACCCCGCGATGAACCGCGATTGGGTGGTagtgTC 751547
+                   *********************************************......************************************9999*** PP
+
+       Aux5   1957 gatatatcgtaagggccagcagtttttccgccagcatt.caaaccgtcaaaggcaaaggcattgctacccatatttccattgacataaatgtaa 2049  
+                   gat++a+c+++a+gg++agcag     ccgc+agc+tt caa+++g+++++ggca++ggc++t+ctacc+a+a                 gtaa
+  scaffold2 751548 GATTAACCACCAAGGTGAGCAG-----CCGCAAGCGTTaCAAGAAGAGGGCGGCAGCGGCGCTACTACCTACA-----------------GTAA 751619
+                   **********************.....**********************************************.................**** PP
+
+       Aux5   2050 ctaattgggcgatccattaaattattgagcactaggtgagcaccaccaaagctctctttaattgccaaaaac.caaaccagatacccaatgagc 2142  
+                   ++a+tt   c+++++    aatt++tg+gca+        c+ccac++++gc+c++++++a+++cc+aaa+c caa++c++++++ccaatga+c
+  scaffold2 751620 TCAGTT---CAGCTT----AATTCCTGGGCAT--------CTCCACTGGCGCGCCGAGCCACAACCTAAACCgCAAGTCGATGGTCCAATGATC 751698
+                   ******...******....*************........****************************************************** PP
+
+       Aux5   2143 aggacgcctgccaacc.............................................aacgtccccagcggggc................ 2175  
+                   ++gacg++tg++++cc                                             ++c+t++cc+g+ggg+c                
+  scaffold2 751699 GCGACGGTTGTTGGCCctgaaggcgaagaaatcttctgtgatgaacacgggcgcgtgaaaaTCCATTTCCCGTGGGACcgctactcgaacggta 751792
+                   *************************************************************9******************************** PP
+
+       Aux5   2176 ...aacagagtccaaat........ggcatcaaaaactaataccggcaatgatttacgcattacaacatcctctaacactcttttttaattctt 2258  
+                      a+cagag++c+++t        gg++tca+aa++t++++c+ggca+t+a+t+++gc+tta+++c+++++c+++ca++++t++t+aa+t++t
+  scaffold2 751793 acgAGCAGAGCTCCTGTtgggtgcgGGTGTCACAAGGTTGGGCGGGCAGTCAGTATGGCTTTATCGCCATTCCGCGCATCGGTCATGAAGTGAT 751886
+                   ********************************************************************************************** PP
+
+       Aux5   2259 cgaaaactttttgaaaacacttcttggagcccatgtacatactcaatccgcgaaaggtataggatagacccctgactc..actatcccaatggc 2350  
+                   +g+a+a+ttttt+aa                                                      c++tgac+c  ac+a+ccca+t++c
+  scaffold2 751887 TGTAGAGTTTTTAAA------------------------------------------------------CGGTGACCCagACCAACCCATTATC 751926
+                   ***************......................................................9************************ PP
+
+       Aux5   2351 tattgcggtgcatatcatcaaagaaaaatcccacttgacacc.tgctaaagcgcacgtccataaccccgct......tgatgcagactctgctc 2437  
+                   ++++g++g++c+tatcat+++a++aa+a++cc+c+++acacc tgc+++agc+ca+++cca+aacc++gct      +ga++c++ac+++g+++
+  scaffold2 751927 ACCGGACGCACCTATCATGCGACCAACACGCCGCCATACACCtTGCCTGAGCACAAAACCAAAACCGTGCTgcgcacCGAGACGCACCAAGGGG 752020
+                   ********************************************************************************************** PP
+
+       Aux5   2438 acggattttacga......tattgaatatcctgtatatcgagcattaatattccctcgt...ctgataggtggcaatgacatcatcaaaaggcg 2522  
+                   a+gg+ttt+acga      t+ttgaa+a+c++g+++++++ag++++aat+t+cc++c+t   c+ga+ag++++c+atg+++t+at++aaa +cg
+  scaffold2 752021 AAGGGTTTAACGAgctcagTTTTGAAGACCAAGCGGGCAAAGAGCAAATCTACCTGCATgcgCAGAAAGACTTCGATGGTTTGATTGAAA-ACG 752113
+                   **************999999**********************************************************************.*** PP
+
+       Aux5   2523 accaccgcacttgcacctcgttattaggcataatcaaggtgtagaaatatatatcgccttgtttgcgctccggcataggtaaggttactttgtg 2616  
+                   accac++cac        +gt+att+g+ca++a+caa++t+t+++++t++a+a++g+c+++ttt+c   cc+g++ta+g+a+++++a+++++tg
+  scaffold2 752114 ACCACACCAC--------GGTCATTCGTCACGACCAACATCTGACCGTTGAAAATGACCAATTTAC---CCAGATTAAGCACAACCAACACCTG 752196
+                   **********........************************************************...************************* PP
+
+       Aux5   2617 tttttcaagacggtagcctgtgtcgggctgagttttggtcatacctagcacccattcaatcgtaaccgttttgcccgatatatcgtaaggtcca 2710  
+                   ++++tc+ag++gg     +g+gtcg+g++g+++tt+++++a++c++a+cac+cat+++++++++++c++ttt+++++a++t+t+gtaaggtc++
+  scaffold2 752197 ACGGTCGAGGGGG-----AGAGTCGAGAAGCCGTTAAAGGAAGCAAAACACTCATGGTGGAAGGCTCTCTTTATGTCAAGTCTGGTAAGGTCTG 752285
+                   *************.....**************************************************************************** PP
+
+       Aux5   2711 gcaacagcaccacccgcatttaaaccgtcaaaggcaaaggcattgagacccatatttccattgacataaaggtagctaattgggcgatccatta 2804  
+                   g                         gtca++g++++aggc++tgaga++catatt++++++g+++++aa+gt+g+ta+t+++gcg++c++++a
+  scaffold2 752286 G-------------------------GTCAGTGAAGCAGGCGATGAGATACATATTAAAGCCGGTGAGAAAGTCGTTATTGAAGCGGGCTCCGA 752354
+                   *.........................******************************************************************** PP
+
+       Aux5   2805 aattattgatgactagggaggctcccccaaagctctctttaatcgcaaaaaaccaaaccagataccccacgagcatggctcctgcca....... 2891  
+                   +atta++g+t+a+++ggg+ggc        agct+t+tt  a           +a++c+    a+cc++c++g++tg++tc+tg+c+       
+  scaffold2 752355 GATTACGGTTAAAGCGGGCGGC--------AGCTTTGTT--A-----------AAGTCG----ATCCTGCCGGTGTGCATCTTGTCGgagcgat 752423
+                   **********************........*********..6...........78****....******************************* PP
+
+       Aux5   2892 ................agcaacgtccccagcggggcaacagagtccaaatggcatcaaaaactaataccggcaatgatttacgcattcaaagat 2969  
+                                   +gc++++++ccc+g+++gg+++c+g++t++a+++ggca++++++a+t++tacc++++a+g+tt+++++a++++++gat
+  scaffold2 752424 gattaacctcaactctGGCGGTAGTCCCGGACAGGGGGCTGGTTGGAGTGGGCAGGCGTCATTGTTACCAAAGACGGTTGCGAAAGAAGCCGAT 752517
+                   ********************************************************************************************** PP
+
+       Aux5   2970 cctgtagatcgagtttttttaattcttctaatgcggcac.........tcccaccctcaagccaagcaagtccccatatcaagcggtcagcgga 3054  
+                   cc+g+a+at+++g  +t+tt+a++ctt+ta++gcg+cac         +c++++c+t+a++++aa+ca++tcccc+tat++a+++++c+g+   
+  scaffold2 752518 CCAGAAAATATGG--CTATTGAGCCTTTTACGGCGACACaaacgagtgCCGAGGCTTTATTAAAAACACTTCCCCCTATGGAAAATCCTGT--- 752606
+                   *************..****************************************************************************... PP
+
+       Aux5   3055 aggcgcaccagctgcgtcgcttttttgcagggctttctgagccatattcatgcgagcacaagcgggaaattgttgataacgaacgctaccttgc 3148  
+                              ctgc+t++ctt+t+tgcag+g+++++t+ag+ca+++t+atgc+a+c++a+++gggaaat++t+gat    +a+gct+cct   
+  scaffold2 752607 -----------CTGCATACCTTGTATGCAGCGAGCAATTAGGCAAGGTAATGCAATCGTAGAGGGGAAATAATCGAT----GATGCTGCCT--- 752682
+                   ...........******************************************************************....**********... PP
+
+       Aux5   3149 cacatgacgagcaatctcggtaaatcgggatcccccaataaggctccttgcaaatcctccgtaagggttatcactctgagttctgaaggctcaa 3242  
+                                     g++aaat+++g+tc++cc+at   gct++tt++++++++t+cg+a++gg+          ag++ct+aa+gct+aa
+  scaffold2 752683 ------------------GACAAATTATGGTCTGCCGAT---GCTTGTTATGTCCTATTCGAAGCGGC----------AGAGCTAAAAGCTGAA 752745
+                   ..................*********************...**************************..........**************** PP
+
+       Aux5   3243 cctcaatcgaatagtgagtccactggccat..cacattggtaacaccaccagtcactcattccaccaaatagcgatgaataccaaggcaatgtt 3334  
+                   c++c+   ++a++gt++gt+c+ctg++cat  +++att++ta+++ccac+a+t+a++cat+cc++c+++t+g++a+++a+    a++c++tg++
+  scaffold2 752746 CTGCG---TGAGCGTCTGTTCTCTGAACATggTGAATTCTTACGTCCACTATTGATCCATCCCGACCTTTGGGAACTGAC----AAACCTTGGC 752832
+                   *****...************************************************************************....********** PP
+
+       Aux5   3335 cgctggctcag.......catgataggtaatgacgatgaggtatagaagcgaagtagtagactatggcgctgtttcggctccagcaccatgcac 3421  
+                   c++tggct++g       catga+aggt++t+ac++t+a+++++a++ag+ga+++ag+a+++t+t+g++c++++t++g+tcc+++++ca+++++
+  scaffold2 752833 CCTTGGCTTTGgcactgtCATGAAAGGTCGTTACCTTTACTCGAATCAGTGATTGAGCAAGGTGTAGTTCAAGGTGTGATCCGCAGTCAGCGTA 752926
+                   ********************************************************************************************** PP
+
+       Aux5   3422 cccatggcaaactgctgttgcagttcatccagtgtacgctgactgcggatcacagcttgaactacaccttgctcaatcactgattcgagtaaag 3515  
+                   c+c++g+++aactgc++++gcagtt+++c++g+g+++++tg+++++gga+c++a++++g++c+a+a+++t+ct+++tc+ct++t+++++t++++
+  scaffold2 752927 CACTGGATGAACTGCAACAGCAGTTTGCCATGGGGTGCATGGTGCTGGAGCCTAAACAGCGCCATAGTCTACTACTTCGCTTCTATACCTCGTC 753020
+                   ********************************************************************************************** PP
+
+       Aux5   3516 gtaacgacctttcatgacagtgccaaagccaagggccaaggtt....tgtcagttcccaaaggtcgggatggatcaatagcggacgtaagaatt 3605  
+                   g++a++acct+tcatg       c++agcca++g++ca++g++    t+t+++t++c+a+++g++gg++tg++t+a+t+g+gg+++ta++aat 
+  scaffold2 753021 GGCATTACCTATCATG-------CTGAGCCAGCGAACATTGCCttggTATTCATCGCTATTTGGTGGATTGAGTGACTGGTGGTGTTACCAAT- 753106
+                   ****************.......*******************999999*********************************************. PP
+
+       Aux5   3606 caccatgttcagagaacagacgctc...acgcagttcagcttttagctct..........gccgcttcgaataggacataacaagc...atcgg 3683  
+                    +++atg++cag+g+ac++ac++t+   ++g++gt++agc+tt+ag++ct          +cc++t+cg+a++++++++aa++agc   at+gg
+  scaffold2 753107 -GTGATGGCCAGTGGACTCACTATTcgaTTGAGGTCGAGCCTTCAGAACTcagagtgataACCCTTACGGAGGATTTGCAAGGAGCcttATTGG 753199
+                   .************************9999***************************************************************** PP
+
+       Aux5   3684 cagaccataatttgtc.....................aggcag....catcatcgattatttcccctctacgattgcattaccttgcctaattg 3752  
+                   ++ga+c+++attt++c                     agg+ag    c+t+atc+a++atttccc+++t++g+t+gcat+a+c+tg++t+a+++
+  scaffold2 753200 GGGATCCCGATTTACCgagattgctcgtcatgtggcaAGGTAGcgttCGTTATCAACAATTTCCCGCTTGTGCTCGCATGAACATGGTTCAGAA 753293
+                   *******************************************8888899******************************************** PP
+
+       Aux5   3753 ctcgctgcatacaaggtatgcag..............acaggattttccatagggggaagtgtttttaataaagcctcggcactcgtttgtgtc 3832  
+                   ++c+ctgca+a+aag++a+gc+g              +c+g+++++t++ata+gggga++tg+tt++++t+a+g++++g+         gtg+c
+  scaffold2 753294 AGCCCTGCAAAAAAGCGACGCTGctggtgcgccttccGCTGACCGCTTGATATGGGGACTTGCTTGGCTTGAGGGTGGGA---------GTGCC 753378
+                   ********************************************************************************.........***** PP
+
+       Aux5   3833 gccgtaaaaggctc..aataaccatattttctggatc.............ggcttctttcgcaaccgtctttggtaacaatgacgcttggccac 3911  
+                   gc++ta+aag++t+  aa+aac+++at+t+c+ggatc             ++c+t+++++g+a+++gt+tttg+t++ca+t++++ct++g+++c
+  scaffold2 753379 GCATTAGAAGAATTaaAAAAACTCGATCTACAGGATCtttgaatgcgtaaATCATTGCCGGTATTAGTTTTTGATGCCATTTGGACTCTGTTGC 753472
+                   **************888899****************************999******************************************* PP
+
+       Aux5   3912 tcc................aaccagccccctgtcc.................................gggactaccgccagagttga...... 3950  
+                   +cc                ++c++gc+ccctg++c                                 g+ga+t+++g+++g+g+t+a      
+  scaffold2 753473 CCCgctggggacgttggttGGCAGGCGCCCTGCTCgtggggtatctggtttggtttttggcaattaaaGAGAGTTTTGGTGGTGCTTAccttgt 753566
+                   *******************9************************************************************************** PP
+
+       Aux5   3951 ........................ggttaatcatcgctccgacaagatgcacaccggcaggatcgactttaac..................... 3999  
+                                           ++tta+t+atc++t++g++aa+++++a+a++gg++g+a++g+cttt++c                     
+  scaffold2 753567 gctcaataatttaatggatcgtccAATTAGTTATCATTATGTGAATGGAAATATGGGTGGAAATGCCTTTGCCtttgatggtttaaatgcggga 753660
+                   *********************************************************************************************9 PP
+
+       Aux5   4000 aaagctgccgcccgctttaaccgtaatctcggagcccgcttcaataacgactttctcaccggctttaatatgtatctcatcgcctgcttcactg 4093  
+                   ++agctg++gc++gc++t+ac++ta+++++gg++++++++tca+ta++ga+t        gg+t+t+a++t+t++c+ca++++c+g++t+ac++
+  scaffold2 753661 GGAGCTGTTGCTGGCCCTTACGATATATCAGGCAAAACGGTCACTATTGAGT--------GGATGTTAAGTATGACCCAAACTCAGTATGACAC 753746
+                   9***************************************************........********************************** PP
+
+       Aux5   4094 acccagaccttaccagacttgacataaagagagccttccaccatgagtgttttgcttcctttaacggcttctcgactctccccctcgaccgtca 4187  
+                   ac+++g+++t+++c+++++++aca+aaag++a+c+t+cca++++++++g+++++++++++t+a+++g+tt+tc+ac+c+c              
+  scaffold2 753747 ACTTGGGTATCGTCCTGAAAAACACAAAGTAACCTTACCAATGCCGAAGCGCAAACAAGGTGACATGTTTTTCTACACCC-------------- 753826
+                   ********************************************************************************.............. PP
+
+       Aux5   4188 ggtgttggttgtgcttaa........tctgagtaaattggtcattttcaacggtcagatgttggtcgtgacgaatgaccgtggtgtggtcgttt 4273  
+                        tg+tt+tgc++aa        t+++agta++ttggtca+              +g++g+t+g+g+c+++tga   tg+tgtg+tcg+++
+  scaffold2 753827 -----TGATTATGCCAAAtaacgaggTTCAAGTACGTTGGTCAC--------------CGGAGTTTGGGGCCTTTGA---TGATGTGATCGCCA 753898
+                   .....*************999999999*****************..............*******************...************** PP
+
+       Aux5   4274 tcaatcaaaccatcaaagtctttctgcgcatgcaggtagatttgctctttgcccgcttggtcttcaaaa...ctgagctcgttaaacccttcac 4364  
+                   +++atcaaac+a++aaa                              t++++++gct+g+t+ttca++a   c++a+ctcgt+aa+c+c+t+a+
+  scaffold2 753899 CTTATCAAACAAGGAAA------------------------------TAATAATGCTCGATATTCAGGAtatCCAATCTCGTAAAGCTCGTGAG 753962
+                   *****************..............................*********************************************** PP
+
+       Aux5   4365 cttggtgcgtctcggtgcgcagcacggttttggttttgtgctctggcaaggtgtatggtggcgtgttggtcgcatgatatgtgcggccagtgat 4458  
+                   c+++      ctc+g+++++agc++gg+t++gg+++tg+gct+t+gc++gg++   +gtgg++t+tt++t+++atg+tat+++++gc+a++g++
+  scaffold2 753963 CACA------CTCTGCATAAAGCGGGGGTAGGGACGTGCGCTTTAGCTTGGCA---AGTGGGATTTTTCTTTGATGGTATACATCGCAATAGCC 754047
+                   ****......*******************************************...************************************** PP
+
+       Aux5   4459 aatgggttggt............................................cagggtctcca.........tttaaaaagtttacgatca 4499  
+                   a+tggg+t+gt                                            ca+gg+ctcca         tt+a+aaagttt+cga++a
+  scaffold2 754048 ATTGGGATAGTgagtcaggacgtctatcctatacctttcgcggattgagtatgtaCATGGGCTCCAagaagtgttTTCAGAAAGTTTTCGAAGA 754141
+                   **************************************************************************9******************* PP
+
+       Aux5   4500 cttcatgaccgatgcgcggaattgcgataaaaccttattggctgcccgcccaaccttgtgacac.............................. 4563  
+                   +tt+a++a++++tg+++g++++tg+++taa++c+t+a+t+++tgcc+g++++a++tt+tga++c                              
+  scaffold2 754142 ATTAAAAAATAGTGTTAGAGGATGTTGTAATGCGTAAATCATTGCCGGTATTAGTTTTTGATGCcatttggactctgttgccccgctgggggcg 754235
+                   ********************************************************************************************** PP
+
+       Aux5   4564 ..............ccgtacccaacaggagctttgctcgttactgttcgagtaacgatcccacgggaagtggattttcacccgcccgtgttcat 4643  
+                                 cc+t+c+ca+++gg++++t+g+t+g+t++t+t+c+a+taa+ga+++c+++gg++g+g+attt++a++c++c++t++t   
+  scaffold2 754236 ttggttggcgggtgCCCTGCTCATTGGGTATCTGGTTTGGTTTTTTGCAATTAAAGAGAGCTTTGGGGGAGCATTTCTAGTCATCAATAAT--- 754326
+                   *******************************************************************************************... PP
+
+       Aux5   4644 cacagaagatttcttcgccttcaggaccgacgaccgtggctatcattggaccatcgacttgcggtttagtttgtggctcggcgcgccagtggag 4737  
+                                                             t+a+tgga+c++c+a+tt+++++t+a+t+tgt+++t+g++++++++gtgga+
+  scaffold2 754327 ------------------------------------------TTAATGGATCGCCCAATTAGTTATCATTATGTCAATGGAAATATGGGTGGAA 754378
+                   ..........................................**************************************************** PP
+
+       Aux5   4738 atgccccggaattaagctgaactggttgctgtaggtggttgcaccgctgccgccctcttcttgtaacgcttgcggctgctcaccttgatggtta 4831  
+                   atgcc+                   ttgc++t+g+tggtt++a++gc+g++g                 +tgc+g+tgct++cc+t+a+g+t++
+  scaffold2 754379 ATGCCT-------------------TTGCCTTTGATGGTTTAAATGCGGGTG-----------------GTGCTGTTGCTGGCCCTTACGATAT 754436
+                   ******...................***************************.................************************* PP
+
+       Aux5   4832 atcgacaccaccacccaatcgcggttcatcgcggggtcaagatgctct.............tgcaggtcaaacttataaccagcacgcagtagc 4912  
+                   atcg+    +c+a++c++t++cg+tt+a++g+g+++tc+a+atg++++             +gcagg++a+++tt+t+a++a+cac++agta+c
+  scaffold2 754437 ATCGG----GCAAAACGGTTACGATTGAATGGGAACTCGATATGACACgagctcagaaagaAGCAGGATACCGTTTTGAAAAACACAAAGTAAC 754526
+                   *****....**************************************99999****************************************** PP
+
+       Aux5   4913 ggctcgttgctctgccctgccgcggtgtgggcatggcggcgcagatagtctaagcggatttggctaaaggcggcgccgttcacatcgtctttgt 5006  
+                            ct+++c++tgccg++g+g++++ca+ggcg++++a+at                             +++t+cacat++t+t+tg+
+  scaffold2 754527 ---------CTTACCTATGCCGGAGCGCAAACAAGGCGATAGATAT-----------------------------TTCTACACATTATTTATGC 754582
+                   .........*************************************.............................9****************** PP
+
+       Aux5   5007 agcgccccggcgcatcaaagtgttggtagcgcgtttgctgatattctagctcagtaccctgcacgg..tttgtaaaaatgagtaggctggcttt 5098  
+                   +++++++cg++g++++a++g+g+tggt+gc c+tttg+tgat+tt+t+gc++++tacc+++c++gg  +t++t+a+++t+++ta++c+gg+t+t
+  scaffold2 754583 CTAATAACGAGGTGCAAGTGCGATGGTCGC-CTTTTGATGATGTTATTGCCACCTACCGGACGAGGgaATATTGATGCTCGATATACAGGATAT 754675
+                   ******************************.*************************************************************** PP
+
+       Aux5   5099 ttgaagctgt..aatctttgagctgaacttcgctcacttctgcttgggtgcgataggttaagccgtggatgtacggtgtatctttcgtgccgcc 5190  
+                   t++a+g++gt  aat+++tgagc+ga+++t+++t+a+++++g++t+ggt+cg+++g+tt+agc+++g+a+gt++g+t+t+tcttt+++g+++++
+  scaffold2 754676 TCAATGTCGTaaAATTCGTGAGCAGACTCTGCATAAAGCGGGGGTAGGTACGTGCGCTTTAGCATGGCAAGTCGGATTTTTCTTTGACGGTATG 754769
+                   **********9999******************************************************************************** PP
+
+       Aux5   5191 cgctaaagcgttgtacgggat.g.ggctccggtagtttacttaggctgtcac................tggcatcactgaaatagagggtatgt 5266  
+                   c+++++a+c+tt+++c+ggat g g+ctccggt+gt+ta+++a+++t+tcac                tg+++tc+++gaaa+a++gg+t+t++
+  scaffold2 754770 CATCGCAACATTAATCAGGATaGtGACTCCGGTCGTCTATCCAATATCTCACgattatttcgagcccaTGAAGTCCGCGAAACAATGGATTTAG 754863
+                   *********************879********************************************************************** PP
+
+       Aux5   5267 ttgccagcttcatggac....aaagctgtacaccaagcct........tcttcagcggcgaggcggtggagaaagtcgatatcgctttcgcggt 5348  
+                   +t+ccag+t+c+t++a+    a+a++t+ta++cca+gc+t        +ctt++++g+++a++cgg+  +gaa+gtc+++at+g++t++++g+t
+  scaffold2 754864 ATTCCAGTTACCTCTATtctaAGATTTATATTCCAGGCTTgggaacagACTTTGAAGATCAAACGGC--TGAACGTCTGCATAGTGTCATGGAT 754955
+                   *******************************************************************..************************* PP
+
+       Aux5   5349 actgcacacaaaact...........cacgctgcacgctatcacggttgagcgcaaaagcgtaatcgttgatgcccatctcttgcagcaagata 5431  
+                   a+t+++ca+aa++ct           +acg+tg+a+++t+tca++g+t+ag+gcaaa+++g+++t+gttgat+  c+++t+ttg+agc+a ata
+  scaffold2 754956 AGTCAGCAAAAGGCTttactggataaTACGTTGGATAGTGTCAGCGGTCAGAGCAAAGATGCGGTAGTTGATA--CGCTTTTTGAAGCCA-ATA 755046
+                   ***************99******9999**********************************************..***************.*** PP
+
+       Aux5   5432 gaaagaatttctgggacagtctg...................cttttggaa...........aatgcggctattat.gacgcagggataagcgc 5494  
+                   ++aagaatt++t++ga+a++ct+                   ++ttt+g+a           aa+gc+g+tatta+ ga++cag+g++aa++++
+  scaffold2 755047 AGAAGAATTGGTTTGATACCCTAtcaaaccatctcgatgagcTCTTTAGTAtcaaaggagctAAAGCAGTTATTACaGATACAGCGCAAAATAT 755140
+                   *****************************************999************************************************** PP
+
+       Aux5   5495 tctaaggca.............................gggactaaggtgagttcgtagaaggtttggtgatggccgatatcgccttggctgaa 5559  
+                   t+++a+g+a                             ggga++a+++tg+g+tc+t+gaa+++tt++tga++g++g+++++gcc++gg++ga+
+  scaffold2 755141 TGCCAAGAAagtgacgctagaggctttaccggcactgcGGGATAACCCTGCGGTCATGGAACAGTTTATGACTGGGGTCGATGCCAGGGTAGAT 755234
+                   ********************************************************************************************** PP
+
+       Aux5   5560 ggcgcaaa.....................caatgccgtgaacgcgctgaaccaactgtgaattgcggtaaagcttcagctcagcacgcttatcg 5632  
+                   gg+gcaaa                     c+a+++cgt+aa++cg++gaaccaact++++att+ +++++a  ttcagct+++c++g+tt+++g
+  scaffold2 755235 GGTGCAAAgcgcagttttaaagatcgcttCGAATTCGTAAAGTCGAGGAACCAACTCCCGATTA-AACTTA--TTCAGCTTTCCGTGTTTGGAG 755325
+                   ****************************************************************.******..********************* PP
+
+       Aux5   5633 accatctgctcagcagtcagattggatgcccgactcgccaattgcacttcgtagcgaaacccgtaacaggcttgccctaaa.......aaaaca 5719  
+                   +++a++t+++++gca+tc++++t+g++g++++a+t++c+aatt+                c+g+aa+agg++tgc+c+aaa       aa+ac+
+  scaffold2 755326 CAGACTTAGGTGGCATTCTTGCTCGTCGTTTTATTGACGAATTA----------------CTGGAAGAGGTCTGCACGAAAcagggcgAAGACT 755403
+                   ********************************************................********************************** PP
+
+       Aux5   5720 ctatttgagagtgactcctgcccgtggaagcctctgaccaccagagtctcatcttccagcccttccacctcaatgctgtacgctaatgtcgcca 5813  
+                   +tat+t++gag+g+++c++g++cg+gg++++ct+tg    cc+g++t+t++++tt+ca          ctc+++gc+gt+c+ct++++tcg   
+  scaffold2 755404 ATATCTATGAGGGGGCCAAGGTCGAGGTCAACTTTG----CCGGGCTATTTGATTGCA----------CTCGCCGCAGTTCACTCGATTCG--- 755480
+                   ************************************....******************..........***********************... PP
+
+       Aux5   5814 tcctgcctttccttcccctacattaaaaatggcaaaaccttaaac................ccacaataccgcgccaaacgatactctgggttt 5891  
+                                                 gg++a+acc+t+aac                cc++aat+++gc+++a++c++t++++tgg+tt+
+  scaffold2 755481 ------------------------------GGTGATACCATGAACgatgttttcagttttgCCGGAATCTTGCTTAAGCCTCTGGAATGGATTG 755544
+                   ..............................**************************************************************** PP
+
+       Aux5   5892 aaggttcacagccgcccacccgaaggtgagcgacat...............tctcgcagcgtaaattacgcttcgattggcttacgccagtcat 5970  
+                   ++gg              c+++aaggtga++ga++t               tc+cgc+g+g+aaa+++c+cttc+++tgg+t++cgcc++t+a+
+  scaffold2 755545 GTGG--------------CGGTAAGGTGATTGATTTtgataagccgcttcaTCGCGCGGTGAAAAAGGCACTTCATCTGGTTGCCGCCCATGAG 755624
+                   ****..............**************************************************************************** PP
+
+       Aux5   5971 cagagcctgaggtgcccgcgttaacgtggtcccaagtgattttgcggtaagacagagacacagtcacattctgagtaaaatcagattttgct.. 6062  
+                   c+g+g++t+++++g+cc       c+t+gtccca+++g+                    +c+gt+aca+tctg++t+++a++aga++ttg+t  
+  scaffold2 755625 CGGCGAGTTTACCGTCC-------CTTAGTCCCACTCGG--------------------GCCGTTACAGTCTGGATGGGAAGAGAGCTTGTTac 755691
+                   *****************.......***************....................*********************************** PP
+
+       Aux5   6063 .............gggtcttggcagtgtggcatttcacagtggatatcg..............................acgatagacgcgttt 6113  
+                                +g+t+tt++++gtg++++++t+c+ca+tg+++a+cg                              ac+++aga+g++t++
+  scaffold2 755692 cgggcataagcgaAGATATTACAGGTGGTTTGCTCCCCAATGAGCAACGccccagtgccgaattgagcagagtggcgttACATCAGATGTATCA 755785
+                   ***********999******************************************************************************** PP
+
+       Aux5   6114 tccagcttagtggtgaagaagttctcttgtttaccttcgata................gaagtacggtaccacttcagctcaaccgttttcagc 6191  
+                   t+c+gc++ gt+gtg++ga+gt+c++tt++++a++tt++at+                g+a++a+g+t+cc+c+t  ++t++++c+t++++++c
+  scaffold2 755786 TGCGGCCC-GTAGTGGGGAGGTGCCTTTTCCAAATTTTAATGagttacataaagtctcGGAAAAGGTTGCCGCAT--ATTTTGTCATGCATGAC 755876
+                   ********.******************************************************************..***************** PP
+
+       Aux5   6192 ttctcaccggaagagagcgcgttgtacagca.............................gaggaaccgctttgt..............tcagc 6242  
+                   ++ct+++cgg+a+a++++g+g++gta++++a                             +a++aac++++++gt              tca+c
+  scaffold2 755877 AACTTGGCGGGAAAATCAGTGCAGTATTATAcgcgccaatatatgcaacaagctggtaatAAAAAACTATCCCGTcaagcctttgagaaTCACC 755970
+                   ************************************************************9********************************* PP
+
+       Aux5   6243 gccacagtgaatttgaatggcttgtgca....cacgttggcctgaaggctgacctga.......................ttgtgggtcag... 6306  
+                   +++aca+++a+t+t+++tggcttg+++a    +a+g+tg+c+++aa+gct+++ct+a                       t++tgg+t+ag   
+  scaffold2 755971 AATACATCTACTCTTGGTGGCTTGGAAAgcagTATGCTGACTACAAAGCTAGGCTAAaggatgccgattcgggtgagcgcTCATGGCTAAGaaa 756064
+                   **************************99999*************************************************************** PP
+
+       Aux5   6307 ...............tcggtacggttacgacgtggtcaaac.tgctgaaccagcatctcatcttcatggccttcaacgaatgaatcgccgatag 6384  
+                                  t++gt+cg+tta+ga+g++g++aaa+ tg++gaac++gc       c+t+a+++++++caa+g++t+++t+gc++at++
+  scaffold2 756065 gcgttggggatggctTGAGTTCGTTTATGATGAAGCGAAATaTGTCGAACGTGC-------CGTGACAAATCCCAATGGTTATGTGGCTTATGT 756151
+                   ******************************************************.......********************************* PP
+
+       Aux5   6385 agtcagcagtacatgcgcctgcagtgataagaccct.............gagtttggccttcgatagagatat..................... 6444  
+                   +++++g+agta atgc+c+t++++tg++aa+++cct             gagt++gg++tt+++ta+agatat                     
+  scaffold2 756152 GCAGGGAAGTA-ATGCCCTTAACATGGCAAAGACCTtcttgtatccaccGAGTAGGGAGTTTCCTAAAGATATcgcgacgttcttcacttactt 756244
+                   ***********.********************************************************************************** PP
+
+       Aux5   6445 ..........................................................................aacatggagttggca 6459  
+                                                                                             aa++tg++gttggc+
+  scaffold2 756245 tatgcatgactttgtaagttcaacagcatttacttcatcacccagcgaacaggttaaaattaaagcccaagcgaAAAGTGTGGTTGGCT 756333
+                   ***************************************************************************************97 PP
+
+  == domain 4  score: 7392.1 bits;  conditional E-value: 0
+       Aux5       1 ttagccctcaacactctcaattttacgcgcaaggaaaaaatgatgagagccaaccacacttttcgcttgggctttaattttaacctgttcgc 92     
+                    ttagccctcaacactctcaattttacgcgcaaggaaaaaatgatgagagccaacca acttt+cgcttg+gctttaattttaacctgttcgc
+  scaffold2 1156181 TTAGCCCTCAACACTCTCAATTTTACGCGCAAGGAAAAAATGATGAGAGCCAACCAAACTTTCCGCTTGAGCTTTAATTTTAACCTGTTCGC 1156272
+                    589***************************************************************************************** PP
+
+       Aux5      93 tgggtgatgaagtaaatgctgttgagcttacaaagtcatgcataaagtaagtgaagaacgtcgcgatatctttaggaaactccctactcggt 184    
+                    tgggtgatgaagtaaatgctg+tgagct+acaaagtcatgcataaagtaagtgaagaa+gtcgcgatatctttaggaaactccctactcggt
+  scaffold2 1156273 TGGGTGATGAAGTAAATGCTGATGAGCTCACAAAGTCATGCATAAAGTAAGTGAAGAAAGTCGCGATATCTTTAGGAAACTCCCTACTCGGT 1156364
+                    ******************************************************************************************** PP
+
+       Aux5     185 ggatacaagaaggtctttgccatgttaagggcattacttccctgcacataggcgacataaccattgggatttgtcacggtgcgttcgacatg 276    
+                    ggatacaagaaggtctttgccatgttaagggcattacttccctgcacata+gc+acataaccattgggatttgtcacgg+gcgttcgacat+
+  scaffold2 1156365 GGATACAAGAAGGTCTTTGCCATGTTAAGGGCATTACTTCCCTGCACATAAGCAACATAACCATTGGGATTTGTCACGGCGCGTTCGACATA 1156456
+                    ******************************************************************************************** PP
+
+       Aux5     277 tttcgcttcatcgtaaacgaactcaagccatccccaacgctttcttagccatgagcgctcacccgaatcggcatcctttagcctagctttgt 368    
+                    tttcgcttcatc+taaacgaactcaagccatccccaacgctttcttagccatgagcgctcacccgaatcggcatcctttagcctagctttgt
+  scaffold2 1156457 TTTCGCTTCATCATAAACGAACTCAAGCCATCCCCAACGCTTTCTTAGCCATGAGCGCTCACCCGAATCGGCATCCTTTAGCCTAGCTTTGT 1156548
+                    ******************************************************************************************** PP
+
+       Aux5     369 agtcagcatactgctttccaagccaccaagagtagatgtattggtgattctctaaggcttgacgggatagtttcttattaccagcttgttgc 460    
+                    agtcagcatactgctttccaagccaccaagagtagatgtattggtgattctc aaggcttg cgggatagtttcttattaccagcttgttgc
+  scaffold2 1156549 AGTCAGCATACTGCTTTCCAAGCCACCAAGAGTAGATGTATTGGTGATTCTCAAAGGCTTGGCGGGATAGTTTCTTATTACCAGCTTGTTGC 1156640
+                    ******************************************************************************************** PP
+
+       Aux5     461 atatatcgttgcgtataatactgcactgattttcccgccaagttgtcatgcatgacaaaatatgcggcaaccttttccgagactttatgtaa 552    
+                    atatatcg+tgcgtataatactgcactgattttcccgccaagtt+tcatgcat+acaaa+tatgc+gc++++++t++++++a+tt++tg+a+
+  scaffold2 1156641 ATATATCGGTGCGTATAATACTGCACTGATTTTCCCGCCAAGTTATCATGCATAACAAAGTATGCTGCTGTTAGTGGGTCTAGTTCTTGAAG 1156732
+                    ******************************************************************************************** PP
+
+       Aux5     553 cttattaaaattaggaaaaggaacctctccactacgagccgcatgatacatctgatgtaacgccactcgactcaattcggcactggggcgtt 644    
+                    c tattaaaattaggaaaagg+acctc ccactacgagccgcatgatacatctgatgtaacgccactcgactcaattcggcactggggcgtt
+  scaffold2 1156733 CGTATTAAAATTAGGAAAAGGTACCTCACCACTACGAGCCGCATGATACATCTGATGTAACGCCACTCGACTCAATTCGGCACTGGGGCGTT 1156824
+                    ******************************************************************************************** PP
+
+       Aux5     645 gttcattggggagcaaaccacctgtaatatcttcgcttatgcccggtaacaagctctcgtcccatccagactgtaacggcccaagtgggact 736    
+                    gttcattggggagcaaaccacctgtaatatcttcgcttatgcccggtaacaagctctcgtcccatccagact+taacggcccaagtgggact
+  scaffold2 1156825 GTTCATTGGGGAGCAAACCACCTGTAATATCTTCGCTTATGCCCGGTAACAAGCTCTCGTCCCATCCAGACTTTAACGGCCCAAGTGGGACT 1156916
+                    ******************************************************************************************** PP
+
+       Aux5     737 aaggggcggtaaacgcgccgctcatgggcggcaaccaaatgaagtgcctttttcaccgcgcgatgaagcggcttatcaaaatcaatcacctt 828    
+                    aaggg+cggtaaac+cgccgctcatgggcggcaaccaaatgaagtgcctttttcaccgcgc atgaagcggcttatcaaaatcaatcacctt
+  scaffold2 1156917 AAGGGACGGTAAACTCGCCGCTCATGGGCGGCAACCAAATGAAGTGCCTTTTTCACCGCGCCATGAAGCGGCTTATCAAAATCAATCACCTT 1157008
+                    ******************************************************************************************** PP
+
+       Aux5     829 agggccaccaatccattccagaggcttaagcaagattccggcaaaactgaaaacatcgttcatggtatcacccgaatcgagtgaactgcggc 920    
+                    a++gccaccaatccattccagaggcttaag aagattccggcaaaactgaaaacatcgttcatggtatcacccgaatcgagtgaactgcggc
+  scaffold2 1157009 ACCGCCACCAATCCATTCCAGAGGCTTAAGTAAGATTCCGGCAAAACTGAAAACATCGTTCATGGTATCACCCGAATCGAGTGAACTGCGGC 1157100
+                    ******************************************************************************************** PP
+
+       Aux5     921 gagtgcaatcaaatagcccggcaaaggttacctcgaccttggctccctcatagatatagtcttcgccctgtttcgtgcagacctcttccagt 1012   
+                    gagtgcaatcaaatagcccggcaaaggt acctcgaccttggc ccctcatagatatagtcttcgccctgtttcgtgcagacctcttccagt
+  scaffold2 1157101 GAGTGCAATCAAATAGCCCGGCAAAGGTAACCTCGACCTTGGCCCCCTCATAGATATAGTCTTCGCCCTGTTTCGTGCAGACCTCTTCCAGT 1157192
+                    ******************************************************************************************** PP
+
+       Aux5    1013 aattcgtcaataaaacgacgagccagaatgccacctagatcgggtccaaacacggaaagctgaataagtttaatcgggagttgattcttcgc 1104   
+                    aattcgtcaataaaacgacgagcca aat ccacc agatcgg tccaaacac+gaaa+ctgaataagtttaatcgggagttgatt+ttcgc
+  scaffold2 1157193 AATTCGTCAATAAAACGACGAGCCAAAATACCACCGAGATCGGATCCAAACACAGAAACCTGAATAAGTTTAATCGGGAGTTGATTTTTCGC 1157284
+                    ******************************************************************************************** PP
+
+       Aux5    1105 tttcaaaattgaaaagcgttttctgaaggcatttttcgcgccatcaacccgggcatcaacccctgtcataaactgctccatgaccatggggt 1196   
+                    tttcaaa+ttgaaaagcgttttctgaag+++tttttcgcgccatcaa++cg+gcatcaacccctgtcataaactgctccat+accatggggt
+  scaffold2 1157285 TTTCAAATTTGAAAAGCGTTTTCTGAAGATGTTTTTCGCGCCATCAATACGAGCATCAACCCCTGTCATAAACTGCTCCATCACCATGGGGT 1157376
+                    ******************************************************************************************** PP
+
+       Aux5    1197 tatcccgcagtgctggcaacgcctctagcgtcactttcttggcaacattttccgctgtatctgtaataactgctttagctcctttgatacta 1288   
+                    tatcccgcagtgctggcaacgcctctag gtcactttcttggcaacatttt cgctgtatctgtaataactgctttagctcctttgatacta
+  scaffold2 1157377 TATCCCGCAGTGCTGGCAACGCCTCTAGTGTCACTTTCTTGGCAACATTTTGCGCTGTATCTGTAATAACTGCTTTAGCTCCTTTGATACTA 1157468
+                    ******************************************************************************************** PP
+
+       Aux5    1289 aagagctcatcgagatggtttgatagggtatcaaaccaattcttcttattggcttcaaaaagcgtatcaaccgccgcctctttgctctgacc 1380   
+                    aagagctcatcgagatggtttgatagggtatcaaaccaattcttcttattggcttcaaaaagcgtatcaaccgccgcctcttt ctctgacc
+  scaffold2 1157469 AAGAGCTCATCGAGATGGTTTGATAGGGTATCAAACCAATTCTTCTTATTGGCTTCAAAAAGCGTATCAACCGCCGCCTCTTTACTCTGACC 1157560
+                    ******************************************************************************************** PP
+
+       Aux5    1381 gctgacactatccaacgtattatccagtaaagccttttgctgactatccatgatactgtgcagacgttcagccgtttgatcttcatagtctg 1472   
+                    gctgacactatccaacgtattatccagtaaagccttttgctgactatccatgatactgtgcagacgttcagccgtttgatcttca+agtctg
+  scaffold2 1157561 GCTGACACTATCCAACGTATTATCCAGTAAAGCCTTTTGCTGACTATCCATGATACTGTGCAGACGTTCAGCCGTTTGATCTTCAAAGTCTG 1157652
+                    ******************************************************************************************** PP
+
+       Aux5    1473 tacccaaaccggggatatataccgtcgatttaaggtaagatgagtcgaagtccatcgattcttgaattggatgtgcccttaataagcgggat 1564   
+                    t+cccaa cc gg atata a c+tcgat  +aggta+ a+ga+tc+aa+tccatcg++tc++g+a+t+ atg+gc+c+ aataagcggg t
+  scaffold2 1157653 TTCCCAAGCCTGGAATATAAATCTTCGATACTAGGTAGCAAGAATCTAAATCCATCGTCTCGCGTAATTCATGAGCTCGGAATAAGCGGGCT 1157744
+                    ******************************************************************************************** PP
+
+       Aux5    1565 agattagataaacgaccggagtcactatcctgattaacgttgcggcgcataccatcaaagaaaaatcctacttgccaggctaaagcgcacgt 1656   
+                    a+ ttagata+acgacc gagtcactatcctgatt+ac+ttgcg+ gcatacc+tcaaagaaaaatcc acttgcca gctaaagcgcacgt
+  scaffold2 1157745 ATGTTAGATAGACGACCAGAGTCACTATCCTGATTGACATTGCGAAGCATACCGTCAAAGAAAAATCCCACTTGCCAAGCTAAAGCGCACGT 1157836
+                    ******************************************************************************************** PP
+
+       Aux5    1657 acccaccccggcttgatgcagattctgctcacgaactttacggcattgaatatcctgtatatcgagcattagtatttccttgtttgataagt 1748   
+                    acc acccc+gctt+atgcaga+tctgctcacga+ctttacg+ attg atatcctg atatcgagcatta tatttccttgtttgataagt
+  scaffold2 1157837 ACCTACCCCCGCTTTATGCAGAGTCTGCTCACGAGCTTTACGAGATTGGATATCCTGAATATCGAGCATTATTATTTCCTTGTTTGATAAGT 1157928
+                    ******************************************************************************************** PP
+
+       Aux5    1749 ggcaatcacatcatcaaaagctccaagctccggtgaccaacgtacttgaacctcgttatttggcataatcagggtataaaaaaatatgtcgc 1840   
+                    ggc atcacatcatcaaa gc+ccaa+ctccggtgaccaacgtacttgaacctcgttatttggcataatcagggt+ta+aaaaa+atgtc+c
+  scaffold2 1157929 GGCGATCACATCATCAAAGGCCCCAAACTCCGGTGACCAACGTACTTGAACCTCGTTATTTGGCATAATCAGGGTGTAGAAAAACATGTCAC 1158020
+                    ******************************************************************************************** PP
+
+       Aux5    1841 cttgtttgcgcttcggcatgggtaaggttactttgtgtttttcagtacggtatccaagtgtgtcttgctgagctcgtgtcatattgagctcc 1932   
+                    cttgtttgcgcttcggcat ggtaaggttactttgtgtttttcag acg ta+ccaagtgtgtc t ctgag+t+g+gtcata t a c  c
+  scaffold2 1158021 CTTGTTTGCGCTTCGGCATTGGTAAGGTTACTTTGTGTTTTTCAGGACGATACCCAAGTGTGTCATACTGAGTTTGGGTCATACTTAACATC 1158112
+                    ******************************************************************************************** PP
+
+       Aux5    1933 cattcaatcgtgactgttttgcccgatatatcgtaagggccagcagtttttccgccagcattcaaaccgtcaaaggcaaaggcattgctacc 2024   
+                    ca tcaat+gtgac+gttttgcc gatatatcgtaagggccagca+++++tcc+cc gcatt aaacc+tcaaaggcaaaggcatt c acc
+  scaffold2 1158113 CACTCAATAGTGACCGTTTTGCCTGATATATCGTAAGGGCCAGCAACAGCTCCTCCCGCATTTAAACCATCAAAGGCAAAGGCATTTCCACC 1158204
+                    ******************************************************************************************** PP
+
+       Aux5    2025 catatttccattgacataaatgtaactaattgggcgatccattaaattattgagcactaggtgagcaccaccaaagctctctttaattgcca 2116   
+                    catatttccatt acataa+++taactaattgg+cgatccattaaattattgagcac+aggt+agcaccaccaaa ctctctttaattgcca
+  scaffold2 1158205 CATATTTCCATTCACATAATGATAACTAATTGGACGATCCATTAAATTATTGAGCACAAGGTAAGCACCACCAAAACTCTCTTTAATTGCCA 1158296
+                    ******************************************************************************************** PP
+
+       Aux5    2117 aaaaccaaaccagatacccaatgagcaggacgcctgccaaccaacgtccccagcggggcaacagagtccaaatggcatcaaaaactaatacc 2208   
+                    aaaaccaaaccagataccc+a+gagcagg+cgcctgccaaccaacgtccccagcggggcaacagagtccaaatggcatcaaaaactaatacc
+  scaffold2 1158297 AAAACCAAACCAGATACCCCACGAGCAGGGCGCCTGCCAACCAACGTCCCCAGCGGGGCAACAGAGTCCAAATGGCATCAAAAACTAATACC 1158388
+                    ******************************************************************************************** PP
+
+       Aux5    2209 ggcaatgatttacgcattacaacatcctctaacactcttttttaattcttcgaaaactttttgaaaacacttcttggagcccatgtacatac 2300   
+                    ggcaatgatttacgcatt caacatcctctaacactcttttttaattcttcgaaaactttttgaaaacacttcttggagcccatgtacatac
+  scaffold2 1158389 GGCAATGATTTACGCATTCCAACATCCTCTAACACTCTTTTTTAATTCTTCGAAAACTTTTTGAAAACACTTCTTGGAGCCCATGTACATAC 1158480
+                    ******************************************************************************************** PP
+
+       Aux5    2301 tcaatccgcgaaaggtataggatagac.ccctgactcactatcccaatggctattgcggtgcatatcatcaaagaaaaatcccacttgacac 2391   
+                    tcaatccgcgaaaggtataggatagac ccctgactc ctatcc  at g  att cggtgcatatc tcaaagaaaaatcccacttg+cac
+  scaffold2 1158481 TCAATCCGCGAAAGGTATAGGATAGACgCCCTGACTCTCTATCCTGATTGACATTACGGTGCATATCGTCAAAGAAAAATCCCACTTGTCAC 1158572
+                    ******************************************************************************************** PP
+
+       Aux5    2392 ctgctaaagcgcacgtccataaccccgcttgatgcagactctgctcacggattttacgatattgaatatcctgtatatcgagcattaatatt 2483   
+                    ++gctaaagcgcacgtcc+ta ccccgcttgatgcagactctgctcacg+attttacga+attgaatatcctgtatatcgagcatta+tatt
+  scaffold2 1158573 AAGCTAAAGCGCACGTCCCTACCCCCGCTTGATGCAGACTCTGCTCACGAATTTTACGACATTGAATATCCTGTATATCGAGCATTAGTATT 1158664
+                    ******************************************************************************************** PP
+
+       Aux5    2484 ccctcgtctgataggtggcaatgacatcatcaaaa............ggcgaccaccgcacttgcacctcgttattaggcataatcaaggtg 2563   
+                    +cct+gtctgataggtggcaat+acatcatcaaaa            ggcgacca cg+acttg+acctcgttattaggcataatca+ggtg
+  scaffold2 1158665 TCCTTGTCTGATAGGTGGCAATTACATCATCAAAAgcaccaagcttcGGCGACCAACGTACTTGGACCTCGTTATTAGGCATAATCAGGGTG 1158756
+                    ******************************************************************************************** PP
+
+       Aux5    2564 tagaaatatatatcgccttgtttgcgctccggcataggtaaggttactttgtgtttttcaagacggtagcctgtgtcgggctgagttttggt 2655   
+                    tagaaatatatatcgccttgtttgcg+tccggcataggtaaggttactttgtgtttttcaa acggta cctg  tc   ctgag t   gt
+  scaffold2 1158757 TAGAAATATATATCGCCTTGTTTGCGTTCCGGCATAGGTAAGGTTACTTTGTGTTTTTCAAAACGGTACCCTGCTTCTTTCTGAGCTCGTGT 1158848
+                    ******************************************************************************************** PP
+
+       Aux5    2656 catacctagcacccattcaatcgtaaccgttttgcccgatatatcgtaaggtccagcaacagcaccacccgcatttaaaccgtcaaaggcaa 2747   
+                    cata c ag  cccattcaatcgtaaccgttttgcccgatatatcgta g  ccagcaa+++++cc+cc+gcatt+aaaccgtcaaaggcaa
+  scaffold2 1158849 CATATCGAGTTCCCATTCAATCGTAACCGTTTTGCCCGATATATCGTAGGAACCAGCAATTTTTCCCCCAGCATTCAAACCGTCAAAGGCAA 1158940
+                    ******************************************************************************************** PP
+
+       Aux5    2748 aggcattgagacccatatttccattgacataaaggtagctaattgggcgatccattaaattattgatgactagggaggctcccccaaagctc 2839   
+                    aggcattg g cccatatt ccattgacataaa gtagctaattgggcgatccattaaattattga  ac ag  + gc+cc+ccaaagctc
+  scaffold2 1158941 AGGCATTGGGGCCCATATTGCCATTGACATAAATGTAGCTAATTGGGCGATCCATTAAATTATTGAGCACCAGCTTAGCACCACCAAAGCTC 1159032
+                    ******************************************************************************************** PP
+
+       Aux5    2840 tctttaatcgcaaaaaaccaaaccagataccccacgagcatggctcctgccaagcaacgtccccagcggggcaacagagtccaaatggcatc 2931   
+                    tctttaatcgcaaaaaaccaaaccagataccccacgagcatggc+cctgccaagcaacgtccccagcggggcaacagagtccaaatggcatc
+  scaffold2 1159033 TCTTTAATCGCAAAAAACCAAACCAGATACCCCACGAGCATGGCGCCTGCCAAGCAACGTCCCCAGCGGGGCAACAGAGTCCAAATGGCATC 1159124
+                    ******************************************************************************************** PP
+
+       Aux5    2932 aaaaactaataccggcaatgatttacgcattcaaagatcctgtagatcgagtttttttaattcttctaatgcggcactcccaccctcaagcc 3023   
+                    aaaaactaataccggcaatgatttacgcattcaaagatcctg agatcgagtttttttaattcttctaatgcggcactcccaccctcaagcc
+  scaffold2 1159125 AAAAACTAATACCGGCAATGATTTACGCATTCAAAGATCCTGCAGATCGAGTTTTTTTAATTCTTCTAATGCGGCACTCCCACCCTCAAGCC 1159216
+                    ******************************************************************************************** PP
+
+       Aux5    3024 aagcaagtccccatatcaagcggtcagcggaaggcgcaccagctgcgtcgcttttttgcagggctttctgagccatattcatgcgagcacaa 3115   
+                    aagcaagtccccatatcaagcggtcagcggaaggcgcaccagc+gcgtcgcttttttgcagggctttctgagccatattcatgcgagcacaa
+  scaffold2 1159217 AAGCAAGTCCCCATATCAAGCGGTCAGCGGAAGGCGCACCAGCAGCGTCGCTTTTTTGCAGGGCTTTCTGAGCCATATTCATGCGAGCACAA 1159308
+                    ******************************************************************************************** PP
+
+       Aux5    3116 gcgggaaattgttgataacgaacgctaccttgccacatgacgagcaatctcggtaaatcgggatcccccaataaggctccttgcaaatcctc 3207   
+                    gcgggaaa+tgttgataacgaacgctaccttgccacatgacgagcaatctcggtaaatcgggatcccccaataaggctccttgcaaatcctc
+  scaffold2 1159309 GCGGGAAACTGTTGATAACGAACGCTACCTTGCCACATGACGAGCAATCTCGGTAAATCGGGATCCCCCAATAAGGCTCCTTGCAAATCCTC 1159400
+                    ******************************************************************************************** PP
+
+       Aux5    3208 cgtaagggttatcactctgagttctgaaggctcaacctcaatcgaatagtgagtccactggccatcacattggtaacaccaccagtcactca 3299   
+                    cgtaagggttatcactctgagttctgaaggctc+acctcaatcgaata tgagtccactggccatcacattggtaacaccaccagtcactca
+  scaffold2 1159401 CGTAAGGGTTATCACTCTGAGTTCTGAAGGCTCGACCTCAATCGAATAATGAGTCCACTGGCCATCACATTGGTAACACCACCAGTCACTCA 1159492
+                    ******************************************************************************************** PP
+
+       Aux5    3300 ttccaccaaatagcgatgaataccaaggcaatgttcgctggctcagcatgataggtaatgacgatgaggtatagaagcgaagtagtagacta 3391   
+                    +tccaccaaatagcgatgaataccaaggcaatgttcgctggctcagcatgataggtaa g+cgatgaggtatagaa cgaagtagtagacta
+  scaffold2 1159493 ATCCACCAAATAGCGATGAATACCAAGGCAATGTTCGCTGGCTCAGCATGATAGGTAACGCCGATGAGGTATAGAAACGAAGTAGTAGACTA 1159584
+                    ******************************************************************************************** PP
+
+       Aux5    3392 tggcgctgtttcggctccagcaccatgcaccccatggcaaactgctgttgcagttcatccagtgtacgctgactgcggatcacagcttgaac 3483   
+                    tggcgctgtttcggctccagcaccatgcaccccatggcaaactgctgttgcagttcatccagtgtacgctgactgcggatcaca cttgaac
+  scaffold2 1159585 TGGCGCTGTTTCGGCTCCAGCACCATGCACCCCATGGCAAACTGCTGTTGCAGTTCATCCAGTGTACGCTGACTGCGGATCACACCTTGAAC 1159676
+                    ******************************************************************************************** PP
+
+       Aux5    3484 tacaccttgctcaatcactgattcgagtaaaggtaacgacctttcatgacagtgccaaagccaagggccaaggtttgtcagttcccaaaggt 3575   
+                    tacaccttgctcaatcactgattcgagtaaaggtaacgacctttcatgacag+gccaaagccaagggccaaggtttgtcagttcccaaaggt
+  scaffold2 1159677 TACACCTTGCTCAATCACTGATTCGAGTAAAGGTAACGACCTTTCATGACAGAGCCAAAGCCAAGGGCCAAGGTTTGTCAGTTCCCAAAGGT 1159768
+                    ******************************************************************************************** PP
+
+       Aux5    3576 cgggatggatcaatagcggacgtaagaattcaccatgttcagagaacagacgctcacgcagttcagcttttagctctgccgcttcgaatagg 3667   
+                    cgggatggatcaatagcggacgtaagaattcaccatgttcagagaacagacgctcacgcagttc gcttttagc ctgccgcttcgaatagg
+  scaffold2 1159769 CGGGATGGATCAATAGCGGACGTAAGAATTCACCATGTTCAGAGAACAGACGCTCACGCAGTTCCGCTTTTAGCGCTGCCGCTTCGAATAGG 1159860
+                    ******************************************************************************************** PP
+
+       Aux5    3668 acataacaagcatcggcagaccataatttgtcaggcagcatcatcgattatttcccctctacgattgcattaccttgcctaattgctcgctg 3759   
+                    acataacaagcatcggcagaccataatttgtcaggcagcatcatcgattatttcccctctacgattgcattaccttgcctaattgctcgctg
+  scaffold2 1159861 ACATAACAAGCATCGGCAGACCATAATTTGTCAGGCAGCATCATCGATTATTTCCCCTCTACGATTGCATTACCTTGCCTAATTGCTCGCTG 1159952
+                    ******************************************************************************************** PP
+
+       Aux5    3760 catacaaggtatgcagacaggattttccatagggggaagtgtttttaataaagcctcggcactcgtttgtgtcgccgtaaaaggctcaataa 3851   
+                    catacaaggtatgcagacaggattttccatagggggaagtgtttttaataaagcctcggcactcgtttgtgtcgccgtaaaaggctcaataa
+  scaffold2 1159953 CATACAAGGTATGCAGACAGGATTTTCCATAGGGGGAAGTGTTTTTAATAAAGCCTCGGCACTCGTTTGTGTCGCCGTAAAAGGCTCAATAA 1160044
+                    ******************************************************************************************** PP
+
+       Aux5    3852 ccatattttctggatcggcttctttcgcaaccgtctttggtaacaatgacgcttggccactccaaccagccccctgtccgggactaccgcca 3943   
+                    ccat ttttctggatcggcttctttcgcaaccgtctttggtaacaatgacgcttg+ccactccaaccagccccctgtccgggactaccgcca
+  scaffold2 1160045 CCATTTTTTCTGGATCGGCTTCTTTCGCAACCGTCTTTGGTAACAATGACGCTTGCCCACTCCAACCAGCCCCCTGTCCGGGACTACCGCCA 1160136
+                    ******************************************************************************************** PP
+
+       Aux5    3944 gagttgaggttaatcatcgctccgacaagatgcacaccggcaggatcgactttaacaaagctgccgcccgctttaaccgtaatctcggagcc 4035   
+                    gagttgaggttaatcatcgc+ccgacaagatgcacaccggcaggatcgactttaacaaagctgccgcccgctttaaccgtaatctcggagcc
+  scaffold2 1160137 GAGTTGAGGTTAATCATCGCCCCGACAAGATGCACACCGGCAGGATCGACTTTAACAAAGCTGCCGCCCGCTTTAACCGTAATCTCGGAGCC 1160228
+                    ******************************************************************************************** PP
+
+       Aux5    4036 cgcttcaataacgactttctcaccggctttaatatgtatctcatcgcctgcttcactgacccagaccttaccagacttgacataaagagagc 4127   
+                    cgcttcaataacgactttctcaccggctttaatatgtatctcatcgcctgcttcactgacccagaccttaccagacttgacataaagagagc
+  scaffold2 1160229 CGCTTCAATAACGACTTTCTCACCGGCTTTAATATGTATCTCATCGCCTGCTTCACTGACCCAGACCTTACCAGACTTGACATAAAGAGAGC 1160320
+                    ******************************************************************************************** PP
+
+       Aux5    4128 cttccaccatgagtgttttgcttcctttaacggcttctcgactctccccctcgaccgtcaggtgttggttgtgcttaatctgagtaaattgg 4219   
+                    cttccaccatgagtgttttgcttcctttaacggcttctcgactctccccctcgaccgtcaggtgttggttgtgcttaatctg+gtaaattgg
+  scaffold2 1160321 CTTCCACCATGAGTGTTTTGCTTCCTTTAACGGCTTCTCGACTCTCCCCCTCGACCGTCAGGTGTTGGTTGTGCTTAATCTGGGTAAATTGG 1160412
+                    ******************************************************************************************** PP
+
+       Aux5    4220 tcattttcaacggtcagatgttggtcgtgacgaatgaccgtggtgtggtcgttttcaatcaaaccatcaaagtctttctgcgcatgcaggta 4311   
+                    tcattttcaacggtcagatgttggtcgtgacgaatgaccgtggtgtggtcgttttcaatcaaaccatcaaagtctttctg+gcatgcaggta
+  scaffold2 1160413 TCATTTTCAACGGTCAGATGTTGGTCGTGACGAATGACCGTGGTGTGGTCGTTTTCAATCAAACCATCAAAGTCTTTCTGTGCATGCAGGTA 1160504
+                    ******************************************************************************************** PP
+
+       Aux5    4312 gatttgctctttgcccgcttggtcttcaaaactgagctcgttaaacccttcaccttggtgcgtctcggtgcgcagcacggttttggttttgt 4403   
+                    gatttgctctttgcccgcttggtcttcaaaactgagctcgttaaacccttc+ccttggtgcgtctcggtgcgcagcacggttttggttttgt
+  scaffold2 1160505 GATTTGCTCTTTGCCCGCTTGGTCTTCAAAACTGAGCTCGTTAAACCCTTCCCCTTGGTGCGTCTCGGTGCGCAGCACGGTTTTGGTTTTGT 1160596
+                    ******************************************************************************************** PP
+
+       Aux5    4404 gctctggcaaggtgtatggtggcgtgttggtcgcatgatatgtgcggccagtgataatgggttggtcagggtctccatttaaaaagtttacg 4495   
+                    gctc ggcaaggtgtatgg+ggcgtgttggtcgcatgata gtgcg+ccagtgataatgggttggtc+gggtc+cc+tttaaaaa+t+tac+
+  scaffold2 1160597 GCTCAGGCAAGGTGTATGGCGGCGTGTTGGTCGCATGATAAGTGCGTCCAGTGATAATGGGTTGGTCTGGGTCACCGTTTAAAAACTCTACA 1160688
+                    ******************************************************************************************** PP
+
+       Aux5    4496 atcacttcatgaccgatgcgcggaattgcgataaaaccttattggctgcccgcccaaccttgtgacacccgtacccaacaggagctttgctc 4587   
+                    atcacttcatg ccgatgcgcggaat gcgataaaacc+tattggctgcccgcccaaccttgtgacacccg acccaacaggagctttgctc
+  scaffold2 1160689 ATCACTTCATGGCCGATGCGCGGAATAGCGATAAAACCATATTGGCTGCCCGCCCAACCTTGTGACACCCGCACCCAACAGGAGCTTTGCTC 1160780
+                    ******************************************************************************************** PP
+
+       Aux5    4588 gttactgttcgagtaacgatcccacgggaagtggattttcacccgcccgtgttcatcacagaagatttcttcgccttcaggaccgacgaccg 4679   
+                    gttac+gttcgagta+cg+tcccacgggaagtggattttcacccgcccgtgttcatcacagaagatttcttc+ccttcagg+cc+ac+accg
+  scaffold2 1160781 GTTACCGTTCGAGTAGCGGTCCCACGGGAAGTGGATTTTCACCCGCCCGTGTTCATCACAGAAGATTTCTTCACCTTCAGGGCCAACAACCG 1160872
+                    ******************************************************************************************** PP
+
+       Aux5    4680 tggctatcattggaccatcgacttgcggtttagtttgtggctcggcgcgccagtggagatgccccggaattaagctgaactggttgctgtag 4771   
+                    t gctatcattgg ccatc acttgcggtttag+ttgtggctc gcgcgccagtg+agatgccccggaattaagctgaactggttg+tgtag
+  scaffold2 1160873 TCGCTATCATTGGGCCATCAACTTGCGGTTTAGGTTGTGGCTCAGCGCGCCAGTGAAGATGCCCCGGAATTAAGCTGAACTGGTTGTTGTAG 1160964
+                    ******************************************************************************************** PP
+
+       Aux5    4772 gtggttgcaccgctgccgccctcttcttgtaacgcttgcggctgctcaccttgatggttaatcgacaccaccacccaatcgcggttcatcgc 4863   
+                    gt+gttgcacc+ctgccgccctcttcttgta+cgcttgcggctgctcaccttg+tggttaatcgacaccaccacccaatcg ggttcatcgc
+  scaffold2 1160965 GTCGTTGCACCACTGCCGCCCTCTTCTTGTAGCGCTTGCGGCTGCTCACCTTGGTGGTTAATCGACACCACCACCCAATCGTGGTTCATCGC 1161056
+                    ******************************************************************************************** PP
+
+       Aux5    4864 ggggtcaagatgctcttgcaggtcaaacttataaccagcacgcagtagcggctcgttgctctgccctgccgcggtgtgggcatggcggcgca 4955   
+                    ggggtcaag+tgctcttgcaggtc aacttataacc gcacgca++agcggctcgttgctctgccctg++gcggtgtgggcatggcggcgca
+  scaffold2 1161057 GGGGTCAAGGTGCTCTTGCAGGTCGAACTTATAACCGGCACGCAAGAGCGGCTCGTTGCTCTGCCCTGTTGCGGTGTGGGCATGGCGGCGCA 1161148
+                    ******************************************************************************************** PP
+
+       Aux5    4956 gatagtctaagcggatttggctaaaggcggcgccgttcacatcgtctttgtagcgccccggcgcatcaaagtgttggtagcgcgtttgctga 5047   
+                    gatagtctaa+cggatttggctaaaggcggcgccgttcacatcgtctttgtagcgccccggcgcatcaaa+tgttggtagcgcgtttgctga
+  scaffold2 1161149 GATAGTCTAAACGGATTTGGCTAAAGGCGGCGCCGTTCACATCGTCTTTGTAGCGCCCCGGCGCATCAAAATGTTGGTAGCGCGTTTGCTGA 1161240
+                    ******************************************************************************************** PP
+
+       Aux5    5048 tattctagctcagtaccctgcacggtttgtaaaaatgagtaggctggctttttgaagctgtaatctttgagctgaacttcgctcacttctgc 5139   
+                    ta+tc+agctcagtaccctgcacggtttgtaaaaa gagtaggctggctttttgaagctgtaatctttgagctgaacttcgctcacttc gc
+  scaffold2 1161241 TAATCCAGCTCAGTACCCTGCACGGTTTGTAAAAACGAGTAGGCTGGCTTTTTGAAGCTGTAATCTTTGAGCTGAACTTCGCTCACTTCCGC 1161332
+                    ******************************************************************************************** PP
+
+       Aux5    5140 ttgggtgcgataggttaagccgtggatgtacggtgtatctttcgtgccgcccgctaaagcgttgtacgggatgggctccggtagtttactta 5231   
+                    ttgggtgcgataggttaagccgtggat tacgg+gtatc++tcgtgccgcccgctaaagcgttg acgggatgggctccgg+a ttt+ctta
+  scaffold2 1161333 TTGGGTGCGATAGGTTAAGCCGTGGATATACGGCGTATCCATCGTGCCGCCCGCTAAAGCGTTGCACGGGATGGGCTCCGGCAATTTGCTTA 1161424
+                    ******************************************************************************************** PP
+
+       Aux5    5232 ggctgtcactggcatcactgaaatagagggtatgtttgccagcttcatggacaaagctgtacaccaagccttcttcagcggcgaggcggtgg 5323   
+                    ggctgtcactggcatcactgaaatagagggtatg ttgcc+gcttc tggacaaagctgtacaccaagccttcttcagcggcgaggcggtg 
+  scaffold2 1161425 GGCTGTCACTGGCATCACTGAAATAGAGGGTATGCTTGCCTGCTTCGTGGACAAAGCTGTACACCAAGCCTTCTTCAGCGGCGAGGCGGTGC 1161516
+                    ******************************************************************************************** PP
+
+       Aux5    5324 agaaagtcgatatcgctttcgcggtactgcacacaaaactcacgctgcacgctatcacggttgagcgcaaaagcgtaatcgttgatgcccat 5415   
+                    agaaagtcgat+tcgctttcgcggtactgcacacaaaactcacgctgc cgc+atcacg+ttgagcgcaaaagcgtaatcgtt atgcccat
+  scaffold2 1161517 AGAAAGTCGATGTCGCTTTCGCGGTACTGCACACAAAACTCACGCTGCCCGCAATCACGCTTGAGCGCAAAAGCGTAATCGTTAATGCCCAT 1161608
+                    ******************************************************************************************** PP
+
+       Aux5    5416 ctcttgcagcaagatagaaagaatttctgggacagtctgcttttggaaaatgcggctattatgacgcagggataagcgctctaaggcaggga 5507   
+                    ctcttgcagcaagatagaaa aat tc gggacagtctgcttttggaaaatgcggct+tt+tg+cgcagggataagcgctctaaggcaggga
+  scaffold2 1161609 CTCTTGCAGCAAGATAGAAATAATCTCAGGGACAGTCTGCTTTTGGAAAATGCGGCTGTTGTGGCGCAGGGATAAGCGCTCTAAGGCAGGGA 1161700
+                    ******************************************************************************************** PP
+
+       Aux5    5508 ctaaggtgagttcgtagaaggtttggtgatggccgatatcgccttggctgaaggcgcaaacaatgccgtgaacgcgctgaaccaactgtgaa 5599   
+                    ctaaggtgagttcgtagaa gt tggtgatggccgatatcgccttg ctgaa+gcgca+acaatgcc tg+acgcgctg+acca  tgtga 
+  scaffold2 1161701 CTAAGGTGAGTTCGTAGAAAGTATGGTGATGGCCGATATCGCCTTGACTGAAAGCGCACACAATGCCATGCACGCGCTGCACCAGTTGTGAG 1161792
+                    ******************************************************************************************** PP
+
+       Aux5    5600 ttgcggtaaagcttcagctcagcacgcttatcgaccatctgctcagcagtcagattggatgcccgactcgccaattgcacttcgtagcgaaa 5691   
+                    ttgcggtaaagctt+agctcagcacgcttatcgaccatctgctcagcagtcagattggatgcccgactcgccaattgcacttcgtagcgaaa
+  scaffold2 1161793 TTGCGGTAAAGCTTGAGCTCAGCACGCTTATCGACCATCTGCTCAGCAGTCAGATTGGATGCCCGACTCGCCAATTGCACTTCGTAGCGAAA 1161884
+                    ******************************************************************************************** PP
+
+       Aux5    5692 cccgtaacaggcttgccctaaaaaaacactatttgagagtgactcctgcccgtggaagcctctgaccaccagagtctcatcttccagccctt 5783   
+                    cccgtaacaggcttgccctaaaaaaacactatt gagagtgactcctgcccgtg+aagcctctgaccaccagagtctcatcttccagccctt
+  scaffold2 1161885 CCCGTAACAGGCTTGCCCTAAAAAAACACTATTAGAGAGTGACTCCTGCCCGTGAAAGCCTCTGACCACCAGAGTCTCATCTTCCAGCCCTT 1161976
+                    ******************************************************************************************** PP
+
+       Aux5    5784 ccacctcaatgctgtacgctaatgtcgccatcctgcctttccttcccctacattaaaaatggcaaaaccttaaacccacaataccgcgccaa 5875   
+                    ccacctcaatgctgtacgctaatgtcgccatcctgcctttccttcccctacattaaaaatggcaaaaccttaaacccacaataccgcgccaa
+  scaffold2 1161977 CCACCTCAATGCTGTACGCTAATGTCGCCATCCTGCCTTTCCTTCCCCTACATTAAAAATGGCAAAACCTTAAACCCACAATACCGCGCCAA 1162068
+                    ******************************************************************************************** PP
+
+       Aux5    5876 acgatactctgggtttaaggttcacagccgcccacccgaaggtgagcgacattctcgcagcgtaaattacgcttcgattggcttacgccagt 5967   
+                    acgatactctgggtttaaggttcacagccgcccacccgaaggtgagcg cattctcgcagcgtaaattacgcttcgattggcttacgccagt
+  scaffold2 1162069 ACGATACTCTGGGTTTAAGGTTCACAGCCGCCCACCCGAAGGTGAGCGGCATTCTCGCAGCGTAAATTACGCTTCGATTGGCTTACGCCAGT 1162160
+                    ******************************************************************************************** PP
+
+       Aux5    5968 catcagagcctgaggtgcccgcgttaacgtggtcccaagtgattttgcggtaagacagagacacagtcacattctgagtaaaatcagatttt 6059   
+                    catcagagcctgaggtgcccgcgttaacgtggtcccaagtgattttgcggtaagacagagacacagtcacattctgagtaaaatcagatttt
+  scaffold2 1162161 CATCAGAGCCTGAGGTGCCCGCGTTAACGTGGTCCCAAGTGATTTTGCGGTAAGACAGAGACACAGTCACATTCTGAGTAAAATCAGATTTT 1162252
+                    ******************************************************************************************** PP
+
+       Aux5    6060 gctgggtcttggcagtgtggcatttcacagtggatatcgacgatagacgcgttttccagcttagtggtgaagaagttctcttgtttaccttc 6151   
+                    gctgggtcttggcagtgtggcatttcacagtggatatc+acgatagacgcgttttccagcttagtggtgaagaagtt+tcttgtttaccttc
+  scaffold2 1162253 GCTGGGTCTTGGCAGTGTGGCATTTCACAGTGGATATCAACGATAGACGCGTTTTCCAGCTTAGTGGTGAAGAAGTTTTCTTGTTTACCTTC 1162344
+                    ******************************************************************************************** PP
+
+       Aux5    6152 gatagaagtacggtaccacttcagctcaaccgttttcagcttctcaccggaagagagcgcgttgtacagcagaggaaccgctttgttcagcg 6243   
+                    gatagaagtacggtaccacttcagctcaaccg  ttcagcttctcacc+gaagagagcgcgttgtacagcagaggaaccgctttgttcagcg
+  scaffold2 1162345 GATAGAAGTACGGTACCACTTCAGCTCAACCGACTTCAGCTTCTCACCTGAAGAGAGCGCGTTGTACAGCAGAGGAACCGCTTTGTTCAGCG 1162436
+                    ******************************************************************************************** PP
+
+       Aux5    6244 ccacagtgaatttgaatggcttgtgcacacgttggcctgaaggctgacctgattgtgggtcagtcggtacggttacgacgtggtcaaactgc 6335   
+                    ccacagtgaatttgaatggcttgtgcacacgttggcctgaaggctgacc+gattgtgggtcagtcggtac gt+acgacgtggtcaaactgc
+  scaffold2 1162437 CCACAGTGAATTTGAATGGCTTGTGCACACGTTGGCCTGAAGGCTGACCAGATTGTGGGTCAGTCGGTACCGTCACGACGTGGTCAAACTGC 1162528
+                    ******************************************************************************************** PP
+
+       Aux5    6336 tgaaccagcatctcatcttcatggccttcaacgaatgaatcgccgatagagtcagcagtacatgcgcctgcagtgataagaccctgagtttg 6427   
+                    tgaaccagcatctcatcttc+tggccttcaacgaatgaatcgccgatagagtcagcagtacatgcgcctgcagtgataagaccctgagtttg
+  scaffold2 1162529 TGAACCAGCATCTCATCTTCGTGGCCTTCAACGAATGAATCGCCGATAGAGTCAGCAGTACATGCGCCTGCAGTGATAAGACCCTGAGTTTG 1162620
+                    ******************************************************************************************** PP
+
+       Aux5    6428 gccttcgatagagatataacatggagttggca 6459   
+                    gccttcgatagagatataacatggagttggca
+  scaffold2 1162621 GCCTTCGATAGAGATATAACATGGAGTTGGCA 1162652
+                    ******************************97 PP
+
+>> scaffold3  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ! 7448.5   0.1         0         0       1    6459 [.   16186   22642 ..   16186   22643 .. 1.00
+   2 ! 2753.9   0.0         0         0    3928    6459 ..   73225   75756 ..   73176   75757 .. 0.99
+   3 !  538.6   0.1  2.7e-165    9e-165     158    2500 ..  696032  698185 ..  696021  698382 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 7448.5 bits;  conditional E-value: 0
+       Aux5     1 ttagccctcaacactctcaattttacgcgcaaggaaaaaatgatgagagccaaccacacttttcgcttgggctttaattttaacctgttcgctggg 96   
+                  ttagccctcaacactctcaattttacgcgcaaggaaaaaatgatgagagccaaccacacttttcgcttgggctttaattttaacctgttcgctggg
+  scaffold3 16186 TTAGCCCTCAACACTCTCAATTTTACGCGCAAGGAAAAAATGATGAGAGCCAACCACACTTTTCGCTTGGGCTTTAATTTTAACCTGTTCGCTGGG 16281
+                  589********************************************************************************************* PP
+
+       Aux5    97 tgatgaagtaaatgctgttgagcttacaaagtcatgcataaagtaagtgaagaacgtcgcgatatctttaggaaactccctactcggtggatacaa 192  
+                  tgatgaagtaaatgctgttgagcttacaaagtcatgcataaagtaagtgaagaacgtcgcgatatctttaggaaactccctactcggtggatacaa
+  scaffold3 16282 TGATGAAGTAAATGCTGTTGAGCTTACAAAGTCATGCATAAAGTAAGTGAAGAACGTCGCGATATCTTTAGGAAACTCCCTACTCGGTGGATACAA 16377
+                  ************************************************************************************************ PP
+
+       Aux5   193 gaaggtctttgccatgttaagggcattacttccctgcacataggcgacataaccattgggatttgtcacggtgcgttcgacatgtttcgcttcatc 288  
+                  gaaggtctttgccatgttaagggcattacttccctgcacata gc acataaccattgggatttgtcacgg+gcgttcgacatgtttcgcttcatc
+  scaffold3 16378 GAAGGTCTTTGCCATGTTAAGGGCATTACTTCCCTGCACATATGCCACATAACCATTGGGATTTGTCACGGCGCGTTCGACATGTTTCGCTTCATC 16473
+                  ************************************************************************************************ PP
+
+       Aux5   289 gtaaacgaactcaagccatccccaacgctttcttagccatgagcgctcacccgaatcggcatcctttagcctagctttgtagtcagcatactgctt 384  
+                  gtaaacgaactcaagccatccccaacgctttcttagccatgagcgctcacccgaatcggcatcctttagcctagctttgtagtcagcatactgctt
+  scaffold3 16474 GTAAACGAACTCAAGCCATCCCCAACGCTTTCTTAGCCATGAGCGCTCACCCGAATCGGCATCCTTTAGCCTAGCTTTGTAGTCAGCATACTGCTT 16569
+                  ************************************************************************************************ PP
+
+       Aux5   385 tccaagccaccaagagtagatgtattggtgattctctaaggcttgacgggatagtttcttattaccagcttgttgcatatatcgttgcgtataata 480  
+                  tccaagccaccaagagtagatgtattggtgattctc+aaggcttgacgggatagtttcttattaccagcttgttgcatatat g++gcgtataata
+  scaffold3 16570 TCCAAGCCACCAAGAGTAGATGTATTGGTGATTCTCGAAGGCTTGACGGGATAGTTTCTTATTACCAGCTTGTTGCATATATTGGCGCGTATAATA 16665
+                  ************************************************************************************************ PP
+
+       Aux5   481 ctgcactgattttcccgccaagttgtcatgcatgacaaaatatgcggcaaccttttccgagactttatgtaacttattaaaattaggaaaaggaac 576  
+                  ctgcactgat+ttcccgccaagttgtcatgcatgacaaaatatgcggcaaccttttccgagactttatgtaact+attaaaattaggaaaagg+ac
+  scaffold3 16666 CTGCACTGATCTTCCCGCCAAGTTGTCATGCATGACAAAATATGCGGCAACCTTTTCCGAGACTTTATGTAACTCATTAAAATTAGGAAAAGGCAC 16761
+                  ************************************************************************************************ PP
+
+       Aux5   577 ctctccactacgagccgcatgatacatctgatgtaacgccactcgactcaattcggcactggggcgttgttcattggggagcaaaccacctgtaat 672  
+                  ctc+ccactacg gccgcatgatacatctgatgtaacgccactcg+ctcaattcggcactggggcgttg tcattggggagcaaaccacctgtaat
+  scaffold3 16762 CTCCCCACTACGGGCCGCATGATACATCTGATGTAACGCCACTCGGCTCAATTCGGCACTGGGGCGTTGCTCATTGGGGAGCAAACCACCTGTAAT 16857
+                  ************************************************************************************************ PP
+
+       Aux5   673 atcttcgcttatgcccggtaacaagctctcgtcccatccagactgtaacggcccaagtgggactaaggggcggtaaacgcgccgctcatgggcggc 768  
+                  atcttcgcttatgcccggtaacaagctctcgtcccatccagactgtaacggccc+agtgggactaaggg+cggtaaac+cgccgctcatgggcggc
+  scaffold3 16858 ATCTTCGCTTATGCCCGGTAACAAGCTCTCGTCCCATCCAGACTGTAACGGCCCGAGTGGGACTAAGGGACGGTAAACTCGCCGCTCATGGGCGGC 16953
+                  ************************************************************************************************ PP
+
+       Aux5   769 aaccaaatgaagtgcctttttcaccgcgcgatgaagcggcttatcaaaatcaatcaccttagggccaccaatccattccagaggcttaagcaagat 864  
+                  aacca+atgaagtgcctttttcaccgcgcgatgaagcggcttatcaaaatcaatcaccttag++ccaccaatccattccagaggcttaagcaagat
+  scaffold3 16954 AACCAGATGAAGTGCCTTTTTCACCGCGCGATGAAGCGGCTTATCAAAATCAATCACCTTAGCTCCACCAATCCATTCCAGAGGCTTAAGCAAGAT 17049
+                  ************************************************************************************************ PP
+
+       Aux5   865 tccggcaaaactgaaaacatcgttcatggtatcacccgaatcgagtgaactgcggcgagtgcaatcaaatagcccggcaaaggttacctcgacctt 960  
+                  tccggcaaa+ctgaaaacatcgttcatggtatcacccgaatcgagtgaact cggcgagtgcaatcaaatagcccggcaaag t+acct+gacctt
+  scaffold3 17050 TCCGGCAAAGCTGAAAACATCGTTCATGGTATCACCCGAATCGAGTGAACTACGGCGAGTGCAATCAAATAGCCCGGCAAAGATGACCTGGACCTT 17145
+                  ************************************************************************************************ PP
+
+       Aux5   961 ggctccctcatagatatagtcttcgccctgtttcgtgcagacctcttccagtaattcgtcaataaaacgacgagccagaatgccacctagatcggg 1056 
+                  ggctcc tcatagatatagtcttcgccctgtttcgtgcagac tcttccagtaattcgtcaataaaacgacgagc+agaatgccaccta++tc+g+
+  scaffold3 17146 GGCTCCTTCATAGATATAGTCTTCGCCCTGTTTCGTGCAGACTTCTTCCAGTAATTCGTCAATAAAACGACGAGCAAGAATGCCACCTAAGTCTGC 17241
+                  ************************************************************************************************ PP
+
+       Aux5  1057 tccaaacacggaaagctgaataagtttaatcgggagttgattcttcgctttcaaaattgaaaagcgttttctgaaggcatttttcgcgccatcaac 1152 
+                  tccaaacacggaaa+ctgaataagtttaatcgggagttgatt+ttcgctttcaaaattgaaaagcgttttctgaag+++tttttcgcgccatcaa+
+  scaffold3 17242 TCCAAACACGGAAATCTGAATAAGTTTAATCGGGAGTTGATTTTTCGCTTTCAAAATTGAAAAGCGTTTTCTGAAGATGTTTTTCGCGCCATCAAT 17337
+                  ************************************************************************************************ PP
+
+       Aux5  1153 ccgggcatcaacccctgtcataaactgctccatgaccatggggttatcccgcagtgctggcaacgcctctagcgtcactttcttggcaacattttc 1248 
+                  +cg+gcatc acccctgtcataaactgctccat+accatggggttatcccgcagtgctggca+cgcctctagcgtcactttcttggcaacattttc
+  scaffold3 17338 ACGAGCATCGACCCCTGTCATAAACTGCTCCATCACCATGGGGTTATCCCGCAGTGCTGGCAGCGCCTCTAGCGTCACTTTCTTGGCAACATTTTC 17433
+                  ************************************************************************************************ PP
+
+       Aux5  1249 cgctgtatctgtaataactgctttagctcctttgatactaaagagctcatcgagatggtttgatagggtatcaaaccaattcttcttattggcttc 1344 
+                  cgctgtatctgtaataactgctttagctcctttgatactaaagagctcatcgagatggtttgatagggtatcaaaccaattcttcttattggcttc
+  scaffold3 17434 CGCTGTATCTGTAATAACTGCTTTAGCTCCTTTGATACTAAAGAGCTCATCGAGATGGTTTGATAGGGTATCAAACCAATTCTTCTTATTGGCTTC 17529
+                  ************************************************************************************************ PP
+
+       Aux5  1345 aaaaagcgtatcaaccgccgcctctttgctctgaccgctgacactatccaacgtattatccagtaaagccttttgctgactatccatgatactgtg 1440 
+                  aaaaagcgtatcaaccgccgcctctttgctctgaccgctgacactatccaa  tattatccagtaaagccttttgctgactatccatgatactgtg
+  scaffold3 17530 AAAAAGCGTATCAACCGCCGCCTCTTTGCTCTGACCGCTGACACTATCCAATATATTATCCAGTAAAGCCTTTTGCTGACTATCCATGATACTGTG 17625
+                  ************************************************************************************************ PP
+
+       Aux5  1441 cagacgttcagccgtttgatcttcatagtctgtacccaaaccggggatatataccgtcgatttaaggtaagatgagtcgaagtccatcgattcttg 1536 
+                  cagacgttcagccgtttgatcttcatag+ctgtacccaaacc+g+gat+ta +c+g++ga+t+aaggtaagatgagtcgaagtccatcgattcttg
+  scaffold3 17626 CAGACGTTCAGCCGTTTGATCTTCATAGGCTGTACCCAAACCAGAGATGTACTCAGCTGAGTAAAGGTAAGATGAGTCGAAGTCCATCGATTCTTG 17721
+                  ************************************************************************************************ PP
+
+       Aux5  1537 aattggatgtgcccttaataagcgggatagattagataaacgaccggagtcactatcctgattaacgttgcggcgcataccatcaaagaaaaatcc 1632 
+                  aattggatgtgccct+aataa cgggata+att gataaacgacc+ga+tcactatcctgattaa gttgcg+cgcataccatcaaagaaaaatcc
+  scaffold3 17722 AATTGGATGTGCCCTAAATAAACGGGATACATTGGATAAACGACCTGATTCACTATCCTGATTAATGTTGCGACGCATACCATCAAAGAAAAATCC 17817
+                  ************************************************************************************************ PP
+
+       Aux5  1633 tacttgccaggctaaagcgcacgtacccaccccggcttgatgcagattctgctcacgaactttacggcattgaatatcctgtatatcgagcattag 1728 
+                  +acttgcca+g taaagcgcacgt+cccacccc+gcttgatgcaga+tctgctcacga+ctttacggcattgaatatcctgtatatcgagcattag
+  scaffold3 17818 GACTTGCCATGATAAAGCGCACGTGCCCACCCCTGCTTGATGCAGAGTCTGCTCACGAGCTTTACGGCATTGAATATCCTGTATATCGAGCATTAG 17913
+                  ************************************************************************************************ PP
+
+       Aux5  1729 tatttccttgtttgataagtggcaatcacatcatcaaaagctccaagctccggtgaccaacgtacttgaacctcgttatttggcataatcagggta 1824 
+                  tatttccttgt+tgata+gtggc at+acatcatcaaaagc+ccaa+ctccggtgaccaacgtacttgaa ctcgttatt ggcataatcag   a
+  scaffold3 17914 TATTTCCTTGTCTGATAGGTGGCTATTACATCATCAAAAGCCCCAAACTCCGGTGACCAACGTACTTGAATCTCGTTATTAGGCATAATCAGAACA 18009
+                  ************************************************************************************************ PP
+
+       Aux5  1825 taaaaaaatatgtcgccttgtttgcgcttcggcatgggtaaggttactttgtgtttttcagtacggtatccaagtgtgtcttgctgagctcgtgtc 1920 
+                  taaaaaaa+atgtc+ccttgtttgcgcttcggcat+ggtaaggttactttgtgtttttca++acggta+cc   tg++tctt+ctgagctcgtgtc
+  scaffold3 18010 TAAAAAAACATGTCACCTTGTTTGCGCTTCGGCATAGGTAAGGTTACTTTGTGTTTTTCAAAACGGTACCC---TGCTTCTTTCTGAGCTCGTGTC 18102
+                  ***********************************************************************...********************** PP
+
+       Aux5  1921 atattgagctcccattcaatcgtgactgttttgcccgatatatcgtaagggccagcagtttttccgccagcattcaaaccgtcaaaggcaaaggca 2016 
+                  atat+ ag+tcccattcaat+gtgactgtttt cccgatatatcgta gggcc g a tttt+cc cc+gcattcaaacc+tcaaaggcaaaggca
+  scaffold3 18103 ATATCAAGTTCCCATTCAATAGTGACTGTTTTACCCGATATATCGTAGGGGCCGGTACTTTTCCCACCTGCATTCAAACCATCAAAGGCAAAGGCA 18198
+                  ************************************************************************************************ PP
+
+       Aux5  2017 ttgctacccatatttccattgacataaatgtaactaattgggcgatccattaaattattgagcactaggtgagcaccaccaaagctctctttaatt 2112 
+                  ttg++ cccatatttccatt+acataaa++ta+ctaattgggcga ccattaaattattgagcactag+tg+gcaccaccaaagctctctttaatt
+  scaffold3 18199 TTGGGTCCCATATTTCCATTAACATAAACATAGCTAATTGGGCGAGCCATTAAATTATTGAGCACTAGATGCGCACCACCAAAGCTCTCTTTAATT 18294
+                  ************************************************************************************************ PP
+
+       Aux5  2113 gccaaaaaccaaaccagatacccaatgagcaggacgcctgccaaccaacgtccccagcggggcaacagagtccaaatggcatcaaaaactaatacc 2208 
+                  gccaaaaacca accagatacccaat agcaggac cc gccaaccaacg ccccagcggggcaacagagtccaaatggcatcaaaaactaatacc
+  scaffold3 18295 GCCAAAAACCACACCAGATACCCAATAAGCAGGACACCCGCCAACCAACGGCCCCAGCGGGGCAACAGAGTCCAAATGGCATCAAAAACTAATACC 18390
+                  ************************************************************************************************ PP
+
+       Aux5  2209 ggcaatgatttacgcattacaacatcctctaacactcttttttaattcttcgaaaactttttgaaaacacttcttggagcccatgtacatactcaa 2304 
+                  ggcaatgatttacgcattacaacatcctctaacactcttttttaattcttcgaaaacttt+tgaaaacacttct+ggagcccatgtacatactcaa
+  scaffold3 18391 GGCAATGATTTACGCATTACAACATCCTCTAACACTCTTTTTTAATTCTTCGAAAACTTTCTGAAAACACTTCTCGGAGCCCATGTACATACTCAA 18486
+                  ************************************************************************************************ PP
+
+       Aux5  2305 tccgcgaaaggtataggatagacccctgactcactatcccaatggctattgcggtgcatatcatcaaagaaaaatcccacttgacacctgctaaag 2400 
+                  tcc+cgaaaggtataggatagac cctgactcactatcccaatggctattgcg+tg+ata+catcaaagaaaaatcc+acttg+ca+  gctaaag
+  scaffold3 18487 TCCACGAAAGGTATAGGATAGACTCCTGACTCACTATCCCAATGGCTATTGCGATGTATACCATCAAAGAAAAATCCTACTTGCCAT--GCTAAAG 18580
+                  ***************************************************************************************..******* PP
+
+       Aux5  2401 cgcacgtccataaccccgcttgatgcagactctgctcacggattttacgatattgaatatcctgtatatcgagcattaatattccctcgtctgata 2496 
+                  cgcacgt c+ta+ccccgcttgatgcagactctgctcacg+attttacga+attgaatatcctgtatatcgagcat aatattccctcgtc g ta
+  scaffold3 18581 CGCACGTACCTATCCCCGCTTGATGCAGACTCTGCTCACGAATTTTACGACATTGAATATCCTGTATATCGAGCATCAATATTCCCTCGTCCGGTA 18676
+                  ************************************************************************************************ PP
+
+       Aux5  2497 ggtggcaatgacatcatcaaaaggcgaccaccgcacttgcacctcgttattaggcataatcaaggtgtagaaatatatatcgccttgtttgcgctc 2592 
+                  ggtggcaat acatcatcaaaaggcgacca+cgcacttgcacctcgttattaggcataa  aa+gtgtagaaatat tatcgccttgtttgcgctc
+  scaffold3 18677 GGTGGCAATAACATCATCAAAAGGCGACCATCGCACTTGCACCTCGTTATTAGGCATAAATAATGTGTAGAAATATCTATCGCCTTGTTTGCGCTC 18772
+                  ************************************************************************************************ PP
+
+       Aux5  2593 cggcataggtaaggttactttgtgtttttcaagacggtagcc...tgtgtcgggctgagttttggtcatacctagcacccattcaatcgtaaccgt 2685 
+                  cggcataggtaaggttactt gtgtttttca+gacg+tagcc   tgt+tc+g+ctgagttttggtcatacctagca+ccattcaatcgtaaccgt
+  scaffold3 18773 CGGCATAGGTAAGGTTACTTGGTGTTTTTCAGGACGATAGCCaagTGTATCAGACTGAGTTTTGGTCATACCTAGCATCCATTCAATCGTAACCGT 18868
+                  *******************************************999************************************************** PP
+
+       Aux5  2686 tttgcccgatatatcgtaaggtccagcaacagcaccacccgcatttaaaccgtcaaaggcaaaggcattgagacccatatttccattgacataaag 2781 
+                  tttgcccgatatatcgtaagg+ccagcaacagcaccacccgcatttaaacc+tcaaaggcaaaggcatt+++ cccatatttccattgacataa+g
+  scaffold3 18869 TTTGCCCGATATATCGTAAGGGCCAGCAACAGCACCACCCGCATTTAAACCATCAAAGGCAAAGGCATTTCCCCCCATATTTCCATTGACATAATG 18964
+                  ************************************************************************************************ PP
+
+       Aux5  2782 gtagctaattgggcgatccattaaattattgatgactagggaggctcccccaaagctctctttaatcgcaaaaaaccaaaccagataccccacgag 2877 
+                  +ta+ctaattgggcgatccattaaattattgatgactag++a+gctcccccaaagctctctttaat+gcaaaaaaccaaaccagataccccacgag
+  scaffold3 18965 ATAACTAATTGGGCGATCCATTAAATTATTGATGACTAGAAATGCTCCCCCAAAGCTCTCTTTAATTGCAAAAAACCAAACCAGATACCCCACGAG 19060
+                  ************************************************************************************************ PP
+
+       Aux5  2878 catggctcctgccaagcaacgtccccagcggggcaacagagtccaaatggcatcaaaaactaataccggcaatgatttacgcattcaaagatcctg 2973 
+                  ca+ggctcctgccaa+caacgtccccagcggggcaacagagtccaaatggcatcaaaaactaata cggcaatgatttacgcattcaaagatcctg
+  scaffold3 19061 CAGGGCTCCTGCCAACCAACGTCCCCAGCGGGGCAACAGAGTCCAAATGGCATCAAAAACTAATAACGGCAATGATTTACGCATTCAAAGATCCTG 19156
+                  ************************************************************************************************ PP
+
+       Aux5  2974 tagatcgagtttttttaattcttctaatgcggcactcccaccctcaagccaagcaagtccccatatcaagcggtcagcggaaggcgcaccagctgc 3069 
+                  tagatcgag+ttttttaattcttctaatgcggcactcccaccctcaagccaagcaagtccccatatcaagcggtcagcggaaggcgcaccagctgc
+  scaffold3 19157 TAGATCGAGGTTTTTTAATTCTTCTAATGCGGCACTCCCACCCTCAAGCCAAGCAAGTCCCCATATCAAGCGGTCAGCGGAAGGCGCACCAGCTGC 19252
+                  ************************************************************************************************ PP
+
+       Aux5  3070 gtcgcttttttgcagggctttctgagccatattcatgcgagcacaagcgggaaattgttgataacgaacgctaccttgccacatgacgagcaatct 3165 
+                  gtc cttttttgcagggctttctgagccatattcatgcgagcacaagcgggaaattgttgataacgaacgctaccttgccacatgacgagcaatct
+  scaffold3 19253 GTCACTTTTTTGCAGGGCTTTCTGAGCCATATTCATGCGAGCACAAGCGGGAAATTGTTGATAACGAACGCTACCTTGCCACATGACGAGCAATCT 19348
+                  ************************************************************************************************ PP
+
+       Aux5  3166 cggtaaatcgggatcccccaataaggctccttgcaaatcctccgtaagggttatcactctgagttctgaaggctcaacctcaatcgaatagtgagt 3261 
+                  cggtaaatcgggatcccccaataaggctccttgcaaatcctccgtaagggttatcactctgagttctgaaggctcaacctcaatcgaatagtgagt
+  scaffold3 19349 CGGTAAATCGGGATCCCCCAATAAGGCTCCTTGCAAATCCTCCGTAAGGGTTATCACTCTGAGTTCTGAAGGCTCAACCTCAATCGAATAGTGAGT 19444
+                  ************************************************************************************************ PP
+
+       Aux5  3262 ccactggccatcacattggtaacaccaccagtcactcattccaccaaatagcgatgaataccaaggcaatgttcgctggctcagcatgataggtaa 3357 
+                  ccactggccatcacattggtaacaccaccagtcactca+tccaccaaatagcgatgaataccaaggcaatgttcgctggctcagcatgataggtaa
+  scaffold3 19445 CCACTGGCCATCACATTGGTAACACCACCAGTCACTCAATCCACCAAATAGCGATGAATACCAAGGCAATGTTCGCTGGCTCAGCATGATAGGTAA 19540
+                  ************************************************************************************************ PP
+
+       Aux5  3358 tgacgatgaggtatagaagcgaagtagtagactatggcgctgtttcggctccagcaccatgcaccccatggcaaactgctgttgcagttcatccag 3453 
+                  tg+cga+gaggtatagaagcgaagtagtagactatggcgctgtttcggctccagcaccatgcaccccatggcaaactgctgttgcagttcatccag
+  scaffold3 19541 TGCCGACGAGGTATAGAAGCGAAGTAGTAGACTATGGCGCTGTTTCGGCTCCAGCACCATGCACCCCATGGCAAACTGCTGTTGCAGTTCATCCAG 19636
+                  ************************************************************************************************ PP
+
+       Aux5  3454 tgtacgctgactgcggatcacagcttgaactacaccttgctcaatcactgattcgagtaaaggtaacgacctttcatgacagtgccaaagccaagg 3549 
+                  tgtacgctgactgcggatcacagcttgaactacaccttgctcaatcactgattcgagtaaaggtaacgacctttcatgacagtgccaaagccaagg
+  scaffold3 19637 TGTACGCTGACTGCGGATCACAGCTTGAACTACACCTTGCTCAATCACTGATTCGAGTAAAGGTAACGACCTTTCATGACAGTGCCAAAGCCAAGG 19732
+                  ************************************************************************************************ PP
+
+       Aux5  3550 gccaaggtttgtcagttcccaaaggtcgggatggatcaatagcggacgtaagaattcaccatgttcagagaacagacgctcacgcagttcagcttt 3645 
+                  gccaaggtttgtcagttcccaaaggtcgggatggatcaatagcggacgtaagaattcaccatgttcagagaacagacgctcacgcagttc+gcttt
+  scaffold3 19733 GCCAAGGTTTGTCAGTTCCCAAAGGTCGGGATGGATCAATAGCGGACGTAAGAATTCACCATGTTCAGAGAACAGACGCTCACGCAGTTCTGCTTT 19828
+                  ************************************************************************************************ PP
+
+       Aux5  3646 tagctctgccgcttcgaataggacataacaagcatcggcagaccataatttgtcaggcagcatcatcgattatttcccctctacgattgcattacc 3741 
+                  tagctctgccgcttcgaataggacataacaagcatcggcagaccataat tgtcaggcagcatcatcgattatttcccctctacgattgcattacc
+  scaffold3 19829 TAGCTCTGCCGCTTCGAATAGGACATAACAAGCATCGGCAGACCATAATCTGTCAGGCAGCATCATCGATTATTTCCCCTCTACGATTGCATTACC 19924
+                  ************************************************************************************************ PP
+
+       Aux5  3742 ttgcctaattgctcgctgcatacaaggtatgcagacaggattttccatagggggaagtgtttttaataaagcctcggcactcgtttgtgtcgccgt 3837 
+                  ttgcctaat gctcgctgcatacaaggtatgcagacaggattttccatagggggaagtgtttttaataaagcctcggcactcgtttgtgtcgccgt
+  scaffold3 19925 TTGCCTAATGGCTCGCTGCATACAAGGTATGCAGACAGGATTTTCCATAGGGGGAAGTGTTTTTAATAAAGCCTCGGCACTCGTTTGTGTCGCCGT 20020
+                  ************************************************************************************************ PP
+
+       Aux5  3838 aaaaggctcaataaccatattttctggatcggcttctttcgcaaccgtctttggtaacaatgacgcttggccactccaaccagccccctgtccggg 3933 
+                  aaaaggctcaataaccatattttctggatcggcttctttcgcaaccgtctttggtaacaatgacgcttg+ccactccaaccagccccctgtccggg
+  scaffold3 20021 AAAAGGCTCAATAACCATATTTTCTGGATCGGCTTCTTTCGCAACCGTCTTTGGTAACAATGACGCTTGTCCACTCCAACCAGCCCCCTGTCCGGG 20116
+                  ************************************************************************************************ PP
+
+       Aux5  3934 actaccgccagagttgaggttaatcatcgctccgacaagatgcacaccggcaggatcgactttaacaaagctgccgcccgctttaaccgtaatctc 4029 
+                  actaccgccagagttgaggttaatcatcgctccgacaagatgcacacc gcaggatcgactttaacaaagctgccgcccgctttaaccgtaatctc
+  scaffold3 20117 ACTACCGCCAGAGTTGAGGTTAATCATCGCTCCGACAAGATGCACACCTGCAGGATCGACTTTAACAAAGCTGCCGCCCGCTTTAACCGTAATCTC 20212
+                  ************************************************************************************************ PP
+
+       Aux5  4030 ggagcccgcttcaataacgactttctcaccggctttaatatgtatctcatcgcctgcttcactgacccagaccttaccagacttgacataaagaga 4125 
+                  ggagcccgcttc ataacgactttctcaccggctttaatatgtatctcatcgcctgcttcactgacccagaccttaccagacttgacataaagaga
+  scaffold3 20213 GGAGCCCGCTTCGATAACGACTTTCTCACCGGCTTTAATATGTATCTCATCGCCTGCTTCACTGACCCAGACCTTACCAGACTTGACATAAAGAGA 20308
+                  ************************************************************************************************ PP
+
+       Aux5  4126 gccttccaccatgagtgttttgcttcctttaacggcttctcgactctccccctcgaccgtcaggtgttggttgtgcttaatctgagtaaattggtc 4221 
+                  gccttccaccatgagtgttttgcttcctttaacggcttctcgactctccccctcgaccgtcaggtgttggttgtgcttaatctg+gtaaattggtc
+  scaffold3 20309 GCCTTCCACCATGAGTGTTTTGCTTCCTTTAACGGCTTCTCGACTCTCCCCCTCGACCGTCAGGTGTTGGTTGTGCTTAATCTGGGTAAATTGGTC 20404
+                  ************************************************************************************************ PP
+
+       Aux5  4222 attttcaacggtcagatgttggtcgtgacgaatgaccgtggtgtggtcgttttcaatcaaaccatcaaagtctttctgcgcatgcaggtagatttg 4317 
+                  attttcaacggtcagatgttggtcgtgacgaatgaccgtggtgtggtcgttttcaatcaaaccatc+aagtctttctgcgcatgcaggtagatttg
+  scaffold3 20405 ATTTTCAACGGTCAGATGTTGGTCGTGACGAATGACCGTGGTGTGGTCGTTTTCAATCAAACCATCGAAGTCTTTCTGCGCATGCAGGTAGATTTG 20500
+                  ************************************************************************************************ PP
+
+       Aux5  4318 ctctttgcccgcttggtcttcaaaactgagctcgttaaacccttcaccttggtgcgtctcggtgcgcagcacggttttggttttgtgctctggcaa 4413 
+                  ctctttgcccgcttggtcttcaaaactgagctcgttaaacccttc+ccttggtgcgt tcggtgcgcagcacggttttggttttgtgctctggcaa
+  scaffold3 20501 CTCTTTGCCCGCTTGGTCTTCAAAACTGAGCTCGTTAAACCCTTCCCCTTGGTGCGTTTCGGTGCGCAGCACGGTTTTGGTTTTGTGCTCTGGCAA 20596
+                  ************************************************************************************************ PP
+
+       Aux5  4414 ggtgtatggtggcgtgttggtcgcatgatatgtgcggccagtgataatgggttggtcagggtctccatttaaaaagtttacgatcacttcatgacc 4509 
+                   gtgtatgg+ggcgtgttggtcgcatgata+gtgcggccagtgataat+ggttggtc+gggtc ccatttaa aag   ac atcacttcatgacc
+  scaffold3 20597 AGTGTATGGCGGCGTGTTGGTCGCATGATAGGTGCGGCCAGTGATAATCGGTTGGTCTGGGTCGCCATTTAAGAAGGAAACTATCACTTCATGACC 20692
+                  ************************************************************************************************ PP
+
+       Aux5  4510 gatgcgcggaattgcgataaaaccttattggctgcccgcccaaccttgtgacacccgtacccaacaggagctttgctcgttactgttcgagtaacg 4605 
+                  gatgcgcggaat+gcgataaaacc+tattggctgcccgcccaaccttg+gacacccgtacccaacaggagct tgctcgttactgttcgagtaacg
+  scaffold3 20693 GATGCGCGGAATGGCGATAAAACCATATTGGCTGCCCGCCCAACCTTGCGACACCCGTACCCAACAGGAGCTCTGCTCGTTACTGTTCGAGTAACG 20788
+                  ************************************************************************************************ PP
+
+       Aux5  4606 atcccacgggaagtggattttcacccgcccgtgttcatcacagaagatttcttcgccttcaggaccgacgaccgtggctatcattggaccatcgac 4701 
+                  +tcccacgggaagtggattttcacccgcccgtgttcatcacagaagatttcttcgccttcaggaccgacgaccgtggc+atcattggaccatcgac
+  scaffold3 20789 GTCCCACGGGAAGTGGATTTTCACCCGCCCGTGTTCATCACAGAAGATTTCTTCGCCTTCAGGACCGACGACCGTGGCAATCATTGGACCATCGAC 20884
+                  ************************************************************************************************ PP
+
+       Aux5  4702 ttgcggtttagtttgtggctcggcgcgccagtggagatgccccggaattaagctgaactggttgctgtaggtggttgcaccgctgccgccctcttc 4797 
+                  ttgcggtttag ttgtggctcggcgcgccagtg+agatgccccggaattaa+ct+aa+tggtt ctgta gt gt gc ccgctgccgccctcttc
+  scaffold3 20885 TTGCGGTTTAGCTTGTGGCTCGGCGCGCCAGTGAAGATGCCCCGGAATTAAACTAAATTGGTTACTGTAAGTAGTAGCGCCGCTGCCGCCCTCTTC 20980
+                  ************************************************************************************************ PP
+
+       Aux5  4798 ttgtaacgcttgcggctgctcaccttgatggttaatcgacaccaccacccaatcgcggttcatcgcggggtcaagatgctcttgcaggtcaaactt 4893 
+                  ttgtaacgcttgcggctgctcaccttg+tggttaatcgacaccaccacccaatcgcggttcatcgcggggtcaag+tgctcttgcaggtcaaactt
+  scaffold3 20981 TTGTAACGCTTGCGGCTGCTCACCTTGGTGGTTAATCGACACCACCACCCAATCGCGGTTCATCGCGGGGTCAAGGTGCTCTTGCAGGTCAAACTT 21076
+                  ************************************************************************************************ PP
+
+       Aux5  4894 ataaccagcacgcagtagcggctcgttgctctgccctgccgcggtgtgggcatggcggcgcagatagtctaagcggatttggctaaaggcggcgcc 4989 
+                  ata+cc gcacgcagtagcgg+tcgttgctctgccctgccgcggtgtgggcatggcggcgcag+tagtctaagcggatttggctaaaggc++c+cc
+  scaffold3 21077 ATAGCCCGCACGCAGTAGCGGTTCGTTGCTCTGCCCTGCCGCGGTGTGGGCATGGCGGCGCAGGTAGTCTAAGCGGATTTGGCTAAAGGCTTCACC 21172
+                  ************************************************************************************************ PP
+
+       Aux5  4990 gttcacatcgtctttgtagcgccccggcgcatcaaagtgttggtagcgcgtttgctgatattctagctcagtaccctgcacggtttgtaaaaatga 5085 
+                   ttcacatcgtctttgtagcgccccggcgcatcaaagtgttggtagcgcgtttgctgata  c agctc+gt ccctgcacggtttgtaaaaa+ga
+  scaffold3 21173 ATTCACATCGTCTTTGTAGCGCCCCGGCGCATCAAAGTGTTGGTAGCGCGTTTGCTGATAGCCAAGCTCTGTGCCCTGCACGGTTTGTAAAAAGGA 21268
+                  ************************************************************************************************ PP
+
+       Aux5  5086 gtaggctggctttttgaagctgtaatctttgagctgaacttcgctcacttctgcttgggtgcgataggttaagccgtggatgtacggtgtatcttt 5181 
+                  gtaggctggctttttgaagctgta+tctttgagctgaacttcgctcacttctgcttgggtgcgataggttaagccgtggatgtacgg+gtatc  t
+  scaffold3 21269 GTAGGCTGGCTTTTTGAAGCTGTAGTCTTTGAGCTGAACTTCGCTCACTTCTGCTTGGGTGCGATAGGTTAAGCCGTGGATGTACGGCGTATCACT 21364
+                  ************************************************************************************************ PP
+
+       Aux5  5182 cgtgccgcccgctaaagcgttgtacgggatgggctccggtagtttacttaggctgtcactggcatcactgaaatagagggtatgtttgccagcttc 5277 
+                  cgt ccgcccgctaa+gcgttgtacgggatgggctccgg+agtttacttaggctgtcactggcatcactgaaatagagggtatgtttgcc+gcttc
+  scaffold3 21365 CGTACCGCCCGCTAAGGCGTTGTACGGGATGGGCTCCGGCAGTTTACTTAGGCTGTCACTGGCATCACTGAAATAGAGGGTATGTTTGCCCGCTTC 21460
+                  ************************************************************************************************ PP
+
+       Aux5  5278 atggacaaagctgtacaccaagccttcttcagcggcgaggcggtggagaaagtcgatatcgctttcgcggtactgcacacaaaactcacgctgcac 5373 
+                  atggacaaagctgtacaccaa ccttcttcagcggcgaggcggtggagaaagtcgatatc ctttc cggtactgcacacaaaactcacgctgcac
+  scaffold3 21461 ATGGACAAAGCTGTACACCAAACCTTCTTCAGCGGCGAGGCGGTGGAGAAAGTCGATATCACTTTCACGGTACTGCACACAAAACTCACGCTGCAC 21556
+                  ************************************************************************************************ PP
+
+       Aux5  5374 gctatcacggttgagcgcaaaagcgtaatcgttgatgcccatctcttgcagcaagatagaaagaatttctgggacagtctgcttttggaaaatgcg 5469 
+                  gc atcacg+ttgagcgcaaaagcgtaatcgttgatgcccatctcttgcagcaagataga+agaatttctgg+acagtctgcttttggaaaatgcg
+  scaffold3 21557 GCCATCACGCTTGAGCGCAAAAGCGTAATCGTTGATGCCCATCTCTTGCAGCAAGATAGAGAGAATTTCTGGAACAGTCTGCTTTTGGAAAATGCG 21652
+                  ************************************************************************************************ PP
+
+       Aux5  5470 gctattatgacgcagggataagcgctctaaggcagggactaaggtgagttcgtagaaggtttggtgatggccgatatcgccttggctgaaggcgca 5565 
+                  gctatt+tg+cgcagggataagcgctctaaggcagg actaaggtgagttcgtagaaggt+tggtgatggccgatatcgccttggct aaggcgc+
+  scaffold3 21653 GCTATTGTGGCGCAGGGATAAGCGCTCTAAGGCAGGCACTAAGGTGAGTTCGTAGAAGGTGTGGTGATGGCCGATATCGCCTTGGCTAAAGGCGCG 21748
+                  ************************************************************************************************ PP
+
+       Aux5  5566 aacaatgccgtgaacgcgctgaaccaactgtgaattgcggtaaagcttcagctcagcacgcttatcgaccatctgctcagcagtcagattggatgc 5661 
+                  +acaatgccgtg+acgcgctg+accaactgtgaattgcggtaaagctt+agctcagcacgcttatcgaccatctgctcagcagtcagattggatgc
+  scaffold3 21749 CACAATGCCGTGTACGCGCTGCACCAACTGTGAATTGCGGTAAAGCTTGAGCTCAGCACGCTTATCGACCATCTGCTCAGCAGTCAGATTGGATGC 21844
+                  ************************************************************************************************ PP
+
+       Aux5  5662 ccgactcgccaattgcacttcgtagcgaaacccgtaacaggcttgccctaaaaaaacactatttgagagtgactcctgcccgtggaagcctctgac 5757 
+                  ccgactcgcca+ttgcacttcgtagcgaaacccgtaacaggcttgccctaaaaaaacact+tt+gagagtgactcctgcccgtggaagcctctgac
+  scaffold3 21845 CCGACTCGCCAGTTGCACTTCGTAGCGAAACCCGTAACAGGCTTGCCCTAAAAAAACACTGTTGGAGAGTGACTCCTGCCCGTGGAAGCCTCTGAC 21940
+                  ************************************************************************************************ PP
+
+       Aux5  5758 caccagagtctcatcttccagcccttccacctcaatgctgtacgctaatgtcgccatcctgcctttccttcccctacattaaaaatggcaaaacct 5853 
+                  caccagagtctcatcttccagcccttccacctcaatgctgtacgctaatgtcgccatcctgcctttccttcccctacattaaaaatggcaaaacct
+  scaffold3 21941 CACCAGAGTCTCATCTTCCAGCCCTTCCACCTCAATGCTGTACGCTAATGTCGCCATCCTGCCTTTCCTTCCCCTACATTAAAAATGGCAAAACCT 22036
+                  ************************************************************************************************ PP
+
+       Aux5  5854 taaacccacaataccgcgccaaacgatactctgggtttaaggttcacagccgcccacccgaaggtgagcgacattctcgcagcgtaaattacgctt 5949 
+                  taaacccacaataccgcgccaaacgatactctgggtttaaggttcacagccgcccacccgaaggtgagcgacattctcgcagcgtaaattacgctt
+  scaffold3 22037 TAAACCCACAATACCGCGCCAAACGATACTCTGGGTTTAAGGTTCACAGCCGCCCACCCGAAGGTGAGCGACATTCTCGCAGCGTAAATTACGCTT 22132
+                  ************************************************************************************************ PP
+
+       Aux5  5950 cgattggcttacgccagtcatcagagcctgaggtgcccgcgttaacgtggtcccaagtgattttgcggtaagacagagacacagtcacattctgag 6045 
+                  cgattggcttacgccagtcatcagagcctgaggtgcccgcgttaacgtggtcccaagtgattttgcggtaagacagagacacagtcacattctgag
+  scaffold3 22133 CGATTGGCTTACGCCAGTCATCAGAGCCTGAGGTGCCCGCGTTAACGTGGTCCCAAGTGATTTTGCGGTAAGACAGAGACACAGTCACATTCTGAG 22228
+                  ************************************************************************************************ PP
+
+       Aux5  6046 taaaatcagattttgctgggtcttggcagtgtggcatttcacagtggatatcgacgatagacgcgttttccagcttagtggtgaagaagttctctt 6141 
+                  taaa+tcagattttgctgggtcttggcagtgtggcatttcacagtggatatcgacgatagacgcgttttccagcttagtggtgaagaagttctctt
+  scaffold3 22229 TAAAGTCAGATTTTGCTGGGTCTTGGCAGTGTGGCATTTCACAGTGGATATCGACGATAGACGCGTTTTCCAGCTTAGTGGTGAAGAAGTTCTCTT 22324
+                  ************************************************************************************************ PP
+
+       Aux5  6142 gtttaccttcgatagaagtacggtaccacttcagctcaaccgttttcagcttctcaccggaagagagcgcgttgtacagcagaggaaccgctttgt 6237 
+                  gtttaccttcgataga+gtacggtaccacttcagctcaac+gttttcagcttctcacc gaagagagcgcgttgtacagcagaggaaccgctttgt
+  scaffold3 22325 GTTTACCTTCGATAGAGGTACGGTACCACTTCAGCTCAACGGTTTTCAGCTTCTCACCAGAAGAGAGCGCGTTGTACAGCAGAGGAACCGCTTTGT 22420
+                  ************************************************************************************************ PP
+
+       Aux5  6238 tcagcgccacagtgaatttgaatggcttgtgcacacgttggcctgaaggctgacctgattgtgggtcagtcggtacggttacgacgtggtcaaact 6333 
+                  tcagcgccacagtgaatttgaatggcttgtgcacacgttggcctgaaggctgacc+gattgtgggtcagtcggtacggttac+acgtggtcaaact
+  scaffold3 22421 TCAGCGCCACAGTGAATTTGAATGGCTTGTGCACACGTTGGCCTGAAGGCTGACCAGATTGTGGGTCAGTCGGTACGGTTACAACGTGGTCAAACT 22516
+                  ************************************************************************************************ PP
+
+       Aux5  6334 gctgaaccagcatctcatcttcatggccttcaacgaatgaatcgccgatagagtcagcagtacatgcgcctgcagtgataagaccctgagtttggc 6429 
+                  gctgaaccagcatctcatcttc+tggccttcaacgaatgaatcgccgatagagtcagcagtacatgcgcctgcagtgataagaccctgagtttggc
+  scaffold3 22517 GCTGAACCAGCATCTCATCTTCGTGGCCTTCAACGAATGAATCGCCGATAGAGTCAGCAGTACATGCGCCTGCAGTGATAAGACCCTGAGTTTGGC 22612
+                  ************************************************************************************************ PP
+
+       Aux5  6430 cttcgatagagatataacatggagttggca 6459 
+                  cttcgatagagatataacatggagttggca
+  scaffold3 22613 CTTCGATAGAGATATAACATGGAGTTGGCA 22642
+                  ****************************97 PP
+
+  == domain 2  score: 2753.9 bits;  conditional E-value: 0
+       Aux5  3928 tccgggactaccgccagagttgaggttaatcatcgctccgacaagatgcacaccggcaggatcgactttaacaaagctgccgcccgctttaaccgt 4023 
+                  tccgg act+ccgcc+gagttgag+tt a ca  gc ccg   agatgcac cc gc ggatcgactttaacaaagctgccgcccgctttaac+gt
+  scaffold3 73225 TCCGGCACTTCCGCCGGAGTTGAGATTGACCAAAGCACCGGACAGATGCACCCCAGCCGGATCGACTTTAACAAAGCTGCCGCCCGCTTTAACGGT 73320
+                  678999****************************************************************************************** PP
+
+       Aux5  4024 aatctcggagcccgcttcaataacgactttctcaccggctttaatatgtatctcatcgcctgcttcactgacccagaccttaccagacttgacata 4119 
+                  aatctcggagcccgcttcaat acgactttct  cc gcttt a atg atctc    cc gcttca tgaccca ac tt+cc g  tt acat 
+  scaffold3 73321 AATCTCGGAGCCCGCTTCAATCACGACTTTCTGTCCCGCTTTCACATGGATCTCTGTACCCGCTTCATTGACCCAAACTTTGCCTGTTTTCACATG 73416
+                  ************************************************************************************************ PP
+
+       Aux5  4120 aagagagccttccaccatgagtgttttgcttcctttaacggcttctcgactctccccctcgaccgtcaggtgttggttgtgcttaatctgagtaaa 4215 
+                   ag gagccttc a   t+agt +tt   + cc  t ac gcttctcgact tcccc tc accgtcaggtgttg+ttg   ttaatctg+gtaaa
+  scaffold3 73417 CAGCGAGCCTTCAATACTCAGTACTTGCTCGCCAGTCACCGCTTCTCGACTTTCCCCTTCCACCGTCAGGTGTTGATTGCCTTTAATCTGGGTAAA 73512
+                  ************9999999999999888888888888899***************************************999************** PP
+
+       Aux5  4216 ttggtcattttcaacggtcagatgttggtcgtgacgaatgaccgtggtgtggtcgttttcaatcaaaccatcaaagtctttctgcgcatgcaggta 4311 
+                  ttggtc ttttcaacggt ag+tgttggtcgtgacgaatgaccgtggtgtggtcgttttcaatcaaaccatc+aagtctttctgcgcatgcaggta
+  scaffold3 73513 TTGGTCGTTTTCAACGGTTAGGTGTTGGTCGTGACGAATGACCGTGGTGTGGTCGTTTTCAATCAAACCATCGAAGTCTTTCTGCGCATGCAGGTA 73608
+                  ************************************************************************************************ PP
+
+       Aux5  4312 gatttgctctttgcccgcttggtcttcaaaactgagctcgttaaacccttcaccttggtgcgtctcggtgcgcagcacggttttggttttgtgctc 4407 
+                  gatttgctctttgcccgcttggtcttcaaaactgagctcgttaaacccttc+ccttggtgcgt tcggtgcgcagcacggttttggttttgtgctc
+  scaffold3 73609 GATTTGCTCTTTGCCCGCTTGGTCTTCAAAACTGAGCTCGTTAAACCCTTCCCCTTGGTGCGTTTCGGTGCGCAGCACGGTTTTGGTTTTGTGCTC 73704
+                  ************************************************************************************************ PP
+
+       Aux5  4408 tggcaaggtgtatggtggcgtgttggtcgcatgatatgtgcggccagtgataatgggttggtcagggtctccatttaaaaagtttacgatcacttc 4503 
+                  tggcaa gtgtatgg+ggcgtgttggtcgcatgata+gtgcggccagtgataat+ggttggtc+gggtc ccatttaa aag   ac atcacttc
+  scaffold3 73705 TGGCAAAGTGTATGGCGGCGTGTTGGTCGCATGATAGGTGCGGCCAGTGATAATCGGTTGGTCTGGGTCGCCATTTAAGAAGGAAACTATCACTTC 73800
+                  ************************************************************************************************ PP
+
+       Aux5  4504 atgaccgatgcgcggaattgcgataaaaccttattggctgcccgcccaaccttgtgacacccgtacccaacaggagctttgctcgttactgttcga 4599 
+                  atgaccgatgcgcggaat+gcgataaaacc+tattggctgcccgcccaaccttg+gacacccgtacccaacaggagct tgctcgttactgttcga
+  scaffold3 73801 ATGACCGATGCGCGGAATGGCGATAAAACCATATTGGCTGCCCGCCCAACCTTGCGACACCCGTACCCAACAGGAGCTCTGCTCGTTACTGTTCGA 73896
+                  ************************************************************************************************ PP
+
+       Aux5  4600 gtaacgatcccacgggaagtggattttcacccgcccgtgttcatcacagaagatttcttcgccttcaggaccgacgaccgtggctatcattggacc 4695 
+                  gtaacg+tcccacgggaagtggattttcacccgcccgtgttcatcacagaagatttcttcgccttcaggaccgacgaccgtggc+atcattggacc
+  scaffold3 73897 GTAACGGTCCCACGGGAAGTGGATTTTCACCCGCCCGTGTTCATCACAGAAGATTTCTTCGCCTTCAGGACCGACGACCGTGGCAATCATTGGACC 73992
+                  ************************************************************************************************ PP
+
+       Aux5  4696 atcgacttgcggtttagtttgtggctcggcgcgccagtggagatgccccggaattaagctgaactggttgctgtaggtggttgcaccgctgccgcc 4791 
+                  atcgacttgcggtttag ttgtggctcggcgcgccagtg+agatgccccggaattaa+ct+aa+tggtt ctgta gt gt gc ccgctgccgcc
+  scaffold3 73993 ATCGACTTGCGGTTTAGCTTGTGGCTCGGCGCGCCAGTGAAGATGCCCCGGAATTAAACTAAATTGGTTACTGTAAGTAGTAGCGCCGCTGCCGCC 74088
+                  ************************************************************************************************ PP
+
+       Aux5  4792 ctcttcttgtaacgcttgcggctgctcaccttgatggttaatcgacaccaccacccaatcgcggttcatcgcggggtcaagatgctcttgcaggtc 4887 
+                  ctcttcttgtaacgcttgcggctgctcaccttg+tggttaatcgacaccaccacccaatcgcggttcatcgcggggtcaag+tgctcttgcaggtc
+  scaffold3 74089 CTCTTCTTGTAACGCTTGCGGCTGCTCACCTTGGTGGTTAATCGACACCACCACCCAATCGCGGTTCATCGCGGGGTCAAGGTGCTCTTGCAGGTC 74184
+                  ************************************************************************************************ PP
+
+       Aux5  4888 aaacttataaccagcacgcagtagcggctcgttgctctgccctgccgcggtgtgggcatggcggcgcagatagtctaagcggatttggctaaaggc 4983 
+                  aaacttata+cc gcacgcagtagcgg+tcgttgctctgccctgccgcggtgtgggcat gcggcgcag+tagtctaagcggatttggctaaaggc
+  scaffold3 74185 AAACTTATAGCCCGCACGCAGTAGCGGTTCGTTGCTCTGCCCTGCCGCGGTGTGGGCATTGCGGCGCAGGTAGTCTAAGCGGATTTGGCTAAAGGC 74280
+                  ************************************************************************************************ PP
+
+       Aux5  4984 ggcgccgttcacatcgtctttgtagcgccccggcgcatcaaagtgttggtagcgcgtttgctgatattctagctcagtaccctgcacggtttgtaa 5079 
+                  ++c+cc ttcacatcgtctttgtagcgccccggcgcatcaaagtgttggtagcgcgtttgctgata  c agctc+gt ccctgcacggtttgtaa
+  scaffold3 74281 TTCACCATTCACATCGTCTTTGTAGCGCCCCGGCGCATCAAAGTGTTGGTAGCGCGTTTGCTGATAGCCAAGCTCTGTGCCCTGCACGGTTTGTAA 74376
+                  ************************************************************************************************ PP
+
+       Aux5  5080 aaatgagtaggctggctttttgaagctgtaatctttgagctgaacttcgctcacttctgcttgggtgcgataggttaagccgtggatgtacggtgt 5175 
+                  aaa+gagtaggctggctttttgaagctgta+tctttgagctgaacttc ctcacttctgcttgggtgcgataggttaa ccgtggat tacgg+gt
+  scaffold3 74377 AAAGGAGTAGGCTGGCTTTTTGAAGCTGTAGTCTTTGAGCTGAACTTCACTCACTTCTGCTTGGGTGCGATAGGTTAAACCGTGGATATACGGCGT 74472
+                  ************************************************************************************************ PP
+
+       Aux5  5176 atctttcgtgccgcccgctaaagcgttgtacgggatgggctccggtagtttacttaggctgtcactggcatcactgaaatagagggtatgtttgcc 5271 
+                  atc++tcgt ccgcccgctaaagcgtt+ta gggatgggctccgg+agtttacttaggctgtcactggcatcactgaaatagagggtatgtttgcc
+  scaffold3 74473 ATCCATCGTACCGCCCGCTAAAGCGTTATAAGGGATGGGCTCCGGCAGTTTACTTAGGCTGTCACTGGCATCACTGAAATAGAGGGTATGTTTGCC 74568
+                  ************************************************************************************************ PP
+
+       Aux5  5272 agcttcatggacaaagctgtacaccaagccttcttcagcggcgaggcggtggagaaagtcgatatcgctttcgcggtactgcacacaaaactcacg 5367 
+                  +gcttcatggacaaagctgtacaccaa ccttcttcagcggcgaggcggtggagaaagtcgatatc ctttc cggtactgcacacaaaactcacg
+  scaffold3 74569 CGCTTCATGGACAAAGCTGTACACCAAACCTTCTTCAGCGGCGAGGCGGTGGAGAAAGTCGATATCACTTTCACGGTACTGCACACAAAACTCACG 74664
+                  ************************************************************************************************ PP
+
+       Aux5  5368 ctgcacgctatcacggttgagcgcaaaagcgtaatcgttgatgcccatctcttgcagcaagatagaaagaatttctgggacagtctgcttttggaa 5463 
+                  ctgcacgc atcacg+ttgagcgcaaaagcgtaatcgttgatgcccatctcttgcagcaagataga+agaatttctgg+acagtctgcttttggaa
+  scaffold3 74665 CTGCACGCCATCACGCTTGAGCGCAAAAGCGTAATCGTTGATGCCCATCTCTTGCAGCAAGATAGAGAGAATTTCTGGAACAGTCTGCTTTTGGAA 74760
+                  ************************************************************************************************ PP
+
+       Aux5  5464 aatgcggctattatgacgcagggataagcgctctaaggcagggactaaggtgagttcgtagaaggtttggtgatggccgatatcgccttggctgaa 5559 
+                  aatgcggctatt+tg+cgcagggataagcgctctaaggcagg actaaggtgagttcgtagaaggt+tggtgatggccgatatcgccttggct aa
+  scaffold3 74761 AATGCGGCTATTGTGGCGCAGGGATAAGCGCTCTAAGGCAGGCACTAAGGTGAGTTCGTAGAAGGTGTGGTGATGGCCGATATCGCCTTGGCTAAA 74856
+                  ************************************************************************************************ PP
+
+       Aux5  5560 ggcgcaaacaatgccgtgaacgcgctgaaccaactgtgaattgcggtaaagcttcagctcagcacgcttatcgaccatctgctcagcagtcagatt 5655 
+                  ggcgc++acaatgccgtg+acgcgctg+accaactgtgaattgcggtaaagctt+agctcagcacgcttatcgaccatctgctcagcagtcagatt
+  scaffold3 74857 GGCGCGCACAATGCCGTGTACGCGCTGCACCAACTGTGAATTGCGGTAAAGCTTGAGCTCAGCACGCTTATCGACCATCTGCTCAGCAGTCAGATT 74952
+                  ************************************************************************************************ PP
+
+       Aux5  5656 ggatgcccgactcgccaattgcacttcgtagcgaaacccgtaacaggcttgccctaaaaaaacactatttgagagtgactcctgcccgtggaagcc 5751 
+                  ggatgcccgactcgcca+ttgcacttcgtagcgaaacccgtaacaggcttgccctaaaaaaacact+tt+gagagtgactcctgcccgtggaagcc
+  scaffold3 74953 GGATGCCCGACTCGCCAGTTGCACTTCGTAGCGAAACCCGTAACAGGCTTGCCCTAAAAAAACACTGTTGGAGAGTGACTCCTGCCCGTGGAAGCC 75048
+                  ************************************************************************************************ PP
+
+       Aux5  5752 tctgaccaccagagtctcatcttccagcccttccacctcaatgctgtacgctaatgtcgccatcctgcctttccttcccctacattaaaaatggca 5847 
+                  tctgaccaccagagtctcatcttccagcccttccacctcaatgctgtacgctaatgtcgccatcctgcctttccttcccctacattaaaaatggca
+  scaffold3 75049 TCTGACCACCAGAGTCTCATCTTCCAGCCCTTCCACCTCAATGCTGTACGCTAATGTCGCCATCCTGCCTTTCCTTCCCCTACATTAAAAATGGCA 75144
+                  ************************************************************************************************ PP
+
+       Aux5  5848 aaaccttaaacccacaataccgcgccaaacgatactctgggtttaaggttcacagccgcccacccgaaggtgagcgacattctcgcagcgtaaatt 5943 
+                  aaaccttaaacccacaataccgcgccaaacgatactctgggtttaaggttcacagccgcccacccgaaggtgagcgacattctcgcagcgtaaatt
+  scaffold3 75145 AAACCTTAAACCCACAATACCGCGCCAAACGATACTCTGGGTTTAAGGTTCACAGCCGCCCACCCGAAGGTGAGCGACATTCTCGCAGCGTAAATT 75240
+                  ************************************************************************************************ PP
+
+       Aux5  5944 acgcttcgattggcttacgccagtcatcagagcctgaggtgcccgcgttaacgtggtcccaagtgattttgcggtaagacagagacacagtcacat 6039 
+                  acgcttcgattggcttacgccagtcatcagagcctgaggtgcccgcgttaacgtggtcccaagtgattttgcggtaagacagagacacagtcacat
+  scaffold3 75241 ACGCTTCGATTGGCTTACGCCAGTCATCAGAGCCTGAGGTGCCCGCGTTAACGTGGTCCCAAGTGATTTTGCGGTAAGACAGAGACACAGTCACAT 75336
+                  ************************************************************************************************ PP
+
+       Aux5  6040 tctgagtaaaatcagattttgctgggtcttggcagtgtggcatttcacagtggatatcgacgatagacgcgttttccagcttagtggtgaagaagt 6135 
+                  tctgagtaaa+tcagattttgctgggtcttggcagtgtggcatttcacagtg+atatc+acgatagacgcgttttccagcttagtggt aagaagt
+  scaffold3 75337 TCTGAGTAAAGTCAGATTTTGCTGGGTCTTGGCAGTGTGGCATTTCACAGTGAATATCAACGATAGACGCGTTTTCCAGCTTAGTGGTAAAGAAGT 75432
+                  ************************************************************************************************ PP
+
+       Aux5  6136 tctcttgtttaccttcgatagaagtacggtaccacttcagctcaaccgttttcagcttctcaccggaagagagcgcgttgtacagcagaggaaccg 6231 
+                  t+tcttgtttaccttcgatagaagtacggtaccacttcagctcaaccg  ttcagcttctcacc gaagagagcgcgttgtacagcagaggaaccg
+  scaffold3 75433 TTTCTTGTTTACCTTCGATAGAAGTACGGTACCACTTCAGCTCAACCGACTTCAGCTTCTCACCAGAAGAGAGCGCGTTGTACAGCAGAGGAACCG 75528
+                  ************************************************************************************************ PP
+
+       Aux5  6232 ctttgttcagcgccacagtgaatttgaatggcttgtgcacacgttggcctgaaggctgacctgattgtgggtcagtcggtacggttacgacgtggt 6327 
+                  ctttgttcagcgccacagtgaatttgaatggcttgtgcacacgttggcctgaaggctgacc+gattgtgggtcagtcggtacggttacgacgtggt
+  scaffold3 75529 CTTTGTTCAGCGCCACAGTGAATTTGAATGGCTTGTGCACACGTTGGCCTGAAGGCTGACCAGATTGTGGGTCAGTCGGTACGGTTACGACGTGGT 75624
+                  ************************************************************************************************ PP
+
+       Aux5  6328 caaactgctgaaccagcatctcatcttcatggccttcaacgaatgaatcgccgatagagtcagcagtacatgcgcctgcagtgataagaccctgag 6423 
+                  caaactgctgaaccagcatctcatcttc+tggccttcaacgaatgaatcgccgatagagtcagcagtacatgcgcctgcagtgataagaccctgag
+  scaffold3 75625 CAAACTGCTGAACCAGCATCTCATCTTCGTGGCCTTCAACGAATGAATCGCCGATAGAGTCAGCAGTACATGCGCCTGCAGTGATAAGACCCTGAG 75720
+                  ************************************************************************************************ PP
+
+       Aux5  6424 tttggccttcgatagagatataacatggagttggca 6459 
+                  tttggccttcgatagagatataacatggagttggca
+  scaffold3 75721 TTTGGCCTTCGATAGAGATATAACATGGAGTTGGCA 75756
+                  **********************************97 PP
+
+  == domain 3  score: 538.6 bits;  conditional E-value: 2.7e-165
+       Aux5    158 atatctttaggaaactccctactcggtggatacaagaaggtctttgccatgttaagggcat.tacttccctgcacataggcgacataaccattg 250   
+                   atatc   a+ +aa++cc++actc             agg+++t ++ a++++ +g+gc t tact+c ++ +++at+gg ga+++a++ +ttg
+  scaffold3 696032 ATATCAAGATTGAAGGCCAAACTC-------------AGGGTCTGATTACTGCTGGTGCGTgTACTGCAGATTCTATCGGTGATTCATTTGTTG 696112
+                   78889899999*************.............********************************************************* PP
+
+       Aux5    251 ggatttgtcacggtg.......cgttcgacatgtttcgcttcatcgtaaacgaactcaagccatccccaacgctttcttagccatgagcgctca 337   
+                   ++++t++++a+g+tg       +gttc++ca +ttt++ ++ca  gtaa+ g+ac+ a                  c +a cca++a       
+  scaffold3 696113 AAGGTCACGAAGATGagatgctGGTTCAGCA-ATTTGATCACACAGTAACAGTACCTA------------------CCGATCCACAA------- 696180
+                   ***************99999999********.**************************..................99*********....... PP
+
+       Aux5    338 cccgaatcggcatcctttagcctagctttgtagtcagcatactgctttccaagccaccaagagtagatgtattggtga..........ttctct 421   
+                                   t+ g+++agc+tt+++g+cagc+ +    tt++ aagcca+++a+a+t ++tgt+++g tga          t+ctct
+  scaffold3 696181 ----------------TCGGGTCAGCCTTCAGGCCAGCGCG----TTCATAAGCCATTCAAATTTACTGTGGCGCTGAataaagcggtTCCTCT 696254
+                   ................999**********************....************************************************* PP
+
+       Aux5    422 aaggcttgacgggatagtttcttattaccagcttgttgcatatatcgttgcgt....ataatactgcactgattttcccgccaagttgtcatgc 511   
+                   a++g++++acg+g+t ++ttc ++t+a++agct      ++a  +cgttg+g+    +t++tac+g+ac                         
+  scaffold3 696255 ACTGTACAACGCGCTCTCTTCAGGTGAGAAGCT------GAAGTCCGTTGAGCtgaaGTGGTACCGTACA------------------------ 696318
+                   *********************************......**************9999***********98........................ PP
+
+       Aux5    512 atgacaaaatatgcggcaaccttttccgagactttatgtaacttattaaaattaggaaaaggaacctctccactac.gagccgcatgatacatc 604   
+                                                            ++t t +aa++ta+++aa++gaac+tct+cac ac +agc+g+a++a++c tc
+  scaffold3 696319 -----------------------------------------TCTCTAGAAGGTAAACAAGAGAACTTCTTCACGACtAAGCTGGAAAACGCTTC 696371
+                   .........................................6667889********************************************** PP
+
+       Aux5    605 tgatgtaacgccactcgactcaattcggcactggggcgttgttcattggggagcaaaccacctgtaatatcttcgcttatgcccggtaacaagc 698   
+                   t+++gt                               g+t+ttca+tg+g+a++++++cac++++aa+atc               +a+c a++
+  scaffold3 696372 TATCGT------------------------------AGATATTCACTGTGAAATGCCACACTGCCAAGATC---------------CAGCCAAA 696420
+                   ******..............................79*********************************...............9******* PP
+
+       Aux5    699 tctcgtcccatccagactgtaacggc....................ccaagtgggactaag.......gggcggtaaacgcgccgctcatgggc 765   
+                    c ++ ++ca++ca a+  t+ac g+                    +ca+ tggga +a+g       ggg ++t++a+gc+c+g+t+a++ggc
+  scaffold3 696421 GCAGACTTCACTCAAAACCTGACAGTgtctctgtcttaccgcaaaaTCACCTGGGATCACGttaacgcGGGGACTTCAGGCTCTGATGACTGGC 696514
+                   ************************99999***************************************99999********************* PP
+
+       Aux5    766 ggcaaccaaatgaagtgcctttttcaccgcgcgatgaagcggcttatcaaaatcaatcaccttaggg..............ccaccaatccatt 845   
+                   g++a+ccaa++gaag+g+++tt  c+c+ cg+                a  +tc++tcac tt+ggg              cc+++aa+ ca+ 
+  scaffold3 696515 GTAAGCCAATCGAAGCGTAATTCGCGCTCCGAT---------------ACGGTCGCTCACTTTCGGGtgagcggctgaaaaCCTTAAACTCAGC 696593
+                   *******************************99...............7789*************9999************************* PP
+
+       Aux5    846 ccagaggcttaagcaagattccggcaaaactgaaaacatcgttcatggtatc.acc................................cgaatc 906   
+                   c+a++g +t   gc+++           actga       gtt+a+ggt+t+ + c                                cga+++
+  scaffold3 696594 CTATCGATTC-TGCGGTGC---------ACTGA-------GTTTAAGGTTTTtGTCattttccgtatcagagaaggaaggcgtaatggCGACAT 696670
+                   *****98664.34444332.........34444.......9*******976513346777777*************************999999 PP
+
+       Aux5    907 gagtgaa.........ctgcggcgag.....tgcaatcaaatagcccgg.......caaaggttacctcgaccttggctccctcatagatatag 979   
+                   +ag+ +a         c+ cg cg g     t    ++++a a+ c+ g       ca   g+t+  ++g+ c++g++tc ctc++ +a+a  g
+  scaffold3 696671 TAGCTTAtacgatacaCATCGACGGGctcggT----GATGAAACGCTCGttgtgacCA---GCTTTGAGGGACAGGAGTCTCTCTCGAACACGG 696757
+                   99986542211111115555555555755443....3456666666655444434333...56777789************************* PP
+
+       Aux5    980 tctt........cgccctgtttcgtgcagacctcttcca....gtaattc.....gtcaataaaacgacgagccagaatgccacctagatcggg 1056  
+                   t+tt        c ccctg t cg+        ctt c+    g aatt+     g+ca+t++a  + c  ++c+ a tgc +c++ag+tcg++
+  scaffold3 696758 TTTTtcaatacgCCCCCTGCTACGG--------CTTTCGatatGAAATTGctttaGCCAGTCGACAACCTCATCTCAGTGCGGCGCAGGTCGTC 696843
+                   *998444444222344555554443........4455557777777865433333999999999999999999********************* PP
+
+       Aux5   1057 tccaaacacggaaagctgaa...taagtttaatcgggagttgattcttcgctttcaaaattgaaaagcgttttctgaaggcatttttcgcgcca 1147  
+                   +++aaa  +g+++agctga     + +++t at g +a tt +t c+ cg +t c                     a+ggcatt+t+cg gc +
+  scaffold3 696844 GATAAATCTGCTGAGCTGAGaatGTTCCGTGATGGTCAATTAGTCCAACGGGTAC---------------------ACGGCATTGTGCGTGCTT 696916
+                   *****************986445344678899***********************.....................****************** PP
+
+       Aux5   1148 tcaacccgggcatcaacccctgtcataaactgctccatgaccatggggttatcccgcagtgctggcaacgcctctagcgtcactttcttggcaa 1241  
+                   t+  +c++gg +++a+c++ ++tca+ a++++ctc+at  c + +        c  +agt c++gc     ct +a cg c++t+  t++g +a
+  scaffold3 696917 TTTCTCAAGGGGATATCGGTCATCACTACACCCTCTATTCCTTAA--------CGCTAGTACCTGC----TCTTGAACGGCTATCGTTGCGTCA 696998
+                   *************************************98766666........7778*********....999********************* PP
+
+       Aux5   1242 cattttccgctgtatctgtaataactgctttagctcctttgatactaaagagctcatcgagatggtttgatagggtatcaaaccaattcttctt 1335  
+                   ca+ ++ cg ++t+t +++                                                    a ++ +t+++ ++aat  t ++t
+  scaffold3 696999 CAACAGTCGTATTTTTCAACG------------------------------------------------TAAAACCGTTCCTGAAATCTTGTCT 697044
+                   *********999988654322................................................2233456777888888887777777 PP
+
+       Aux5   1336 at.tggcttcaaaaagc..gtatcaaccgccgcctctttgctctgaccgctgacactatccaacgtattatccagtaaagccttttgctgacta 1426  
+                    t  +  t caa+aa++  g atcaac+++++c++ctttgctct  + ++ ga ++t+  caacgt           +ag++tt+tg+t+a ta
+  scaffold3 697045 GTgATCTTACAAGAAATggGGATCAACGATTACGCCTTTGCTCTAGAACGGGAATGTGAACAACGT-----------GAGTTTTGTGTTCAATA 697127
+                   7754445789******99999***********************9999999***************...........***************** PP
+
+       Aux5   1427 tccatgatactgtgcagacgttcagc.........................cgtttgatcttcatagtctgtacccaaaccggggatatatacc 1495  
+                   tc+ ++a+  +++ + ga +ttc+gc                         cgttt  t      ++t+t  +c+c+aa+c gg a+a+a ac 
+  scaffold3 697128 TCGGGAAACGGACCTTGATTTTCTGCaccgcttagccgccgaagagggactCGTTTATT------GCTTTACCCACGAAGCCGGTAAACACACG 697215
+                   ***99999999999********************************9988888887554......77888899********************* PP
+
+       Aux5   1496 gtcgatttaaggtaagatgagtcgaagtccatcgattcttgaattggatgtgcccttaataagcgggatagattagataaacgaccggagtcac 1589  
+                   +t +  tt+ag                                             t+at + +g g  a+a+t +ataaa +a c gag+  c
+  scaffold3 697216 CTGTTATTCAG---------------------------------------------TGATTCTAGCGCGACACTCAATAAATTAGCCGAGC--C 697262
+                   99999999999.............................................8999999****************************..* PP
+
+       Aux5   1590 tatcctgattaacgttgcggcgcataccatcaaagaaaaatcctacttgccaggctaaagcgcacgtacccaccccggcttgatgcagattctg 1683  
+                   tatcc+ +++aa g+ +++gc ++t++ca+  aaga a+++c ta +t  cagg t+ a+c+c cg ac  a+ cc++++t+a+ +a +t  + 
+  scaffold3 697263 TATCCCCTACAATGCATTAGCTGGTGGCACACAAGACACGCCTTATATTTCAGGATTGACCTCGCGAACTGAAACCCAAGTCAGTGACGTCGAA 697356
+                   ******************************************************************************************99** PP
+
+       Aux5   1684 ctcacgaactttacggcattgaata..........tcctgtatatcgagcattagtatttccttgtttgataagtggcaatcacatcatcaa.. 1765  
+                   ct a+++a   tac+gc+t++aa+a          tcct+ +ta+++ag a t++ ++    ++g t+g t+a    c a+ca ++cat  a  
+  scaffold3 697357 CTTAAAGAT--TACAGCTTCAAAAAgccaaactatTCCTTCTTACAAAGGACTCAAGGGGAAGAGATGGCTTA----CCAACAGGCCATATAct 697444
+                   *******99..*************9***********************9998888777666666666665555....44455555555433311 PP
+
+       Aux5   1766 ..aagctccaagctccggtgaccaacg.....tacttgaacctcgtta..tttggcataatcagggtataaaaaaatatgtcgccttgtttgcg 1850  
+                     +a +t++a+gctccgg+ ++ +a +     +ac t aa ++    +  ttt+g ++a t +gg+t+ +aa+a+ ta g cg  + g++++ +
+  scaffold3 697445 ctCACTTTGATGCTCCGGGTCGTTATAaggatGACCTCAATGGTAAAGcgTTTAGTCAAGTACGGTTG-GAATATTTAAGACGTGAGGCCCATA 697537
+                   11456889**********9999988876666655555555544322224599****************.999********99988888887777 PP
+
+       Aux5   1851 cttcggcatgggtaaggttactttgtgtttttcagtacggtatccaagtgtgtcttgctgagctcgtgtcatattgagctcccattcaatcgtg 1944  
+                   c +   c tgg  aa+gt+ac + ++g+t  t+ag++c g++t++aagt+t   tt c+++      +tca++t  a  + +c +t+aatcg g
+  scaffold3 697538 CAGGCTC-TGGAAAAAGTAACCAACCGCTACTGAGAGCTGGCTATAAGTTTACATTACAAG------ATCACCTGAATACGGCTATGAATCGGG 697624
+                   6654445.7788899************************************99999***99......*************************** PP
+
+       Aux5   1945 actgttttgc.....ccgatatatcgtaagggccagcagtttttccgccagcatt.caaaccgtcaaaggcaaaggcattgctacccatatttc 2032  
+                   a+tg+ t+ +      cg t+ atc+++a ggc   ca+     ccgc+agc  t  aa++ g+ ++ gg a+ gg ++ +c ac +at     
+  scaffold3 697625 ATTGGCTGCTaatcaGCG-TTCATCACCACGGCACCCAA-----CCGCAAGCCATgGAAGAGGAAGGTGGTAGTGGTGCAACAACGTATG---- 697708
+                   ****99886666544344.7789*********9999999.....*******99998********************99999999988877.... PP
+
+       Aux5   2033 cattgacataaatgtaactaattgggcgatccattaaattattgagcactaggtgagcaccaccaaagctctctttaattgccaaaaac.caaa 2125  
+                                 taac+aatt  +cg+  +    aatt++tg gca+         +  a ++++  +c+  +++a+++cc+aaa+c   a+
+  scaffold3 697709 -------------CTAACCAATT-TACGG--T----AATTCCTGCGCAT--------TTAAATTGGCAAGCCACGCCACAACCTAAACCtTTAG 697774
+                   .............89*******9.44554..4....9***********9........444467777788899999**************999** PP
+
+       Aux5   2126 ccagatacccaatgagcaggacgcctgccaacc.............................................aacgtccccagcgggg 2174  
+                   +c++ ++ ccaatga+ ++ ac ++ g+c++cc                                             + c+t++cca +ggg+
+  scaffold3 697775 TCGACGGACCAATGATAGCCACCGTAGTCGGCCctaaaggtgaagagattttctgcgatgaatatggacgagtcaaagTTCATTTCCATTGGGA 697868
+                   ****************************************************************************9999*************9 PP
+
+       Aux5   2175 c...................aacagagtccaaat........ggcatcaaaaactaataccggcaatgatttacgcattacaacatcctctaac 2241  
+                                       a+ca ag++ca++t        gg++tca+aa++t++++c gg a+ +a t+ +gcat a++ac+++c+ct++ 
+  scaffold3 697869 TcgttactcgaatggcgatgAGCAAAGCTCATGTtgggtacgGGTGTCACAAGGTTGGGCTGGTAGCCAATACGGCATGATCACCATCCCTCGT 697962
+                   889999999************************************************************************************* PP
+
+       Aux5   2242 actcttttttaattcttcgaaaactttttgaaaacacttcttggagcccatgtacatactcaatccgcgaaaggtataggatagacccctgact 2335  
+                   a+t++t++t+a +t++t+g+   cttttt+aa                                                       ++ ga +
+  scaffold3 697963 ATTGGTCATGAGGTGATTGTCTCCTTTTTAAA------------------------------------------------------TGGCGATC 698002
+                   ********************************......................................................66777777 PP
+
+       Aux5   2336 c..actatcccaatggctattgcggtgcatatcatcaaagaaaaatcccacttgacacc.tgctaaagcgcacgtccataaccccgct...... 2420  
+                   c  a +a+cc a+t++c++t+g +g++c ta+cat++aa++aa a++cc c+t+ac c  tgc+a+a  +ca+++c a+ ac ++ ct      
+  scaffold3 698003 CggATCAACCGATTATCACTGGGCGCACTTACCATGCAACCAATACGCCTCCTTACCCTtTGCCAGAAAACAAAACGAAGACGGTACTgcgtag 698096
+                   788899*************************************************99999**************9999999999999999999* PP
+
+       Aux5   2421 tgatgcagactctgctcacggattttacga......tattgaatatcctgtatatcgagcattaatattccctcgt...ctgataggtg 2500  
+                   tgat+c++a +++g+ +a gg ttt+acga      ++ttgaa+a+c++g++++t++ag+++t at t++c++c+t   c+ga+ag+t 
+  scaffold3 698097 TGATACGCATCAAGGAGAGGGTTTTAACGAactcagCTTTGAAGACCAAGCGGGTAAAGAGCTGATTTATCTGCATgcgCAGAAAGATA 698185
+                   ******************************99999999***************************************99*****99875 PP
+
+>> scaffold1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ! 7419.4   0.1         0         0       1    6459 [. 1171141 1177606 .. 1171141 1177607 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 7419.4 bits;  conditional E-value: 0
+       Aux5       1 ttagccctcaacactctcaattttacgcgcaaggaaaaaatgatgagagccaaccacacttttcgcttgggctttaattttaacctgttcgc 92     
+                    ttagccctcaacactctcaattttacgcgcaaggaaaaaatgatgagagccaaccacacttttcgcttgggctttaattttaacctgttcgc
+  scaffold1 1171141 TTAGCCCTCAACACTCTCAATTTTACGCGCAAGGAAAAAATGATGAGAGCCAACCACACTTTTCGCTTGGGCTTTAATTTTAACCTGTTCGC 1171232
+                    589***************************************************************************************** PP
+
+       Aux5      93 tgggtgatgaagtaaatgctgttgagcttacaaagtcatgcataaagtaagtgaagaacgtcgcgatatctttaggaaactccctactcggt 184    
+                    tgggtgatgaagtaaatgctgttgagcttacaaagtcatgcataaagtaagtgaagaacgtcgcgatatctttaggaaactccctactcggt
+  scaffold1 1171233 TGGGTGATGAAGTAAATGCTGTTGAGCTTACAAAGTCATGCATAAAGTAAGTGAAGAACGTCGCGATATCTTTAGGAAACTCCCTACTCGGT 1171324
+                    ******************************************************************************************** PP
+
+       Aux5     185 ggatacaagaaggtctttgccatgttaagggcattacttccctgcacataggcgacataaccattgggatttgtcacggtgcgttcgacatg 276    
+                    ggatacaagaaggtctttgccatgttaagggcattacttccctgcacata+gc+acataaccattgggatttgtcacggtgcgttcgacat+
+  scaffold1 1171325 GGATACAAGAAGGTCTTTGCCATGTTAAGGGCATTACTTCCCTGCACATAAGCAACATAACCATTGGGATTTGTCACGGTGCGTTCGACATA 1171416
+                    ******************************************************************************************** PP
+
+       Aux5     277 tttcgcttcatcgtaaacgaactcaagccatccccaacgctttcttagccatgagcgctcacccgaatcggcatcctttagcctagctttgt 368    
+                    tttcgcttcatc+taaacgaactcaagccatccccaacgctttcttagccatga+cgctcacccgaatcggcatcctttagcctagctttgt
+  scaffold1 1171417 TTTCGCTTCATCATAAACGAACTCAAGCCATCCCCAACGCTTTCTTAGCCATGAACGCTCACCCGAATCGGCATCCTTTAGCCTAGCTTTGT 1171508
+                    ******************************************************************************************** PP
+
+       Aux5     369 agtcagcatactgctttccaagccaccaagagtagatgtattggtgattctctaaggcttgacgggatagtttcttattaccagcttgttgc 460    
+                    agtcagcatactgctttccaagccaccaagagtagat tattggtgattctc+aaggcttgacgggatagtttcttattaccagcttgttgc
+  scaffold1 1171509 AGTCAGCATACTGCTTTCCAAGCCACCAAGAGTAGATATATTGGTGATTCTCGAAGGCTTGACGGGATAGTTTCTTATTACCAGCTTGTTGC 1171600
+                    ******************************************************************************************** PP
+
+       Aux5     461 atatatcgttgcgtataatactgcactgattttcccgccaagttgtcatgcatgacaaaatatgcggcaaccttttccgagactttatgtaa 552    
+                    atatatcgt+gcgtataatactgcactgattttcccgccaagttgtcatgcatgacaaaatatgcggcaaccttttccgagactttatgtaa
+  scaffold1 1171601 ATATATCGTCGCGTATAATACTGCACTGATTTTCCCGCCAAGTTGTCATGCATGACAAAATATGCGGCAACCTTTTCCGAGACTTTATGTAA 1171692
+                    ******************************************************************************************** PP
+
+       Aux5     553 cttattaaaattaggaaaaggaacctctccactacgagccgcatgatacatctgatgtaacgccactcgactcaattcggcactggggcgtt 644    
+                    ct+attaaaattaggaaaagg+acctc+ccactacgagccgcatgatacatctgatgtaacgccactcgactcaattcggcactggggcgtt
+  scaffold1 1171693 CTCATTAAAATTAGGAAAAGGCACCTCCCCACTACGAGCCGCATGATACATCTGATGTAACGCCACTCGACTCAATTCGGCACTGGGGCGTT 1171784
+                    ******************************************************************************************** PP
+
+       Aux5     645 gttcattggggagcaaaccacctgtaatatcttcgcttatgcccggtaacaagctctcgtcccatccagactgtaacggcccaagtgggact 736    
+                    gttcattggggagcaaaccacctgtaatatcttcgcttatgcccggtaacaagctctcgtccca cc gact+taacggccc+agtgggact
+  scaffold1 1171785 GTTCATTGGGGAGCAAACCACCTGTAATATCTTCGCTTATGCCCGGTAACAAGCTCTCGTCCCAACCTGACTTTAACGGCCCGAGTGGGACT 1171876
+                    ******************************************************************************************** PP
+
+       Aux5     737 aaggggcggtaaacgcgccgctcatgggcggcaaccaaatgaagtgcctttttcaccgcgcgatgaagcggcttatcaaaatcaatcacctt 828    
+                    aaggggcggtaaacgcgccgctcatgggcggcaacca+atgaagtgcctttttcaccgcgcgatgaagcggcttatcaaaatcaatcacctt
+  scaffold1 1171877 AAGGGGCGGTAAACGCGCCGCTCATGGGCGGCAACCAGATGAAGTGCCTTTTTCACCGCGCGATGAAGCGGCTTATCAAAATCAATCACCTT 1171968
+                    ******************************************************************************************** PP
+
+       Aux5     829 agggccaccaatccattccagaggcttaagcaagattccggcaaaactgaaaacatcgttcatggtatcacccgaatcgagtgaactgcggc 920    
+                    a+++ccaccaatcca tccagaggcttaagcaagattccggcaaaactgaaaacatcgttcatgg atcacccgaatcgagtgaactgcggc
+  scaffold1 1171969 ACTTCCACCAATCCACTCCAGAGGCTTAAGCAAGATTCCGGCAAAACTGAAAACATCGTTCATGGAATCACCCGAATCGAGTGAACTGCGGC 1172060
+                    ******************************************************************************************** PP
+
+       Aux5     921 gagtgcaatcaaatagcccggcaaaggttacctcgaccttggctccctcatagatatagtcttcgccctgtttcgtgcagacctcttccagt 1012   
+                    gagtgcaatcaaatagcccggcaaaggt+a ct+gacctt gctccctcatagatatagtcttcgccctgtttcgtgcagacctcttccagt
+  scaffold1 1172061 GAGTGCAATCAAATAGCCCGGCAAAGGTGATCTGGACCTTTGCTCCCTCATAGATATAGTCTTCGCCCTGTTTCGTGCAGACCTCTTCCAGT 1172152
+                    ******************************************************************************************** PP
+
+       Aux5    1013 aattcgtcaataaaacgacgagccagaatgccacctagatcgggtccaaacacggaaagctgaataagtttaatcgggagttgattcttcgc 1104   
+                    aattcgtcaataaaacgacgagc+agaatgccaccta++tc+g+tccaaacac+gaaa+ctgaataagtttaatcgg agt  attcttcg 
+  scaffold1 1172153 AATTCGTCAATAAAACGACGAGCAAGAATGCCACCTAAGTCTGCTCCAAACACAGAAACCTGAATAAGTTTAATCGGAAGTGCATTCTTCGA 1172244
+                    ******************************************************************************************** PP
+
+       Aux5    1105 tttcaaaattgaaaagcgttttctgaaggcatttttcgcgccatcaacccgggcatcaacccctgtcataaactgctccatgaccatggggt 1196   
+                    tttcaa+a+tg+aaa++g+t+t+t+aag catt tt gc ccatcaaccc  gcatcaa ccctgtcataaactgctccat ac atggggt
+  scaffold1 1172245 TTTCAATAATGTAAATTGGTCTTTAAAGCCATTCTTAGCACCATCAACCCTTGCATCAATCCCTGTCATAAACTGCTCCATAACGATGGGGT 1172336
+                    ******************************************************************************************** PP
+
+       Aux5    1197 tatcccgcagtgctggcaacgcctctagcgtcactttcttggcaacattttccgctgtatctgtaataactgctttagctcctttgatacta 1288   
+                    tatcccgcagtgctggcaa+gcctctagcgtcactttcttggcaacattttccgctgtatctgtaataactgctttagctcctttgatacta
+  scaffold1 1172337 TATCCCGCAGTGCTGGCAAGGCCTCTAGCGTCACTTTCTTGGCAACATTTTCCGCTGTATCTGTAATAACTGCTTTAGCTCCTTTGATACTA 1172428
+                    ******************************************************************************************** PP
+
+       Aux5    1289 aagagctcatcgagatggtttgatagggtatcaaaccaattcttcttattggcttcaaaaagcgtatcaaccgccgcctctttgctctgacc 1380   
+                    aagagctcatcgagatggtttgatagggtatcaaaccaattcttcttattggcttc aaaagcgtatcaaccgccgcctctttgctctgacc
+  scaffold1 1172429 AAGAGCTCATCGAGATGGTTTGATAGGGTATCAAACCAATTCTTCTTATTGGCTTCCAAAAGCGTATCAACCGCCGCCTCTTTGCTCTGACC 1172520
+                    ******************************************************************************************** PP
+
+       Aux5    1381 gctgacactatccaacgtattatccagtaaagccttttgctgactatccatgatactgtgcagacgttcagccgtttgatcttcatagtctg 1472   
+                    gctgacactatccaacgtattatccagtaaagccttttgctgactatccatgatactgtgcagacgttcagccgtttgatcttcatag+ctg
+  scaffold1 1172521 GCTGACACTATCCAACGTATTATCCAGTAAAGCCTTTTGCTGACTATCCATGATACTGTGCAGACGTTCAGCCGTTTGATCTTCATAGGCTG 1172612
+                    ******************************************************************************************** PP
+
+       Aux5    1473 tacccaaaccggggatatataccgtcgatttaaggtaagatgagtcgaagtccatcgattcttgaattggatgtgcccttaataagcgggat 1564   
+                    tacccaaacc+g+gat+tat+c+g++ga+t+aaggtaagatgagtcgaagtccatcgattcttgaattgg+t+tgccct+aataagcgggat
+  scaffold1 1172613 TACCCAAACCAGAGATGTATTCAGCTGAGTAAAGGTAAGATGAGTCGAAGTCCATCGATTCTTGAATTGGGTATGCCCTAAATAAGCGGGAT 1172704
+                    ******************************************************************************************** PP
+
+       Aux5    1565 agattagataaacgaccggagtcactatcctgattaacgttgcggcgcataccatcaaagaaaaatcctacttgccaggctaaagcgcacgt 1656   
+                    a+att gata+acgacc+g +tc+ctatcctgatt+ac+tt cgg+gcatacc+tcaaagaaaaatcc+acttgcca+gctaaagcgcacgt
+  scaffold1 1172705 ACATTCGATAGACGACCTGTTTCGCTATCCTGATTGACATTACGGTGCATACCGTCAAAGAAAAATCCGACTTGCCATGCTAAAGCGCACGT 1172796
+                    ******************************************************************************************** PP
+
+       Aux5    1657 acccaccccggcttgatgcagattctgctcacgaactttacggcattgaatatcctgtatatcgagcattagtatttccttgtttgataagt 1748   
+                    +cccacccc+gcttgatgcaga tctgctcacgaa tttacg+cattgaatatcctgtatatcgagcattagtatttccttgt+tgata+gt
+  scaffold1 1172797 GCCCACCCCCGCTTGATGCAGACTCTGCTCACGAATTTTACGACATTGAATATCCTGTATATCGAGCATTAGTATTTCCTTGTCTGATAGGT 1172888
+                    ******************************************************************************************** PP
+
+       Aux5    1749 ggcaatcacatcatcaaaagctccaagctccggtgaccaacgtacttgaacctcgttatttggcataatcagggtataaaaaaatatgtcgc 1840   
+                    ggcaat+acatcatcaaaagc ccaagct cgg gaccaacgtacttg acctcgttatttggcataatcagggt+ta+aaa+atat tcgc
+  scaffold1 1172889 GGCAATTACATCATCAAAAGCACCAAGCTTCGGCGACCAACGTACTTGCACCTCGTTATTTGGCATAATCAGGGTGTAGAAATATATATCGC 1172980
+                    ******************************************************************************************** PP
+
+       Aux5    1841 cttgtttgcgcttcggcatgggtaaggttactttgtgtttttcagtacggtatccaagtgtgtcttgctgagctcgtgtcatattgagctcc 1932   
+                    cttgtttgcg t cggcat+ggtaaggttactttgtgtttttca++acggtatcc   tg++tctt+ctgagctcgtgtcatat+gag+tcc
+  scaffold1 1172981 CTTGTTTGCGTTCCGGCATAGGTAAGGTTACTTTGTGTTTTTCAAAACGGTATCC---TGCTTCTTTCTGAGCTCGTGTCATATCGAGTTCC 1173069
+                    *******************************************************...********************************** PP
+
+       Aux5    1933 cattcaatcgtgactgttttgcccgatatatcgtaagggccagcagtttttccgccagcattcaaaccgtcaaaggcaaaggcattgctacc 2024   
+                    cattcaatcgt ac+gttttgcccgatatatcgtaag  ccagca+tttttcc ccagcattcaaaccgtcaaaggcaaaggcattg++ cc
+  scaffold1 1173070 CATTCAATCGTAACCGTTTTGCCCGATATATCGTAAGAACCAGCAATTTTTCCCCCAGCATTCAAACCGTCAAAGGCAAAGGCATTGGGGCC 1173161
+                    ******************************************************************************************** PP
+
+       Aux5    2025 catatttccattgacataaatgtaactaattgggcgatccattaaattattgagcactaggtgagcaccaccaaagctctctttaattgcca 2116   
+                    catatttccattgacataaatgta+ctaattgggcgatccattaaattattgagcac+ag t+agcaccaccaaagctctctttaat gc a
+  scaffold1 1173162 CATATTTCCATTGACATAAATGTAGCTAATTGGGCGATCCATTAAATTATTGAGCACCAGCTTAGCACCACCAAAGCTCTCTTTAATCGCAA 1173253
+                    ******************************************************************************************** PP
+
+       Aux5    2117 aaaaccaaaccagatacccaatgagcaggacgcctgccaaccaacgtccccagcggggcaacagagtccaaatggcatcaaaaactaatacc 2208   
+                    aaaaccaaaccagataccc+a+gagca+g+cgcctgccaaccaacgtccccagcggggcaacagagtccaaatggcatcaaaaactaatacc
+  scaffold1 1173254 AAAACCAAACCAGATACCCCACGAGCATGGCGCCTGCCAACCAACGTCCCCAGCGGGGCAACAGAGTCCAAATGGCATCAAAAACTAATACC 1173345
+                    ******************************************************************************************** PP
+
+       Aux5    2209 ggcaatgatttacgcattacaacatcctctaacactcttttttaattcttcgaaaactttttgaaaacacttcttggagcccatgtacatac 2300   
+                    ggcaatgatttacgcattacaacatcctctaacactcttttttaattcttcgaaaacttt+tgaaaacacttcttggagcccatgtacatac
+  scaffold1 1173346 GGCAATGATTTACGCATTACAACATCCTCTAACACTCTTTTTTAATTCTTCGAAAACTTTCTGAAAACACTTCTTGGAGCCCATGTACATAC 1173437
+                    ******************************************************************************************** PP
+
+       Aux5    2301 tcaatccgcgaaaggtataggatagac.ccctgactcactatcccaatggctattgcggtgcatatcatcaaagaaaaatcccacttgacac 2391   
+                    tcaatccgcgaaaggtataggatagac ccctgactcactatcccaatggctattgcg+t +ata+catcaaagaaaaatcc acttg+ca+
+  scaffold1 1173438 TCAATCCGCGAAAGGTATAGGATAGACgCCCTGACTCACTATCCCAATGGCTATTGCGATCTATACCATCAAAGAAAAATCCGACTTGCCAT 1173529
+                    ******************************************************************************************** PP
+
+       Aux5    2392 ctgctaaagcgcacgtccataaccccgcttgatgcagactctgctcacggattttacgatattgaatatcctgtatatcgagcattaatatt 2483   
+                      gctaaagcgcacgt c    ccccgcttgatgcagactctgctcacgga tttacga attgaatatcctgtatatcgagcatta+tatt
+  scaffold1 1173530 --GCTAAAGCGCACGTGC----CCCCGCTTGATGCAGACTCTGCTCACGGACTTTACGAAATTGAATATCCTGTATATCGAGCATTAGTATT 1173615
+                    ..****************....********************************************************************** PP
+
+       Aux5    2484 ccctcgtctgataggtggcaatgacatcatcaaaa............ggcgaccaccgcacttgcacctcgttattaggcataatcaaggtg 2563   
+                    +cct+gtctgataggtggcaat+acatcatcaaaa            gg gacca cg+acttgcacctcgttatt+ggcataatca+ggtg
+  scaffold1 1173616 TCCTTGTCTGATAGGTGGCAATTACATCATCAAAAgccccaaactccGGTGACCAGCGTACTTGCACCTCGTTATTTGGCATAATCAGGGTG 1173707
+                    ******************************************************************************************** PP
+
+       Aux5    2564 tagaaatatatatcgccttgtttgcgctccggcataggtaaggttactttgtgtttttcaagacggtagcc...tgtgtcgggctgagtttt 2652   
+                    tagaaa a at tc ccttgtttgcgct cggcat ggtaaggttactttgtgtttttca+gacg+tagcc   tgt+tc+g+ctgagtttt
+  scaffold1 1173708 TAGAAAAACATGTCACCTTGTTTGCGCTTCGGCATTGGTAAGGTTACTTTGTGTTTTTCAGGACGATAGCCaagTGTATCAGACTGAGTTTT 1173799
+                    ************************************************************************999***************** PP
+
+       Aux5    2653 ggtcatacctagcacccattcaatcgtaaccgttttgcccgatatatcgtaaggtccagcaacagcaccacccgcatttaaaccgtcaaagg 2744   
+                    ggtcatacctagca+ccattcaatcgtaaccgttttgcccgatatatcgtaagg+ccagcaacagcaccacccgcatttaaacc+tcaaagg
+  scaffold1 1173800 GGTCATACCTAGCATCCATTCAATCGTAACCGTTTTGCCCGATATATCGTAAGGGCCAGCAACAGCACCACCCGCATTTAAACCATCAAAGG 1173891
+                    ******************************************************************************************** PP
+
+       Aux5    2745 caaaggcattgagacccatatttccattgacataaaggtagctaattgggcgatccattaaattattgatgactagggaggctcccccaaag 2836   
+                    caaaggcatt+++acccatatttccattgacataa+g+ta+ctaattgggcgatccattaaattattgatgactag++a+gctcccccaaag
+  scaffold1 1173892 CAAAGGCATTTCCACCCATATTTCCATTGACATAATGATAACTAATTGGGCGATCCATTAAATTATTGATGACTAGAAATGCTCCCCCAAAG 1173983
+                    ******************************************************************************************** PP
+
+       Aux5    2837 ctctctttaatcgcaaaaaaccaaaccagataccccacgagcatggctcctgccaagcaacgtccccagcggggcaacagagtccaaatggc 2928   
+                    ctctctttaatcgc+aaaaaccaaaccagataccccacgagca+ggc+cctgccaa+caacgtccccagcggggcaacagagtccaaatggc
+  scaffold1 1173984 CTCTCTTTAATCGCCAAAAACCAAACCAGATACCCCACGAGCAGGGCGCCTGCCAACCAACGTCCCCAGCGGGGCAACAGAGTCCAAATGGC 1174075
+                    ******************************************************************************************** PP
+
+       Aux5    2929 atcaaaaactaataccggcaatgatttacgcattcaaagatcctgtagatcgagtttttttaattcttctaatgcggcactcccaccctcaa 3020   
+                    atcaaaaactaatac ggcaatgatttacgcattcaaagatcctgtagatcgagtttttttaattcttctaatgcggcactcccaccctcaa
+  scaffold1 1174076 ATCAAAAACTAATACTGGCAATGATTTACGCATTCAAAGATCCTGTAGATCGAGTTTTTTTAATTCTTCTAATGCGGCACTCCCACCCTCAA 1174167
+                    ******************************************************************************************** PP
+
+       Aux5    3021 gccaagcaagtccccatatcaagcggtcagcggaaggcgcaccagctgcgtcgcttttttgcagggctttctgagccatattcatgcgagca 3112   
+                    gccaagcaagtccccatatcaagcggtcagcggaaggcgcaccagc+gcgtcgcttttttgcagggctttctgagccatattcatgcgagca
+  scaffold1 1174168 GCCAAGCAAGTCCCCATATCAAGCGGTCAGCGGAAGGCGCACCAGCAGCGTCGCTTTTTTGCAGGGCTTTCTGAGCCATATTCATGCGAGCA 1174259
+                    ******************************************************************************************** PP
+
+       Aux5    3113 caagcgggaaattgttgataacgaacgctaccttgccacatgacgagcaatctcggtaaatcgggatcccccaataaggctccttgcaaatc 3204   
+                    caagcggg aa+tgttgataacgaacgctaccttgccacatgacgagcaatctcggtaaatcgggatcccccaataaggctccttgcaaatc
+  scaffold1 1174260 CAAGCGGGGAACTGTTGATAACGAACGCTACCTTGCCACATGACGAGCAATCTCGGTAAATCGGGATCCCCCAATAAGGCTCCTTGCAAATC 1174351
+                    ******************************************************************************************** PP
+
+       Aux5    3205 ctccgtaagggttatcactctgagttctgaaggctcaacctcaatcgaatagtgagtccactggccatcacattggtaacaccaccagtcac 3296   
+                    ctccgtaagggttatcactc+gagttctgaaggctc+acctcaatcgaatagtgagtccactggccatcacattggtaacaccaccagtcac
+  scaffold1 1174352 CTCCGTAAGGGTTATCACTCGGAGTTCTGAAGGCTCGACCTCAATCGAATAGTGAGTCCACTGGCCATCACATTGGTAACACCACCAGTCAC 1174443
+                    ******************************************************************************************** PP
+
+       Aux5    3297 tcattccaccaaatagcgatgaataccaaggcaatgttcgctggctcagcatgataggtaatgacgatgaggtatagaagcgaagtagtaga 3388   
+                    tca tccaccaaatagcgatgaataccaaggcaatgttcgctggctcagcatgataggtaatg+cga+gaggtatagaagcgaag agtaga
+  scaffold1 1174444 TCAGTCCACCAAATAGCGATGAATACCAAGGCAATGTTCGCTGGCTCAGCATGATAGGTAATGTCGACGAGGTATAGAAGCGAAGCAGTAGA 1174535
+                    ******************************************************************************************** PP
+
+       Aux5    3389 ctatggcgctgtttcggctccagcaccatgcaccccatggcaaactgctgttgcagttcatccagtgtacgctgactgcggatcacagcttg 3480   
+                    ctatggcgctgtttcggctccagcaccatgcaccccatggcaaactgctgttgcagttcatccagtgtacgctgactgcggatcacagcttg
+  scaffold1 1174536 CTATGGCGCTGTTTCGGCTCCAGCACCATGCACCCCATGGCAAACTGCTGTTGCAGTTCATCCAGTGTACGCTGACTGCGGATCACAGCTTG 1174627
+                    ******************************************************************************************** PP
+
+       Aux5    3481 aactacaccttgctcaatcactgattcgagtaaaggtaacgacctttcatgacagtgccaaagccaagggccaaggtttgtcagttcccaaa 3572   
+                    aactacaccttgctcaat actgattcgagtaaaggtaacgacctttcatgacagtgccaaagccaagggccaaggtttgtcagttcccaaa
+  scaffold1 1174628 AACTACACCTTGCTCAATTACTGATTCGAGTAAAGGTAACGACCTTTCATGACAGTGCCAAAGCCAAGGGCCAAGGTTTGTCAGTTCCCAAA 1174719
+                    ******************************************************************************************** PP
+
+       Aux5    3573 ggtcgggatggatcaatagcggacgtaagaattcaccatgttcagagaacagacgctcacgcagttcagcttttagctctgccgcttcgaat 3664   
+                    ggtcgggatggatcaatagcggacgtaagaattcaccatgttcagagaacagacgctcacgcagttcagcttttagctctgccgcttcgaat
+  scaffold1 1174720 GGTCGGGATGGATCAATAGCGGACGTAAGAATTCACCATGTTCAGAGAACAGACGCTCACGCAGTTCAGCTTTTAGCTCTGCCGCTTCGAAT 1174811
+                    ******************************************************************************************** PP
+
+       Aux5    3665 aggacataacaagcatcggcagaccataatttgtcaggcagcatcatcgattatttcccctctacgattgcattaccttgcctaattgctcg 3756   
+                    aggacataacaagcatcggcagaccataatttgtcaggcagcatcatcgattatttcccctctacgattgcattaccttgcctaattgctcg
+  scaffold1 1174812 AGGACATAACAAGCATCGGCAGACCATAATTTGTCAGGCAGCATCATCGATTATTTCCCCTCTACGATTGCATTACCTTGCCTAATTGCTCG 1174903
+                    ******************************************************************************************** PP
+
+       Aux5    3757 ctgcatacaaggtatgcagacaggattttccatagggggaagtgtttttaataaagcctcggcactcgtttgtgtcgccgtaaaaggctcaa 3848   
+                    ctgcatacaaggtatgcagacaggattttccatagggggaagtgtttttaataaagcctcggcactcgtttgtgtcgccgtaaaaggctcaa
+  scaffold1 1174904 CTGCATACAAGGTATGCAGACAGGATTTTCCATAGGGGGAAGTGTTTTTAATAAAGCCTCGGCACTCGTTTGTGTCGCCGTAAAAGGCTCAA 1174995
+                    ******************************************************************************************** PP
+
+       Aux5    3849 taaccatattttctggatcggcttctttcgcaaccgtctttggtaacaatgacgcttggccactccaaccagccccctgtccgggactaccg 3940   
+                    taaccatattttctggatcggcttctttcgcaaccgtctttggtaacaatgacgcttg+ccactccaaccagccccctgtccgggactaccg
+  scaffold1 1174996 TAACCATATTTTCTGGATCGGCTTCTTTCGCAACCGTCTTTGGTAACAATGACGCTTGCCCACTCCAACCAGCCCCCTGTCCGGGACTACCG 1175087
+                    ******************************************************************************************** PP
+
+       Aux5    3941 ccagagttgaggttaatcatcgctccgacaagatgcacaccggcaggatcgactttaacaaagctgccgcccgctttaaccgtaatctcgga 4032   
+                    ccagagttgaggttaatcatcgc+ccgacaagatgcacaccggcaggatcgactttaacaaagctgccgcccgctttaaccgtaatctcgga
+  scaffold1 1175088 CCAGAGTTGAGGTTAATCATCGCCCCGACAAGATGCACACCGGCAGGATCGACTTTAACAAAGCTGCCGCCCGCTTTAACCGTAATCTCGGA 1175179
+                    ******************************************************************************************** PP
+
+       Aux5    4033 gcccgcttcaataacgactttctcaccggctttaatatgtatctcatcgcctgcttcactgacccagaccttaccagacttgacataaagag 4124   
+                    gcccgcttcaataacgactttctcaccggctttaatatgtatctcatcgcctgcttcactgacccagaccttaccagacttgacataaagag
+  scaffold1 1175180 GCCCGCTTCAATAACGACTTTCTCACCGGCTTTAATATGTATCTCATCGCCTGCTTCACTGACCCAGACCTTACCAGACTTGACATAAAGAG 1175271
+                    ******************************************************************************************** PP
+
+       Aux5    4125 agccttccaccatgagtgttttgcttcctttaacggcttctcgactctccccctcgaccgtcaggtgttggttgtgcttaatctgagtaaat 4216   
+                    agccttccaccatgagtgttttgcttcctttaacggcttctcgactctccccctcgaccgtcaggtgttggttgtgcttaatctgagt aa 
+  scaffold1 1175272 AGCCTTCCACCATGAGTGTTTTGCTTCCTTTAACGGCTTCTCGACTCTCCCCCTCGACCGTCAGGTGTTGGTTGTGCTTAATCTGAGTGAAC 1175363
+                    ******************************************************************************************** PP
+
+       Aux5    4217 tggtcattttcaacggtcagatgttggtcgtgacgaatgaccgtggtgtggtcgttttcaatcaaaccatcaaagtctttctgcgcatgcag 4308   
+                    tggtc ttttcaacggtcag+tgttggtcgtgacgaatgaccgtggtgtggtcgttttcaatcaaaccatc+aagtctttctgcgcatgcag
+  scaffold1 1175364 TGGTCGTTTTCAACGGTCAGGTGTTGGTCGTGACGAATGACCGTGGTGTGGTCGTTTTCAATCAAACCATCGAAGTCTTTCTGCGCATGCAG 1175455
+                    ******************************************************************************************** PP
+
+       Aux5    4309 gtagatttgctctttgcccgcttggtcttcaaaactgagctcgttaaacccttcaccttggtgcgtctcggtgcgcagcacggttttggttt 4400   
+                    gtagatttgctctttgcccgcttggtcttcaaaactgagctcgttaaacccttcaccttggtgcgtctcggtgcgcagcacggttttggttt
+  scaffold1 1175456 GTAGATTTGCTCTTTGCCCGCTTGGTCTTCAAAACTGAGCTCGTTAAACCCTTCACCTTGGTGCGTCTCGGTGCGCAGCACGGTTTTGGTTT 1175547
+                    ******************************************************************************************** PP
+
+       Aux5    4401 tgtgctctggcaaggtgtatggtggcgtgttggtcgcatgatatgtgcggccagtgataatgggttggtcagggtctccatttaaaaagttt 4492   
+                    tgt ctctggcaag tgtatggtggcgtgttggtcgcatgata+gtgcg+cc gtgat at+gg tg tcagggtc+cc+tttaaaaa+t+t
+  scaffold1 1175548 TGTTCTCTGGCAAGCTGTATGGTGGCGTGTTGGTCGCATGATAGGTGCGTCCGGTGATGATCGGCTGATCAGGGTCACCGTTTAAAAACTCT 1175639
+                    ******************************************************************************************** PP
+
+       Aux5    4493 acgatcacttcatgaccgatgcgcggaattgcgataaaaccttattggctgcccgcccaaccttgtgacacccgtacccaacaggagctttg 4584   
+                    ac+atcacttcatgaccgatgcgcggaat+gcgataaaacc tattggctgcccgcccaaccttg+gacacccgtacccaacaggagctttg
+  scaffold1 1175640 ACAATCACTTCATGACCGATGCGCGGAATGGCGATAAAACCGTATTGGCTGCCCGCCCAACCTTGCGACACCCGTACCCAACAGGAGCTTTG 1175731
+                    ******************************************************************************************** PP
+
+       Aux5    4585 ctcgttactgttcgagtaacgatcccacgggaagtggattttcacccgcccgtgttcatcacagaagatttcttcgccttcaggaccgacga 4676   
+                    ctcgttac+gttcgagta+cgatcccacgggaa tggattttcacccgcccgtgttcatcacagaagatttcttcgccttcaggaccgacga
+  scaffold1 1175732 CTCGTTACCGTTCGAGTAGCGATCCCACGGGAAATGGATTTTCACCCGCCCGTGTTCATCACAGAAGATTTCTTCGCCTTCAGGACCGACGA 1175823
+                    ******************************************************************************************** PP
+
+       Aux5    4677 ccgtggctatcattggaccatcgacttgcggtttagtttgtggctcggcgcgccagtggagatgccccggaattaagctgaactggttgctg 4768   
+                    ccgtggctatcattggaccatcgacttgcggttt g+ttgtggctcggcgcgccagtggagatgccc+ggaattaagctgaactggttg+tg
+  scaffold1 1175824 CCGTGGCTATCATTGGACCATCGACTTGCGGTTTGGGTTGTGGCTCGGCGCGCCAGTGGAGATGCCCTGGAATTAAGCTGAACTGGTTGTTG 1175915
+                    ******************************************************************************************** PP
+
+       Aux5    4769 taggtggttgcaccgctgccgccctcttcttgtaacgcttgcggctgctcaccttgatggttaatcgacaccaccacccaatcgcggttcat 4860   
+                    taggt+gttgcacc+ctgccgccctcttcttgtaacgcttgcggctgctcaccttgatggttaat ga+accaccacccaatcgcggttcat
+  scaffold1 1175916 TAGGTCGTTGCACCACTGCCGCCCTCTTCTTGTAACGCTTGCGGCTGCTCACCTTGATGGTTAATAGAGACCACCACCCAATCGCGGTTCAT 1176007
+                    ******************************************************************************************** PP
+
+       Aux5    4861 cgcggggtcaagatgctcttgcaggtcaaacttataaccagcacgcagtagcggctcgttgctctgccctgccgcggtgtgggcatggcggc 4952   
+                    cgc gggtcaagatgctcttgcaggtcaaacttata+ccagcacgca++agcggctcgttgctctgccctg++gcg tgtgggcatggcggc
+  scaffold1 1176008 CGCAGGGTCAAGATGCTCTTGCAGGTCAAACTTATAGCCAGCACGCAAGAGCGGCTCGTTGCTCTGCCCTGTTGCGATGTGGGCATGGCGGC 1176099
+                    ******************************************************************************************** PP
+
+       Aux5    4953 gcagatagtctaagcggatttggctaaaggcggcgccgttcacatcgtctttgtagcgccccggcgcatcaaagtgttggtagcgcgtttgc 5044   
+                    gcag+ta+tctaagcggatttggctaaaggcggcgccgttcacatcgtctttgtagcgccccggcgcatcaaa+tgttggta cg gtttgc
+  scaffold1 1176100 GCAGGTAATCTAAGCGGATTTGGCTAAAGGCGGCGCCGTTCACATCGTCTTTGTAGCGCCCCGGCGCATCAAAATGTTGGTAACGGGTTTGC 1176191
+                    ******************************************************************************************** PP
+
+       Aux5    5045 tgatattctagctcagtaccctgcacggtttgtaaaaatgagtaggctggctttttgaagctgtaatctttgagctgaacttcgctcacttc 5136   
+                    tgata+tc+agctcagtaccctgcacggtttgtaaaaa+gagtaggc ggctttttgaagctgta+tctttgagctgaacttcgctcacttc
+  scaffold1 1176192 TGATAATCCAGCTCAGTACCCTGCACGGTTTGTAAAAAGGAGTAGGCCGGCTTTTTGAAGCTGTAGTCTTTGAGCTGAACTTCGCTCACTTC 1176283
+                    ******************************************************************************************** PP
+
+       Aux5    5137 tgcttgggtgcgataggttaagccgtggatgtacggtgtatctttcgtgccgcccgctaaagcgttgtacgggatgggctccggtagtttac 5228   
+                    tgcttgggtgcgataggttaa ccgtggatgtacggtgtatc++tcgtgccgcccgctaa+gcgttgtacgggat ggctc ggtagttt+c
+  scaffold1 1176284 TGCTTGGGTGCGATAGGTTAAACCGTGGATGTACGGTGTATCCATCGTGCCGCCCGCTAAGGCGTTGTACGGGATAGGCTCAGGTAGTTTGC 1176375
+                    ******************************************************************************************** PP
+
+       Aux5    5229 ttaggctgtcactggcatcactgaaatagagggtatgtttgccagcttcatggacaaagctgtacaccaagccttcttcagcggcgaggcgg 5320   
+                    ttaggct tcactggcatcactgaaatagagggtatgtttgcc+gcttcatggacaaagctgtacaccaagccttcttcagcggcgaggcgg
+  scaffold1 1176376 TTAGGCTATCACTGGCATCACTGAAATAGAGGGTATGTTTGCCCGCTTCATGGACAAAGCTGTACACCAAGCCTTCTTCAGCGGCGAGGCGG 1176467
+                    ******************************************************************************************** PP
+
+       Aux5    5321 tggagaaagtcgatatcgctttcgcggtactgcacacaaaactcacgctgcacgctatcacggttgagcgcaaaagcgtaatcgttgatgcc 5412   
+                    tggagaaagtcgat+tcgctttcgcggtactgcacacaaaactcacgctgcacgc+atcacg+ttgagcgcaaaagcgtaatcgttgatgcc
+  scaffold1 1176468 TGGAGAAAGTCGATGTCGCTTTCGCGGTACTGCACACAAAACTCACGCTGCACGCAATCACGTTTGAGCGCAAAAGCGTAATCGTTGATGCC 1176559
+                    ******************************************************************************************** PP
+
+       Aux5    5413 catctcttgcagcaagatagaaagaatttctgggacagtctgcttttggaaaatgcggctattatgacgcagggataagcgctctaaggcag 5504   
+                    catctcttgcagcaagataga+agaatttctgg+acagtctgcttttggaaaatgcggct+ttatgacgcagggataagcgctctaaggcag
+  scaffold1 1176560 CATCTCTTGCAGCAAGATAGAGAGAATTTCTGGAACAGTCTGCTTTTGGAAAATGCGGCTGTTATGACGCAGGGATAAGCGCTCTAAGGCAG 1176651
+                    ******************************************************************************************** PP
+
+       Aux5    5505 ggactaaggtgagttcgtagaaggtttggtgatggccgatatcgccttggctgaaggcgcaaacaatgccgtgaacgcgctgaaccaactgt 5596   
+                    ggactaa gtgagttcgtagaaggt+tggtgatggccgatatcgccttggctgaa+gc c++acaatgccgtg+acgcgctg+ac aactgt
+  scaffold1 1176652 GGACTAAAGTGAGTTCGTAGAAGGTGTGGTGATGGCCGATATCGCCTTGGCTGAAAGCACGTACAATGCCGTGCACGCGCTGTACTAACTGT 1176743
+                    ******************************************************************************************** PP
+
+       Aux5    5597 gaattgcggtaaagcttcagctcagcacgcttatcgaccatctgctcagcagtcagattggatgcccgactcgccaattgcacttcgtagcg 5688   
+                    gaattgcggtaaagcttcagctcagcacgcttatcgaccatctgctcagcagtcagattggat cccgactcgcca+ttgcacttcgtagcg
+  scaffold1 1176744 GAATTGCGGTAAAGCTTCAGCTCAGCACGCTTATCGACCATCTGCTCAGCAGTCAGATTGGATACCCGACTCGCCAGTTGCACTTCGTAGCG 1176835
+                    ******************************************************************************************** PP
+
+       Aux5    5689 aaacccgtaacaggcttgccctaaaaaaacactatttgagagtgactcctgcccgtggaagcctctgaccaccagagtctcatcttccagcc 5780   
+                    aaacccgtaacaggcttgccctaaaaaaacact+tt+gagagtgactcctgcccgtg+aagcctctgaccaccagagtctcatcttccagcc
+  scaffold1 1176836 AAACCCGTAACAGGCTTGCCCTAAAAAAACACTGTTGGAGAGTGACTCCTGCCCGTGAAAGCCTCTGACCACCAGAGTCTCATCTTCCAGCC 1176927
+                    ******************************************************************************************** PP
+
+       Aux5    5781 cttccacctcaatgctgtacgctaatgtcgccatcctgcctttccttcccctacattaaaaatggcaaaaccttaaacccacaataccgcgc 5872   
+                    cttccacctcaatgctgtacgctaatgtcgccatcctgcctttccttcccctacattaaaaatggcaaaaccttaaacccacaataccgcgc
+  scaffold1 1176928 CTTCCACCTCAATGCTGTACGCTAATGTCGCCATCCTGCCTTTCCTTCCCCTACATTAAAAATGGCAAAACCTTAAACCCACAATACCGCGC 1177019
+                    ******************************************************************************************** PP
+
+       Aux5    5873 caaacgatactctgggtttaaggttcacagccgcccacccgaaggtgagcgacattctcgcagcgtaaattacgcttcgattggcttacgcc 5964   
+                    caaacgatactctgggtttaaggttcacag+cgcccacccgaaggtgagcgacattctcgcagcgtaaattacgcttcgattggcttacgcc
+  scaffold1 1177020 CAAACGATACTCTGGGTTTAAGGTTCACAGTCGCCCACCCGAAGGTGAGCGACATTCTCGCAGCGTAAATTACGCTTCGATTGGCTTACGCC 1177111
+                    ******************************************************************************************** PP
+
+       Aux5    5965 agtcatcagagcctgaggtgcccgcgttaacgtggtcccaagtgattttgcggtaagacagagacacagtcacattctgagtaaaatcagat 6056   
+                    agtcatcagagcctgaggtgcccgcgttaacgtggtcccaagtgattttgcggtaagacagagacacagtcacattctgagtaaa+tcagat
+  scaffold1 1177112 AGTCATCAGAGCCTGAGGTGCCCGCGTTAACGTGGTCCCAAGTGATTTTGCGGTAAGACAGAGACACAGTCACATTCTGAGTAAAGTCAGAT 1177203
+                    ******************************************************************************************** PP
+
+       Aux5    6057 tttgctgggtcttggcagtgtggcatttcacagtggatatcgacgatagacgcgttttccagcttagtggtgaagaagttctcttgtttacc 6148   
+                    tttgctgggtcttggcagtgtggcatttcacagtggatatc+acgatagacgcgttttccagcttagtggtgaagaagtt+tcttgttt cc
+  scaffold1 1177204 TTTGCTGGGTCTTGGCAGTGTGGCATTTCACAGTGGATATCAACGATAGACGCGTTTTCCAGCTTAGTGGTGAAGAAGTTTTCTTGTTTGCC 1177295
+                    ******************************************************************************************** PP
+
+       Aux5    6149 ttcgatagaagtacggtaccacttcagctcaaccgttttcagcttctcaccggaagagagcgcgttgtacagcagaggaaccgctttgttca 6240   
+                    ttcgataga+gtacggtacca ttcagctcaac+gttttcagcttctcacc+gaagagagcgcgttgtacagcagaggaaccgctttgttca
+  scaffold1 1177296 TTCGATAGAGGTACGGTACCATTTCAGCTCAACGGTTTTCAGCTTCTCACCTGAAGAGAGCGCGTTGTACAGCAGAGGAACCGCTTTGTTCA 1177387
+                    ******************************************************************************************** PP
+
+       Aux5    6241 gcgccacagtgaatttgaatggcttgtgcacacgttggcctgaaggctgacctgattgtgggtcagtcggtacggttacgacgtggtcaaac 6332   
+                    gcgccacagtgaatttgaatggcttgtgcacacgttggcctgaaggctgacctgattgtgggtcagtcggtac gt+ac+acgtggtcaaac
+  scaffold1 1177388 GCGCCACAGTGAATTTGAATGGCTTGTGCACACGTTGGCCTGAAGGCTGACCTGATTGTGGGTCAGTCGGTACAGTCACAACGTGGTCAAAC 1177479
+                    ******************************************************************************************** PP
+
+       Aux5    6333 tgctgaaccagcatctcatcttcatggccttcaacgaatgaatcgccgatagagtcagcagtacatgcgcctgcagtgataagaccctgagt 6424   
+                    tgctgaaccagcatctcatcttcatggccttcaacgaatgaatcgccgatagagtcagcagtacatgc cctgcagtgataagaccctgagt
+  scaffold1 1177480 TGCTGAACCAGCATCTCATCTTCATGGCCTTCAACGAATGAATCGCCGATAGAGTCAGCAGTACATGCACCTGCAGTGATAAGACCCTGAGT 1177571
+                    ******************************************************************************************** PP
+
+       Aux5    6425 ttggccttcgatagagatataacatggagttggca 6459   
+                    ttggccttcgatagagatataacatggagttggca
+  scaffold1 1177572 TTGGCCTTCGATAGAGATATAACATGGAGTTGGCA 1177606
+                    *********************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (6460 nodes)
+Target sequences:                         10  (4417735 residues searched)
+Passed MSV filter:                         3  (0.3); expected 0.2 (0.02)
+Passed bias filter:                        3  (0.3); expected 0.2 (0.02)
+Passed Vit filter:                         3  (0.3); expected 0.0 (0.001)
+Passed Fwd filter:                         3  (0.3); expected 0.0 (1e-05)
+Initial search space (Z):                 10  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 258.50u 0.84s 00:04:19.33 Elapsed: 00:01:47.83
+# Mc/sec: 264.65
+//
+[ok]

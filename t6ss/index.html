@@ -1,0 +1,56 @@
+<meta http-equiv="Refresh" content="60">
+<div class="splash">
+  <div class="middle">
+    <h1>Predicting T6SS genes</h1>
+    <hr>
+    <p>Page will automatically refresh in 60s</p>
+    <p>Time: <span id="datetime"></span></p>
+  </div>
+  <div class="bottomleft">
+    <p><a href="https://T6SS.Vibriocholera.com" target=_blank style="color: black; text-decoration: none;">T6SS.Vibriocholera.com</a></p>
+  </div>
+</div>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+</script>
+
+<style>
+body, html {
+  height: 100%
+}
+
+.splash {
+  height: 100%;
+  position: relative;
+  color: black;
+  /* Add a font */
+  font-family: "Courier New", Courier, monospace;
+  /* Set the font-size to 25 pixels */
+  font-size: 25px;
+}
+
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>

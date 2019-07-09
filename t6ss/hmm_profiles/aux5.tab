@@ -1,0 +1,16 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+scaffold2            -          Aux5                 -                  0 15169.4   3.8         0 7392.1   0.1   4.2   4   0   0   4   4   4   4 -
+scaffold3            -          Aux5                 -                  0 10744.9   0.1         0 7448.5   0.1   3.1   3   0   0   3   3   3   3 -
+scaffold1            -          Aux5                 -                  0 7419.8   0.1         0 7419.4   0.1   1.1   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      aux5
+# Target file:     ../BGT49_PacBio_Final_assembly.fasta
+# Option settings: hmmsearch -o aux5.out --tblout aux5.tab --cpu 10 aux5 ../BGT49_PacBio_Final_assembly.fasta 
+# Current dir:     /storage/aroon/vibrio/hmm
+# Date:            Mon May 13 11:31:17 2019
+# [ok]
